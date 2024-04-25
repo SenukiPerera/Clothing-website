@@ -129,6 +129,8 @@
              </li>
             </ul>
           </div>
+        <%-- nav bar end--%>
+        <%-- content --%>
           <section class="home-section">
             <div class="text">Dashboard</div>
             <div class="container-fluid">
@@ -219,14 +221,9 @@
                             </div>
                         </div>
                     </div>
-                    <%-- content end--%>
             </div>
           </section>
-                    <%-- search bar end--%>
-                    
-                    
-                
-        <%-- nav bar end --%>
+        <%-- content end--%>
         <script>
             let sidebar = document.querySelector(".sidebar");
             let closeBtn = document.querySelector("#btn");
