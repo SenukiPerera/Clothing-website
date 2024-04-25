@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/04/2024, 6:45:01 PM
+    Author     : User
+*/
+
+/*search bar*/
+.searchbar {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    padding-left: 60%;
+}
+input{
+    border: 2px solid #fff;
+    height: 40px;
+    width: 500px;
+    border-radius: 50px;
+    padding: 0px 50px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+}
+::placeholder{
+    color: rgba(240, 248, 255, 0.452);
+}
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    cursor: pointer;
+}
+
+/*first div*/
+.container-one{
+    display: flex;
+}
+.first-content{
+    background-color: #193E29;
+    color: white;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 18%;
+    padding-left: 2%;
+}
+.first-content h1{
+    font-weight: 700;
+}
+.first-content p{
+    padding-top: 10px;
+}
+.discover{
+    padding-top: 15px;
+}
+.discover button{
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    position: relative;
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+}
+/*latest release*/
+
+

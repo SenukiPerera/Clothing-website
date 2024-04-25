@@ -1,0 +1,253 @@
+<%-- 
+    Document   : home
+    Created on : 24/04/2024, 6:41:15 PM
+    Author     : User
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Admin Page</title>
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="navbar.css">
+        
+        <%@include file="allCss.jsp" %>
+        <style>
+            .container-fluid{
+               padding: 5%;
+            }
+            .ts-card-body button{
+                color: white;
+                border: 1px solid white;
+                border-radius: 50px;
+                cursor: pointer;
+                position: relative;
+                height: 40px;
+                width: 200px;
+                font-size: 16px;
+                font-family: Inter;
+                font-weight: 700;
+                word-wrap: break-word;
+                background: #193E29;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .ts-card-body button:hover{
+                background: transparent;
+                color: #193E29;
+                border: 1px solid #193E29;
+            }
+            .ts-card{
+                width: 253px;
+                height: 550px;
+                border: none;
+            }
+            
+        </style>
+    
+    <body>
+        <%-- nav bar --%>
+        <div class="sidebar">
+            <div class="logo-details">
+              
+                <div class="logo_name">LOGO HERE</div>
+                <i class='bx bx-menu' id="btn" ></i>
+            </div>
+            <ul class="nav-list">
+                <li>
+                  <i class='bx bx-search' ></i>
+                 <input type="text" placeholder="Search...">
+                 <span class="tooltip">Search</span>
+              </li>
+              <li>
+                  <a href="home.jsp" active>
+                  <i class='bx bx-grid-alt'></i>
+                  <span class="links_name">Dashboard</span>
+                </a>
+                 <span class="tooltip ">Dashboard</span>
+              </li>
+              
+             <li class="list">
+               <a href="addnew.jsp">
+                 <i class='bx bx-chat' ></i>
+                 <span class="links_name">Add New Item</span>
+               </a>
+               <span class="tooltip">Add New Item</span>
+             </li>
+             <li class="list">
+               <a href="#">
+                 <i class='bx bx-pie-chart-alt-2' ></i>
+                 <span class="links_name">All Items</span>
+               </a>
+               <span class="tooltip">All Items</span>
+             </li>
+             <li class="list">
+               <a href="#">
+                 <i class='bx bx-folder' ></i>
+                 <span class="links_name">Analytics</span>
+               </a>
+               <span class="tooltip">Files</span>
+             </li>
+             <li class="list">
+               <a href="#">
+                 <i class='bx bx-cart-alt' ></i>
+                 <span class="links_name">Orders</span>
+               </a>
+               <span class="tooltip">Orders</span>
+             </li>
+             <li class="list">
+               <a href="#">
+                 <i class='bx bx-heart' ></i>
+                 <span class="links_name">Reviews</span>
+               </a>
+               <span class="tooltip">Reviews</span>
+             </li>
+             <li class="list">
+               <a href="#">
+                 <i class='bx bx-user' ></i>
+                 <span class="links_name">User</span>
+               </a>
+               <span class="tooltip">User</span>
+             </li>
+             <li class="list">
+               <a href="#">
+                 <i class='bx bx-cog' ></i>
+                 <span class="links_name">Setting</span>
+               </a>
+               <span class="tooltip">Setting</span>
+             </li>
+             <li class="profile">
+                 <div class="profile-details">
+                   <img src="profile.jpg" alt="profileImg">
+                   <div class="name_job">
+                     <div class="name">Prem Shahi</div>
+                     <div class="job">Web designer</div>
+                   </div>
+                 </div>
+                 <i class='bx bx-log-out' id="log_out" ></i>
+             </li>
+            </ul>
+          </div>
+          <section class="home-section">
+            <div class="text">Dashboard</div>
+            <div class="container-fluid">
+               <%-- content --%>
+                    <div class="home-container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <box-icon name='plus-square' type='solid' color='#193e29' ></box-icon> <br>
+                                        <h4>New Customers</h4>
+                                        -----------------
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <box-icon name='plus-square' type='solid' color='#193e29' ></box-icon> <br>
+                                        <h4>Active Users</h4>
+                                        -----------------
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <box-icon name='plus-square' type='solid' color='#193e29' ></box-icon> <br>
+                                        <h4>Sales</h4>
+                                        -----------------
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <br>
+                    <div class="second-container">
+                        <div class="tsell">
+                            <div class="text">
+                                Top Selling Products
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="ts-card">
+                                        <img alt="" src="image/lc1.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="ts-card-body text-center ">
+                                            <p><b>Geo Print T-shirt & Waist Shorts</b></p>
+                                            <p>LKR 5,650.00</p>
+                                            <a><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="ts-card">
+                                        <img alt="" src="image/lc2.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="ts-card-body text-center ">
+                                            <p><b>Colourblock Tee & Waist Shorts</b></p>
+                                            <p>LKR 5,650.00</p>
+                                            <a><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="ts-card">
+                                        <img alt="" src="image/lc3.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="ts-card-body text-center ">
+                                            <p><b>Women Letter Graphic Crop Blouse</b></p>
+                                            <p>LKR 3,000.00</p>
+                                            <a><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="ts-card">
+                                        <img alt="" src="image/lc5.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="ts-card-body text-center ">
+                                            <p><b>Men Colourblock Tee & Track Shorts</b></p>
+                                            <p>LKR 7,350.00</p>
+                                            <a><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <%-- content end--%>
+            </div>
+          </section>
+                    <%-- search bar end--%>
+                    
+                    
+                
+        <%-- nav bar end --%>
+        <script>
+            let sidebar = document.querySelector(".sidebar");
+            let closeBtn = document.querySelector("#btn");
+            let searchBtn = document.querySelector(".bx-search");
+            closeBtn.addEventListener("click", ()=>{
+              sidebar.classList.toggle("open");
+              menuBtnChange();//calling the function(optional)
+            });
+            searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+              sidebar.classList.toggle("open");
+              menuBtnChange(); //calling the function(optional)
+            });
+            // following are the code to change sidebar button(optional)
+            function menuBtnChange() {
+             if(sidebar.classList.contains("open")){
+               closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+             }else {
+               closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+             }
+            }
+        </script>
+    </body>
+</html>
+
