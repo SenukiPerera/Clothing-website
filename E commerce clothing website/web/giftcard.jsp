@@ -9,9 +9,24 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+         <%@include file="all_component/allCss.jsp" %>
+        <title>Gift Card</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <%-- nav bar --%>
+        <%@include file="all_component/navbar.jsp" %>
+        <%-- nav bar end --%>
+        <h1>Gift Card</h1>
+        
+        
+        
+        
+        
+        
+        
+        
+          <%-- footer --%>
+        <%@include file="all_component/footer.jsp" %>
+        <%-- footer end --%>
     </body>
 </html>
