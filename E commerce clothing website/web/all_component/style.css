@@ -14,7 +14,7 @@ and open the template in the editor.
     position: absolute;
     align-items: center;
     justify-content: center;
-    padding-left: 60%;
+    padding-left: 50%;
 }
 input{
     border: 2px solid #fff;
