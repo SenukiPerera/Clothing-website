@@ -10,32 +10,32 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Ladies Section</title>
-         <%-- nav bar --%>
-        <%@include file="all_component/navbar.jsp" %>
-         <%-- nav bar --%>
-        <%@include file="all_component/allCss.jsp" %>
+        
         
         <style>
-            *{
-                box-sizing: border-box;
-                padding: 0;
-                margin: 0;
-            }
+            
+           
+            
             .container
             {
                 display: flex;
-                margin-top: 150px;
                 justify-content: center;
+                padding-top: 100px;
+            }
+            .container-1
+            {
+               display: flex;
+               justify-content: center; 
             }
             .card
             {
-                background-color: whitesmoke;
+                background-color: white;
                 width: 300px;
                 height: 550px;
                 color: black;
-                margin: 50px;
-                margin-bottom: 60px;
-                border: none;
+                margin:50px;
+                border: none !important;
+                
                 
             }
             .card-image
@@ -74,8 +74,7 @@
             button
             {
                 width: 200px;
-                height: 40px;
-                border-radius: 12px;
+                height: 45px;
                 background-color: #193E29;
                 color: white;
                 font-weight: bold;
@@ -94,11 +93,16 @@
             
             
             
+            
         </style>
     </head>
     <body>
+         <%-- nav bar --%>
+        <%@include file="all_component/navbar.jsp" %>
+         <%-- nav bar --%>
+        <%@include file="all_component/allCss.jsp" %>
         
-        <section class="container">
+                <section class="container">
             <table>
                 <tr>
                     <td>
@@ -109,7 +113,7 @@
                 <p class="title">T-Shirts</p>
                 <p class="price">Description</p>
                 <div class="button-container">
-                <button type="submit" name="sb" >Shop Now</button>
+                <button type="submit" name="sb" style="border-radius: 20px;" >Shop Now</button>
                 </div>
             </div>
                     </td>
@@ -120,7 +124,7 @@
                 <p class="title">Crop-Tops</p>
                 <p class="price">Description</p>
                 <div class="button-container">
-                <button type="submit" name="sb" >Shop Now</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">Shop Now</button>
                 </div>
             </div>
                     </td>
@@ -130,11 +134,15 @@
                 <p class="title">Jackets</p>
                 <p class="price">Description</p>
                 <div class="button-container">
-                <button type="submit" name="sb" >Shop Now</button>
+                <button type="submit" name="sb" style="border-radius: 20px;" >Shop Now</button>
                 </div>
             </div>
                     </td>
             </tr>
+            </table>
+            </section>
+        <section class="container-1">
+            <table>
             <tr>
                 <td>
             <div class="card">
@@ -142,7 +150,7 @@
                 <p class="title">Shorts</p>
                 <p class="price">Description</p>
                 <div class="button-container">
-                <button type="submit" name="sb" >Shop Now</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">Shop Now</button>
                 </div>
             </div>
                 </td>
@@ -153,18 +161,24 @@
                 <p class="title">Pants</p>
                 <p class="price">Description</p>
                 <div class="button-container">
-                <button type="submit" name="sb" >Shop Now</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">Shop Now</button>
                 </div>
             </div>
                     
-                </td>
+               
             </tr>
+            
             </table>
             
             
             
         </section>
+        <%-- footer --%>
+        <%@include file="all_component/footer.jsp" %>
+        <%-- footer end --%>
         
+
+       
         
     </body>
 </html>
