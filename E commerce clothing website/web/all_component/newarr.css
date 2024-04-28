@@ -1,0 +1,113 @@
+.container h3{
+                margin: 5%;
+                font-weight: bolder;
+                color: #193E29;
+            }
+            .discover button:hover{
+                color: #193E29;
+                background-color: white;
+            }
+            .card-body button{
+                color: white;
+                border: 1px solid white;
+                border-radius: 50px;
+                cursor: pointer;
+                position: relative;
+                height: 40px;
+                width: 200px;
+                font-size: 16px;
+                font-family: Inter;
+                font-weight: 700;
+                word-wrap: break-word;
+                background: #193E29;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .card-body button:hover{
+                background: transparent;
+                color: #193E29;
+                border: 1px solid #193E29;
+            }
+            .card{
+                width: 253px;
+                height: 550px;
+                border: none;
+            }
+            .container-three{
+                display: flex;
+                margin: 5%;
+            }
+            
+.containerf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+.imageh {
+    max-width: 100%; /* Set width to 60% for the images */
+    max-height: auto; /* Limit max-height to maintain aspect ratio */
+}
+
+.details {
+    width: 40%; /* Set width to 30% for the details boxes */
+    background-color: #b9caba; /* Example background color */
+    padding: 20px; /* Example padding */
+}
+
+/* For smaller screens, stack columns vertically */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .image, .details {
+        width: 100%; /* Set width to 100% for smaller screens */
+    }
+}
+
+.containerf .details h2 {
+    font-size: 50px; /* Adjust the font size as needed */
+    color: #193E29; /* Change the text color */
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+    font-family: "Cardo", serif;;
+}
+
+.containerf .details p {
+    font-size: 26px; /* Adjust the font size of the paragraph */
+    color: #000000; /* Change the text color */
+    line-height: 1.6; /* Adjust the line height for better readability */
+    font-family: cursive;
+}
+
+.hcon {
+    background-color: #b9caba;
+}
+
+.btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #4CAF50;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #4CAF50;
+}
+
+
+@media (min-width: 768px) {
+    .containerf {
+        flex-direction: row; /* Stack items horizontally */
+    }
+}
