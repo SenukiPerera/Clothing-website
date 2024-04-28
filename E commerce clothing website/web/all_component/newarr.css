@@ -46,7 +46,7 @@
 }
 
 .imageh {
-    max-width: width: 100%; /* Set width to 60% for the images */
+    max-width: 100%; /* Set width to 60% for the images */
     max-height: auto; /* Limit max-height to maintain aspect ratio */
 }
 

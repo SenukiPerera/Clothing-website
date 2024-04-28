@@ -4,6 +4,8 @@
     Author     : User
 --%>
 
+<%@page import="java.sql.Connection"%>
+<%@page import="com.DB.DBConnect"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -199,6 +201,9 @@
             </div>
         </div>
         <%-- search bar end--%>
+        <% Connection conn = DBConnect.getConn(); 
+           out.println(conn);
+        %>
         <%-- first div --%>
         <div class="container-one">
             <%-- first div image--%>
