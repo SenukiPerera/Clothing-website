@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fashion eCommerce Help Center</title>
+    <title>Help Center</title>
     <%@include file="all_component/allCss.jsp" %>
     <style>
         body {
@@ -59,14 +59,14 @@
     <%-- nav bar --%>
         <%@include file="all_component/navbar.jsp" %>
         <%-- nav bar end --%>
-    <h1>Fashion eCommerce Help Center</h1>
+    <h1>Help Center</h1>
     <br>
     
 
     <div class="help-container"> 
         <div class="image-section">
-            <img src="https://media.istockphoto.com/id/1372001112/photo/cropped-shot-of-an-attractive-young-female-call-center-agent-working-at-her-desk-in-the-office.webp?b=1&s=170667a&w=0&k=20&c=0zHbhD54R5_CyBruAqcwY4Kql526NWy4oKIUeBKNnRI=" alt="Customer Service Image">
-        </div>
+            <img src="img/help.jpeg">
+                 </div>
 
         <div class="qa-section"> 
             
