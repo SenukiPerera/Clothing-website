@@ -9,11 +9,51 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Add New Items</title>
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="navbar.css">
         
         <%@include file="allCss.jsp" %>
+        <style>
+            
+            h5{
+                margin-bottom: 10px;
+            }
+            .form-container{
+                padding: 40px 100px;
+            }
+            .form-data{
+                padding: 20px 20px;
+                border: 1px solid #193E29;
+                border-radius: 10px;
+                width: 50%;
+                margin-bottom: 20px;
+            }
+            
+            .submitbtn{
+                background-color: #193E29;
+                color: #FFF;
+                border: none;
+            }
+            .submitbtn:hover{
+                background-color: transparent;
+                color: #193E29;
+                border: 2px solid #193E29;
+            }
+            @media(max-width: 574px){
+                .form-container{
+                    padding: 40px 50px;
+                }
+                .form-data{
+                    width: 300px;
+                }
+                .submitbtn{
+                    margin-top: 10px;
+                    width: 300px;
+                }
+            }
+            
+        </style>
     </head>
     <body>
         <%-- nav bar --%>
@@ -45,21 +85,15 @@
                <span class="tooltip">Add New Item</span>
              </li>
              <li class="list">
-               <a href="#">
+               <a href="allitems.jsp">
                  <i class='bx bx-pie-chart-alt-2' ></i>
                  <span class="links_name">All Items</span>
                </a>
                <span class="tooltip">All Items</span>
              </li>
+             
              <li class="list">
-               <a href="#">
-                 <i class='bx bx-folder' ></i>
-                 <span class="links_name">Analytics</span>
-               </a>
-               <span class="tooltip">Files</span>
-             </li>
-             <li class="list">
-               <a href="#">
+               <a href="oders.jsp">
                  <i class='bx bx-cart-alt' ></i>
                  <span class="links_name">Orders</span>
                </a>
@@ -100,9 +134,63 @@
           </div>
         <%-- nav bar end--%>
         
-        <%-- content end--%>
+        <%-- content--%>
         <section class="home-section">
             <div class="text">Add New Item</div>
+            
+             <%--success or error  message--%>
+            
+            <div class="form-container">   
+                <form action="../addnew" method="post" enctype="multipart/form-data">
+                    <h5>Base Information</h5>
+                        <div class="form-data">
+                            <div class="form-group">
+                                <label for="exampleInputItemName">Item Name</label>
+                                <input name="iname" type="text" class="form-control" id="exampleInputItemName" aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlFile">Pictures</label>
+                                <input name="iphoto" type="file" class="form-control" id="exampleFormControlFile" aria-describedby="emailHelp" required>
+                            </div>
+                        </div>
+                    
+                    <h5>Details</h5>
+                        <div class="form-data">
+                            <div class="form-group">
+                                <label for="exampleInputItemName">Price</label>
+                                <input name="iprice" type="text" class="form-control" id="exampleInputItemName" aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputItemName">Size</label>
+                                <input name="isize" type="text" class="form-control" id="exampleInputItemName" aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputState">Category</label>
+                                <select id="inputState" name="icategory" class="form-control" required>
+                                    <option selected="">Select Category</option> 
+                                    <option value="women">Women's</option>
+                                    <option value="womenT">Women's T-shirts</option>
+                                    <option value="womenCT">Women's Crop-tops</option>
+                                    <option value="womenP">Women's Pants</option>
+                                    <option value="womenS">Women's Shorts</option>
+                                    <option value="womenJ">Women's Jackets</option>
+                                    <option value="men">Men's</option>
+                                    <option value="menT">Men's T-shirts</option>
+                                    <option value="menP">Men's Pants</option>
+                                    <option value="menS">Men's Shorts</option>
+                                    <option value="menJ">Men's Jackets</option>
+                                    <option value="new">New-Drop</option>
+                                    <option value="best">Best-selling</option>
+                                    <option value="jewellery">Jewellery</option>
+                                    <option value="shoes">Shoes</option>
+                                    <option value="bags">Bags</option>
+                                    <option value="gifts">Gift Cards</option>
+                                </select>
+                            </div>
+                        </div>
+                    <input type="submit" value="Add" name="submitbtn" class="submitbtn">
+                </form>
+            </div>
         </section>
         <%-- content end--%>
         
@@ -127,6 +215,8 @@
                closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
              }
             }
+            
+            
         </script>
     </body>
 </html>
