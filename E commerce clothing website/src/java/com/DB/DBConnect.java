@@ -19,7 +19,7 @@ public class DBConnect {
     {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/verdevo","root","");
+            conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/verdevo?zeroDateTimeBehavior=convertToNull","root","admin123");
         } catch (Exception e){
             e.printStackTrace();
         }
