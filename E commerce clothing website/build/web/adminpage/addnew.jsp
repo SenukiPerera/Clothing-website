@@ -138,7 +138,7 @@
         <section class="home-section">
             <div class="text">Add New Item</div>
             
-             <%--success or error  message--%>
+             <%--success or error message--%>
             
             <div class="form-container">   
                 <form action="../addnew" method="post" enctype="multipart/form-data">
