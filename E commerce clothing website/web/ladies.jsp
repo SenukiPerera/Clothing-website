@@ -31,7 +31,7 @@
             {
                 background-color: white;
                 width: 300px;
-                height: 550px;
+                height: 500px;
                 color: black;
                 margin:50px;
                 border: none !important;
@@ -97,10 +97,11 @@
         </style>
     </head>
     <body>
+        <%@include file="all_component/allCss.jsp" %>
          <%-- nav bar --%>
         <%@include file="all_component/navbar.jsp" %>
          <%-- nav bar --%>
-        <%@include file="all_component/allCss.jsp" %>
+       
         
                 <section class="container">
             <table>
@@ -113,7 +114,7 @@
                 <p class="title">T-Shirts</p>
                 <p class="price">Description</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >Shop Now</button>
+                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
             </div>
                     </td>
@@ -124,7 +125,7 @@
                 <p class="title">Crop-Tops</p>
                 <p class="price">Description</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">Shop Now</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
             </div>
                     </td>
@@ -134,7 +135,7 @@
                 <p class="title">Jackets</p>
                 <p class="price">Description</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >Shop Now</button>
+                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
             </div>
                     </td>
@@ -150,7 +151,7 @@
                 <p class="title">Shorts</p>
                 <p class="price">Description</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">Shop Now</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
             </div>
                 </td>
@@ -161,7 +162,7 @@
                 <p class="title">Pants</p>
                 <p class="price">Description</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">Shop Now</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
             </div>
                     
