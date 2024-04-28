@@ -47,22 +47,34 @@
             {
                 background-image: url('img/L-T-1.jpg');
             }
-            .L-C-1
+            .L-T-2
             {
-               background-image: url('img/L-C-1.jpg'); 
+               background-image: url('img/L-T-2.jpg'); 
             }
-            .L-P-1
+            .L-T-3
             {
-               background-image: url('img/L-P-1.jpg'); 
+               background-image: url('img/L-T-3.jpg'); 
   
             }
-            .L-S-1
+            .L-T-4
             {
-               background-image: url('img/L-S-1.jpg');  
+               background-image: url('img/L-T-4.jpg');  
             }
-            .L-J-1
+            .L-T-5
             {
-                background-image: url('img/L-J-1.jpg');  
+                background-image: url('img/L-T-5.jpg');  
+            }
+            .L-T-6
+            {
+                background-image: url('img/L-T-6.jpg');  
+            }
+            .L-T-7
+            {
+                background-image: url('img/L-T-7.jpg');  
+            }
+            .L-T-8
+            {
+                background-image: url('img/L-T-8.jpg');  
             }
             .button-container{
                 display: flex;
@@ -109,7 +121,7 @@
                 <div class="card-image L-T-1">
                     
                 </div>
-                <p class="title">T-Shirts</p>
+                <p class="title">Cotton-Printed Pink T-Shirt</p>
                 <p class="price">Description</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
@@ -118,9 +130,9 @@
                     </td>
                     <td>
             <div class="card">
-                <div class="card-image L-C-1">
+                <div class="card-image L-T-2">
                    </div>
-                <p class="title">Crop-Tops</p>
+                <p class="title">Pima Cotton-Printed White Tee</p>
                 <p class="price">Description</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
@@ -129,8 +141,8 @@
                     </td>
                     <td>
             <div class="card">
-                <div class="card-image L-J-1"></div>
-                <p class="title">Jackets</p>
+                <div class="card-image L-T-3"></div>
+                <p class="title">Brown Long Sleeve Off-Shoulder</p>
                 <p class="price">Description</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
@@ -139,10 +151,10 @@
                     </td>
                     <td>
             <div class="card">
-                <div class="card-image L-T-1">
+                <div class="card-image L-T-4">
                     
                 </div>
-                <p class="title">T-Shirts</p>
+                <p class="title">Ringspun cotton Long Sleeve dark Green Tee</p>
                 <p class="price">Description</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
@@ -157,8 +169,8 @@
             <tr>
                 <td>
             <div class="card">
-                <div class="card-image L-S-1"></div>
-                <p class="title">Shorts</p>
+                <div class="card-image L-T-5"></div>
+                <p class="title">Slub Cotton Zebra-Pattern Print Tee</p>
                 <p class="price">Description</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
@@ -168,8 +180,8 @@
             
                 <td>
             <div class="card">
-                <div class="card-image L-P-1"></div>
-                <p class="title">Pants</p>
+                <div class="card-image L-T-6"></div>
+                <p class="title">Linen-Over-Size Black T-Shirt</p>
                 <p class="price">Description</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
@@ -178,8 +190,8 @@
                 </td>
                   <td>
             <div class="card">
-                <div class="card-image L-P-1"></div>
-                <p class="title">Pants</p>
+                <div class="card-image L-T-7"></div>
+                <p class="title">Long Sleeve Floral-V-Neck Tee</p>
                 <p class="price">Description</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
@@ -188,10 +200,10 @@
                 </td>
                 <td>
             <div class="card">
-                <div class="card-image L-T-1">
+                <div class="card-image L-T-8">
                     
                 </div>
-                <p class="title">T-Shirts</p>
+                <p class="title">Cotton Blue High Neck Tee</p>
                 <p class="price">Description</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
