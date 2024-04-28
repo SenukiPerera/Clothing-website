@@ -16,13 +16,13 @@
             
            
             
-            .container
+            .container-1
             {
                 display: flex;
                 justify-content: center;
                 padding-top: 100px;
             }
-            .container-1
+            .container-2
             {
                display: flex;
                justify-content: center; 
@@ -80,7 +80,7 @@
                 font-weight: bold;
                 align-items: center;
             }
-            .title,.price,button
+            .title,button
             {
               text-align:  center;  
             }
@@ -103,7 +103,7 @@
          <%-- nav bar --%>
        
         
-                <section class="container">
+                <section class="container-1">
             <table>
                 <tr>
                     <td>
@@ -112,7 +112,7 @@
                     
                 </div>
                 <p class="title">T-Shirts</p>
-                <p class="price">Description</p>
+               
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
@@ -123,7 +123,7 @@
                 <div class="card-image L-C-1">
                    </div>
                 <p class="title">Crop-Tops</p>
-                <p class="price">Description</p>
+                
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
@@ -133,7 +133,7 @@
             <div class="card">
                 <div class="card-image L-J-1"></div>
                 <p class="title">Jackets</p>
-                <p class="price">Description</p>
+               
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
@@ -142,14 +142,14 @@
             </tr>
             </table>
             </section>
-        <section class="container-1">
+        <section class="container-2">
             <table>
             <tr>
                 <td>
             <div class="card">
                 <div class="card-image L-S-1"></div>
                 <p class="title">Shorts</p>
-                <p class="price">Description</p>
+                
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
@@ -160,12 +160,13 @@
             <div class="card">
                 <div class="card-image L-P-1"></div>
                 <p class="title">Pants</p>
-                <p class="price">Description</p>
+                
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
             </div>
-                    
+                </td>
+                
                
             </tr>
             
