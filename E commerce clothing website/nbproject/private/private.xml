@@ -1,27 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <file>file:/E:/GitHub%20Project/Clothing-website/E%20commerce%20clothing%20website/web/ladies.jsp</file>
-            <file>file:/E:/GitHub%20Project/Clothing-website/E%20commerce%20clothing%20website/web/Men.jsp</file>
-            <file>file:/E:/GitHub%20Project/Clothing-website/E%20commerce%20clothing%20website/web/index.jsp</file>
-=======
-=======
->>>>>>> cda0a6896ccfd5f84151c04d7bc23c34c235db0f
-            <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/src/java/comDAO/ItemDAO.java</file>
-            <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/src/java/comDAO/ItemDAOImpl.java</file>
-            <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/src/java/com/DB/DBConnect.java</file>
-            <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/src/java/com/admin/servlet/AddItems.java</file>
-            <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/web/index.jsp</file>
-            <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/web/adminpage/addnew.jsp</file>
-            <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/src/java/com/entity/ItemDetails.java</file>
-<<<<<<< HEAD
->>>>>>> cda0a6896ccfd5f84151c04d7bc23c34c235db0f
-=======
->>>>>>> cda0a6896ccfd5f84151c04d7bc23c34c235db0f
+            <file>file:/C:/Users/Hp/Documents/GitHub/Clothing-website/E%20commerce%20clothing%20website/web/index.jsp</file>
+            <file>file:/C:/Users/Hp/Documents/GitHub/Clothing-website/E%20commerce%20clothing%20website/web/all_component/newarr.css</file>
+            <file>file:/C:/Users/Hp/Documents/GitHub/Clothing-website/E%20commerce%20clothing%20website/web/all_component/navbar.jsp</file>
+            <file>file:/C:/Users/Hp/Documents/GitHub/Clothing-website/E%20commerce%20clothing%20website/web/img/girl3.jpg</file>
+            <file>file:/C:/Users/Hp/Documents/GitHub/Clothing-website/E%20commerce%20clothing%20website/web/img/ac.jpg</file>
+            <file>file:/C:/Users/Hp/Documents/GitHub/Clothing-website/E%20commerce%20clothing%20website/web/img/lc1.jpg</file>
+            <file>file:/C:/Users/Hp/Documents/GitHub/Clothing-website/E%20commerce%20clothing%20website/web/adminpage/navbar.css</file>
+            <file>file:/C:/Users/Hp/Documents/GitHub/Clothing-website/E%20commerce%20clothing%20website/web/adminpage/style.css</file>
+            <file>file:/C:/Users/Hp/Documents/GitHub/Clothing-website/E%20commerce%20clothing%20website/web/newarr.jsp</file>
+            <file>file:/C:/Users/Hp/Documents/GitHub/Clothing-website/E%20commerce%20clothing%20website/web/adminpage/home.jsp</file>
+            <file>file:/C:/Users/Hp/Documents/GitHub/Clothing-website/E%20commerce%20clothing%20website/web/img/bg1.jpg</file>
+            <file>file:/C:/Users/Hp/Documents/GitHub/Clothing-website/E%20commerce%20clothing%20website/web/giftcard.jsp</file>
+            <file>file:/C:/Users/Hp/Documents/GitHub/Clothing-website/E%20commerce%20clothing%20website/web/all_component/style.css</file>
+            <file>file:/C:/Users/Hp/Documents/GitHub/Clothing-website/E%20commerce%20clothing%20website/web/all_component/footer.jsp</file>
+            <file>file:/C:/Users/Hp/Documents/GitHub/Clothing-website/E%20commerce%20clothing%20website/web/img/help.jpeg</file>
         </group>
     </open-files>
 </project-private>

@@ -49,9 +49,8 @@
           ACCESSORIES
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #193E29;">
-          <a class="dropdown-item" href="#" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Jewellery</a>
-          <a class="dropdown-item" href="#" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Shoes</a>
-          <a class="dropdown-item" href="#" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Bags</a>
+          <a class="dropdown-item" href="#shoes" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Shoes</a>
+          <a class="dropdown-item" href="#bags" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Bags</a>
           
         </div>
       </li>
