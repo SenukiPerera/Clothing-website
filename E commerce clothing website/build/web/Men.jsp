@@ -52,6 +52,7 @@
                     justify-content: center;
         </style>
         <%@include file="all_component/allCss.jsp" %>
+        
         <%-- nav bar --%>
         <%@include file="all_component/navbar.jsp" %>
         <%-- nav bar end --%>
