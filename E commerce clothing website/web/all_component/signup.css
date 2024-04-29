@@ -7,7 +7,6 @@
 .containers {
     max-width: 430px;
     width: 100%;
-    background: #fff;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -25,6 +24,7 @@ h1 {
     text-align: center;
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 .forms {
@@ -34,15 +34,17 @@ h1 {
 
 input[type="text"],
 input[type="password"] {
-    width: 100%;
+    width: 150%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-left: -60px;
 }
 
 label {
     font-weight: bold;
+    margin-left: 30px;
 }
 
 button[type="submit"] {

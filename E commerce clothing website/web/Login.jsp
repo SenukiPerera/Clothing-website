@@ -60,7 +60,7 @@ and open the template in the editor.
             background-color: #0056b3;
         }
         p {
-            font-size: 12px;
+            font-size: 15px;
             color: white;
         }
         input {
