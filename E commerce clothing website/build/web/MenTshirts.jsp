@@ -4,6 +4,10 @@
     Author     : Nimsara
 --%>
 
+<%@page import="com.DB.DBConnect"%>
+<%@page import="java.util.List"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="comDAO.ItemDAOImpl"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -83,16 +87,25 @@
         <div class="container">
         <h3 class="text-center">T-SHIRTS</h3>
         <div class="row">
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mt6.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                    <div class="card-body">
-                        <p style="font-weight:bold;">White Print Tee</p>
-                        <p>LKR 3,650.00</p>
-                        <a><button class="btn-cart">ADD TO CART</button></a>
-                    </div>
-            </div>
+            
+            <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list = dao.getMenTshirt();
+                       for(ItemDetails i:list){ %>
+                       
+                            <div class="card">
+                                <div class="card-img">
+                                <div  class="cardh"><img alt="" src="img/mt6.jpeg" style="width:253px; height: 350px;"></div>
+                                </div>
+                                    <div class="card-body">
+                                        <p style="font-weight:bold;"><%=i.getItem_name()%></p>
+                                        <p><%=i.getPrice()%></p>
+                                        <a><button class="btn-cart">ADD TO CART</button></a>
+                                    </div>
+                            </div>
+                            
+             <%}
+                       %>
+            
             
             <div class="card">
                 <div class="card-img">

@@ -4,6 +4,11 @@
     Author     : Ruwanthi
 --%>
 
+<%@page import="com.DB.DBConnect"%>
+<%@page import="java.util.List"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="comDAO.ItemDAOImpl"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -53,6 +58,7 @@
                 transform: scale(1.05); 
                 cursor: pointer;
             }
+            /*
             .L-T-1
             {
                 background-image: url('img/L-T-1.jpg');
@@ -86,6 +92,7 @@
             {
                 background-image: url('img/L-T-8.jpg');  
             }
+            */
             .button-container{
                 display: flex;
                 justify-content: center;
@@ -126,16 +133,22 @@
             <table>
                 <tr>
                     <td>
-            <div class="card">
-                <div class="card-image L-T-1">
-                    
-                </div>
-                <p class="title">Cotton-Printed Pink T-Shirt</p>
-                <p class="price">LKR 2700.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
-                </div>
-            </div>
+                       <%--for admin page --%>
+                        <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list = dao.getWomenTshirt();
+                       for(ItemDetails i:list){ %>
+                            <div class="card">
+                                <div class="card-image L-T-1">
+                                     <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
+                                </div>
+                                <p class="title"><%=i.getItem_name()%></p>
+                                <p class="price"><%=i.getPrice()%></p>
+                                <div class="button-container">
+                                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
+                                </div>
+                            </div>
+             <%}
+                       %>
                     </td>
                     <td>
             <div class="card">

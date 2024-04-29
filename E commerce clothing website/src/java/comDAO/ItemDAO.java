@@ -24,6 +24,8 @@ public interface ItemDAO {
      
      public boolean deleteItems(String item_name);
      
+      /*for home*/
+     public List<ItemDetails> getLatest();
      
      /*Women*/
      public List<ItemDetails> getWomenTshirt();
@@ -46,7 +48,7 @@ public interface ItemDAO {
      public List<ItemDetails> getMenShorts();
      
      /*LATEST*/
-     public List<ItemDetails> getLatest();
+     public List<ItemDetails> getNewdrop();
      
      public List<ItemDetails> getBestSell();
      

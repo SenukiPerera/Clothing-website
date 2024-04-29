@@ -8,6 +8,10 @@
     Author     : Hp
 --%>
 
+<%@page import="java.util.List"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="com.DB.DBConnect"%>
+<%@page import="comDAO.ItemDAOImpl"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -74,17 +78,22 @@
     <div class="container" id="bags">
             <h3 class="text-center">BAGS</h3>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/bag3.jpg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p style="font-weight: bold;">Tote Bag</p>
-                            <p style="font-weight: bold;">Material: Canvas</p>
-                            <p>LKR 1,650.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
+                <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list = dao.getBags();
+                       for(ItemDetails i:list){ %>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
+                                    <div class="card-body text-center ">
+                                        <p style="font-weight:bold;"><%=i.getItem_name()%></p>
+                                        <p><%=i.getPrice()%></p>
+                                        <a><button class="btn-cart">QUICK ADD</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+             <%}
+                       %>
                 
                 <div class="col-md-3">
                     <div class="card">
@@ -128,17 +137,22 @@
     <div class="container" id="shoes">
             <h3 class="text-center">SHOES</h3>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/shoes1.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p style="font-weight: bold;">Sneakers</p>
-                            <p style="font-weight: bold;">Material: Canvas and Rubber</p>
-                            <p>LKR 5,650.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
+                <% ItemDAOImpl dao2 = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list2 = dao.getShoes();
+                       for(ItemDetails i:list){ %>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
+                                    <div class="card-body text-center ">
+                                        <p style="font-weight:bold;"><%=i.getItem_name()%></p>
+                                        <p><%=i.getPrice()%></p>
+                                        <a><button class="btn-cart">QUICK ADD</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+             <%}
+                       %>
                 
                 <div class="col-md-3">
                     <div class="card">

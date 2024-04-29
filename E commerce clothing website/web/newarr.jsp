@@ -4,6 +4,11 @@
     Author     : M.C Ramanayake
 --%>
 
+<%@page import="com.DB.DBConnect"%>
+<%@page import="java.util.List"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="comDAO.ItemDAOImpl"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -54,49 +59,24 @@
    <div class="container" id="latest_release">
        <h3 class="text-center">LATEST RELEASE</h3>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/lc1.jpg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p style="font-weight: bold;">Geo Print Tee & Waist Shorts</p>
-                            <p>LKR 5,650.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
+                <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list = dao.getLatest();
+                       for(ItemDetails i:list){ %>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
+                                    <div class="card-body text-center ">
+                                        <p style="font-weight:bold;"><%=i.getItem_name()%></p>
+                                        <p><%=i.getPrice()%></p>
+                                        <a><button class="btn-cart">QUICK ADD</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+             <%}
+                       %>
                 
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/lc2.jpg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p style="font-weight: bold;">Colourblock Tee & Waist Shorts</p>
-                            <p>LKR 5,650.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
                 
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/lc3.jpg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p style="font-weight: bold;">Women Letter Graphic Crop Blouse</p>
-                            <p>LKR 3,000.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/lc5.jpg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p style="font-weight: bold;">Men Colourblock Tee & Track Shorts</p>
-                            <p>LKR 7,350.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
             </div>
             <br>
             <div class="row">
@@ -196,16 +176,22 @@
         <div class="container">
             <h3 class="text-center" id="top_sell">TOP SELLING</h3>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/lc1.jpg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p style="font-weight: bold;">Geo Print Tee & Waist Shorts</p>
-                            <p>LKR 5,650.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
+                <% ItemDAOImpl dao2 = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list2 = dao.getBestSell();
+                       for(ItemDetails i:list){ %>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
+                                    <div class="card-body text-center ">
+                                        <p style="font-weight:bold;"><%=i.getItem_name()%></p>
+                                        <p><%=i.getPrice()%></p>
+                                        <a><button class="btn-cart">QUICK ADD</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+             <%}
+                       %>
                 
                 <div class="col-md-3">
                     <div class="card">
