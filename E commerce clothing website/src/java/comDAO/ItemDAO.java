@@ -6,6 +6,7 @@
 package comDAO;
 
 import com.entity.ItemDetails;
+import java.util.List;
 
 /**
  *
@@ -14,5 +15,12 @@ import com.entity.ItemDetails;
 public interface ItemDAO {
     
      public boolean addItems(ItemDetails i);
-    
+     
+     public List<ItemDetails> getAllItems();
+     
+     public ItemDetails getItembyItem_name(String item_name);
+     
+     public boolean updateEdit_items(ItemDetails i);
+     
+     public boolean deleteItems(String item_name);
 }

@@ -11,11 +11,12 @@ header {
     color: black; /* White text color for header */
     padding: 20px;
     text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 .image-section {
     display: flex;
-    justify-content: space-between; /* Place items at the beginning and end of the container */
+    justify-content: center; /* Place items at the beginning and end of the container */
     align-items: center; /* Center-align items vertically */
     margin-top: 50px;
 }
@@ -36,8 +37,9 @@ header {
 .image-section img {
     max-width: 1000px; /* Ensure images resize proportionally */
     height: 450px; /* Maintain aspect ratio */
-    border-radius: 15px; /* Add rounded corners to images */
+    border-radius: 35px; /* Add rounded corners to images */
     margin-bottom: 20px; /* Add spacing between images */
+    padding: 20px;
     
 }
 

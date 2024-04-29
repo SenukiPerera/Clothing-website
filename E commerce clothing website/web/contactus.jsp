@@ -191,7 +191,7 @@
                     </div>
                 </div>
                 <div class="contactform">
-                    <form>
+                    <form >
                         <h2>Send Message</h2>
                         <div class="inputbox">
                             <input type="text" name="" required="required">
