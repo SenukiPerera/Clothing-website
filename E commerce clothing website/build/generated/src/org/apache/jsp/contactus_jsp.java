@@ -70,6 +70,13 @@ public final class contactus_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("<link rel=\"stylesheet\" href=\"https://unicons.iconscout.com/release/v4.0.8/css/line.css\">\r\n");
       out.write("\r\n");
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> 38d7f534c205bffd131671340722c7e46f96f54c
+>>>>>>> 41b603210cc9de2155e2f4dc48d4513d13f29f24
       out.write("\r\n");
       out.write("        <title>Contact Us Page</title>\r\n");
       out.write("        <style>\r\n");
@@ -283,8 +290,24 @@ public final class contactus_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("          ACCESSORIES\r\n");
       out.write("        </a>\r\n");
       out.write("        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\" style=\"background-color: #193E29;\">\r\n");
+<<<<<<< HEAD
       out.write("          <a class=\"dropdown-item\" href=\"Accessories.jsp#shoes\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shoes</a>\r\n");
       out.write("          <a class=\"dropdown-item\" href=\"Accessories.jsp#bags\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Bags</a>\r\n");
+=======
+<<<<<<< HEAD
+      out.write("          <a class=\"dropdown-item\" href=\"Accessories.jsp#shoes\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shoes</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"Accessories.jsp#bags\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Bags</a>\r\n");
+=======
+<<<<<<< Updated upstream
+      out.write("          <a class=\"dropdown-item\" href=\"Accessories.jsp#shoes\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shoes</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"Accessories.jsp#bags\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Bags</a>\r\n");
+=======
+      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Jewellery</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shoes</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Bags</a>\r\n");
+>>>>>>> Stashed changes
+>>>>>>> 38d7f534c205bffd131671340722c7e46f96f54c
+>>>>>>> 41b603210cc9de2155e2f4dc48d4513d13f29f24
       out.write("          \r\n");
       out.write("        </div>\r\n");
       out.write("      </li>\r\n");
