@@ -70,16 +70,6 @@ public final class contactus_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("<link rel=\"stylesheet\" href=\"https://unicons.iconscout.com/release/v4.0.8/css/line.css\">\r\n");
       out.write("\r\n");
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
->>>>>>> 38d7f534c205bffd131671340722c7e46f96f54c
->>>>>>> 41b603210cc9de2155e2f4dc48d4513d13f29f24
->>>>>>> 24354a312ed902e7c132c18d35010b515eed8dbe
       out.write("\r\n");
       out.write("        <title>Contact Us Page</title>\r\n");
       out.write("        <style>\r\n");
@@ -206,15 +196,6 @@ public final class contactus_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                outline: none;\r\n");
       out.write("                resize: none;\r\n");
       out.write("                border-radius: 0;\r\n");
-<<<<<<< HEAD
-      out.write("<<<<<<< Updated upstream\r\n");
-      out.write("                color: black;\r\n");
-      out.write("=======\r\n");
-      out.write("                color: #193E29;\r\n");
-      out.write("                \r\n");
-      out.write(">>>>>>> Stashed changes\r\n");
-=======
->>>>>>> 24354a312ed902e7c132c18d35010b515eed8dbe
       out.write("            }\r\n");
       out.write("            .contactform .inputbox input[type=\"submit\"] {\r\n");
       out.write("                width: 100%;\r\n");
@@ -304,24 +285,6 @@ public final class contactus_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\" style=\"background-color: #193E29;\">\r\n");
       out.write("          <a class=\"dropdown-item\" href=\"Accessories.jsp#shoes\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shoes</a>\r\n");
       out.write("          <a class=\"dropdown-item\" href=\"Accessories.jsp#bags\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Bags</a>\r\n");
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-      out.write("          <a class=\"dropdown-item\" href=\"Accessories.jsp#shoes\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shoes</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"Accessories.jsp#bags\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Bags</a>\r\n");
-=======
-<<<<<<< Updated upstream
-      out.write("          <a class=\"dropdown-item\" href=\"Accessories.jsp#shoes\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shoes</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"Accessories.jsp#bags\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Bags</a>\r\n");
-=======
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Jewellery</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shoes</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Bags</a>\r\n");
->>>>>>> Stashed changes
->>>>>>> 38d7f534c205bffd131671340722c7e46f96f54c
->>>>>>> 41b603210cc9de2155e2f4dc48d4513d13f29f24
->>>>>>> 24354a312ed902e7c132c18d35010b515eed8dbe
       out.write("          \r\n");
       out.write("        </div>\r\n");
       out.write("      </li>\r\n");
@@ -378,61 +341,29 @@ public final class contactus_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </div>\r\n");
       out.write("                </div>\r\n");
       out.write("                <div class=\"contactform\">\r\n");
-<<<<<<< HEAD
       out.write("                    <form action=\"https://api.web3forms.com/submit\" method=\"POST\">\r\n");
-      out.write("<<<<<<< Updated upstream\r\n");
-      out.write(" \r\n");
-      out.write("=======\r\n");
-      out.write(">>>>>>> Stashed changes\r\n");
-=======
-      out.write("                    <form>\r\n");
->>>>>>> 24354a312ed902e7c132c18d35010b515eed8dbe
+      out.write("\r\n");
       out.write("                        <h2>Send Message</h2>\r\n");
       out.write("                        <div class=\"inputbox\">\r\n");
-<<<<<<< HEAD
-      out.write("<<<<<<< Updated upstream\r\n");
       out.write("                            <input type=\"text\" name=\"name\" required=\"required\">\r\n");
-      out.write("=======\r\n");
-      out.write("                            <input type=\"text\" name=\"customer_name\" required=\"required\">\r\n");
-      out.write(">>>>>>> Stashed changes\r\n");
-=======
-      out.write("                            <input type=\"text\" name=\"\" required=\"required\">\r\n");
->>>>>>> 24354a312ed902e7c132c18d35010b515eed8dbe
       out.write("                            <span>Full Name</span>\r\n");
       out.write("                        </div>\r\n");
+      out.write("                        <input type=\"hidden\" name=\"access_key\" value=\"22d9b8f8-6426-45f3-8184-85143f9e7fd6\">\r\n");
+      out.write("\r\n");
       out.write("                        <div class=\"inputbox\">\r\n");
-<<<<<<< HEAD
-      out.write("<<<<<<< Updated upstream\r\n");
       out.write("                            <input type=\"text\" name=\"number\" required=\"required\">\r\n");
       out.write("                            <span>Contact Number</span>\r\n");
       out.write("                        </div>\r\n");
       out.write("                        <div class=\"inputbox\">\r\n");
       out.write("                            <input type=\"text\" name=\"mail\" required=\"required\">\r\n");
-      out.write("=======\r\n");
-      out.write("                            <input type=\"text\" name=\"contact_number\" required=\"required\">\r\n");
-      out.write("                            <span>Contact Number</span>\r\n");
-      out.write("                        </div>\r\n");
-      out.write("                        <div class=\"inputbox\">\r\n");
-      out.write("                            <input type=\"text\" name=\"email\" required=\"required\">\r\n");
-      out.write(">>>>>>> Stashed changes\r\n");
-=======
-      out.write("                            <input type=\"text\" name=\"\" required=\"required\">\r\n");
-      out.write("                            <span>Contact Number</span>\r\n");
-      out.write("                        </div>\r\n");
-      out.write("                        <div class=\"inputbox\">\r\n");
-      out.write("                            <input type=\"text\" name=\"\" required=\"required\">\r\n");
->>>>>>> 24354a312ed902e7c132c18d35010b515eed8dbe
       out.write("                            <span>E-mail</span>\r\n");
       out.write("                        </div>\r\n");
-      out.write("                        \r\n");
-      out.write("                         <input type=\"hidden\" name=\"access_key\" value=\"22d9b8f8-6426-45f3-8184-85143f9e7fd6\">\r\n");
-      out.write("\r\n");
       out.write("                        <div class=\"inputbox\">\r\n");
       out.write("                            <textarea required=\"required\"></textarea>\r\n");
       out.write("                            <span>Message</span>\r\n");
       out.write("                        </div>\r\n");
       out.write("                        <div class=\"inputbox\">\r\n");
-      out.write("                            <input type=\"submit\" name=\"\" value=\"Send\">\r\n");
+      out.write("                            <input type=\"submit\" name=\"Massage\" value=\"Send\">\r\n");
       out.write("                        </div>\r\n");
       out.write("                    </form>\r\n");
       out.write("                </div>\r\n");
@@ -502,14 +433,8 @@ public final class contactus_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("        ");
       out.write("\r\n");
-      out.write("        \r\n");
-      out.write("        \r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
-<<<<<<< HEAD
-      out.write("\r\n");
-=======
->>>>>>> 24354a312ed902e7c132c18d35010b515eed8dbe
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
