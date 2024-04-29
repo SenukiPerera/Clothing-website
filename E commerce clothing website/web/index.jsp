@@ -4,6 +4,9 @@
     Author     : User
 --%>
 
+<%@page import="java.util.List"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="comDAO.ItemDAOImpl"%>
 <%@page import="java.sql.Connection"%>
 <%@page import="com.DB.DBConnect"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -92,6 +95,9 @@
                 width: 253px;
                 height: 550px;
                 border: none;
+            }
+            .card p{
+                color: black;
             }
             .container-three{
                 display: flex;
@@ -214,7 +220,7 @@
                 <div class="content-one">
                     <h1>SHOP MENS</h1>
                     <div class="discover">
-                        <a href=""><button class="btn">SHOP NOW</button></a>
+                        <a href="Men.jsp"><button class="btn">SHOP NOW</button></a>
                     </div>
                 </div>
             </div>
@@ -224,7 +230,7 @@
                  <div class="content-two">
                     <h1>SHOP WOMENS</h1>
                     <div class="discover">
-                        <a href=""><button class="btn">SHOP NOW</button></a>
+                        <a href="ladies.jsp"><button class="btn">SHOP NOW</button></a>
                     </div>
                 </div>
              </div>
@@ -240,7 +246,7 @@
                 <h1>SHOP THE LATEST DROP</h1>
                 <p>Browse all Latest Releases</p>
                 <div class="discover">
-                    <a href=""><button class="btn">SHOP NOW</button></a>
+                    <a href="newarr.jsp"><button class="btn">SHOP NOW</button></a>
                 </div>
             </div> 
         </div>
@@ -249,22 +255,34 @@
         <div class="container">
             <h3 class="text-center">LATEST RELEASE</h3>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/lc1.jpg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p><b>Geo Print Tee & Waist Shorts</b></p>
-                            <p>LKR 5,650.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
                 
+                    
+                    <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list = dao.getLatest();
+                       for(ItemDetails i:list){ %>
+                       
+                            <div class="col-md-3">           
+                                <div class="card">
+                                    <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
+                                    <div class="card-body text-center">
+                                        <p style="font-weight:bold;"><%=i.getItem_name()%></p>
+                                        <p><%=i.getPrice()%></p>
+                                        <a><button class="btn-cart">QUICK ADD</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                                        
+                       <%}
+                       %>
+                    
+                    
+                
+               
                 <div class="col-md-3">
                     <div class="card">
                         <img alt="" src="img/lc2.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Colourblock Tee & Waist Shorts</b></p>
+                            <p style="font-weight:bold;">Colourblock Tee & Waist Shorts</p>
                             <p>LKR 5,650.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -275,7 +293,7 @@
                     <div class="card">
                         <img alt="" src="img/lc3.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Women Letter Graphic Crop Blouse</b></p>
+                            <p style="font-weight:bold;">Women Letter Graphic Crop Blouse</p>
                             <p>LKR 3,000.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -286,7 +304,18 @@
                     <div class="card">
                         <img alt="" src="img/lc5.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Men Colourblock Tee & Track Shorts</b></p>
+                            <p style="font-weight:bold;">Men Colourblock Tee & Track Shorts</p>
+                            <p>LKR 7,350.00</p>
+                            <a><button class="btn-cart">QUICK ADD</button></a>
+                        </div>
+                    </div>
+                </div>
+                       
+                <div class="col-md-3">
+                    <div class="card">
+                        <img alt="" src="img/lc5.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                        <div class="card-body text-center ">
+                            <p style="font-weight:bold;">Men Colourblock Tee & Track Shorts</p>
                             <p>LKR 7,350.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -294,6 +323,7 @@
                 </div>
             </div>
             <br>
+            <%--
             <div class="row">
                 <div class="col-md-3">
                     <div class="card">
@@ -305,7 +335,7 @@
                         </div>
                     </div>
                 </div>
-                
+                 
                 <div class="col-md-3">
                     <div class="card">
                         <img alt="" src="img/lc9.jpg" style="width:253px; height: 350px;" class="img-thumblin">
@@ -384,15 +414,16 @@
                         </div>
                     </div>
                 </div>
+                --%>
             </div>
         </div>
         <%-- latest release end--%>
         <div class="container-three">
             <div class="first-content">
                 <h1>SHOP ACCESSORIES</h1>
-                <p>JEWELLERY | HATS | SHOES | BAGS</p>
+                <p>SHOES | BAGS</p>
                 <div class="collection">
-                    <a href=""><button class="btn">SHOP THE COLLECTION</button></a>
+                    <a href="Accessories.jsp"><button class="btn">SHOP THE COLLECTION</button></a>
                 </div>
             </div> 
             <%-- first div image--%>
@@ -401,7 +432,7 @@
         </div>
         <%-- gallery--%>
         <div class="photo-container">
-            <h3 class="text-center">FROM OUR GALLERY</h3>
+            <h3 class="text-center" style="color: #193E29;">FROM OUR GALLERY</h3>
             <div class="gallery">
                 <div class="photos">
                     <div class="collage">

@@ -32,9 +32,13 @@
                 height: 550px;
                 border: none;
             }
+            
             .container-three{
                 display: flex;
                 margin: 5%;
+            }
+            .card-body text-center{
+                color: black;
             }
             
 .containerf {

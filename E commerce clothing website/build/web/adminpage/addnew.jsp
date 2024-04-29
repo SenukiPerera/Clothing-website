@@ -191,9 +191,9 @@
                                     <option value="menP">Men's Pants</option>
                                     <option value="menS">Men's Shorts</option>
                                     <option value="menJ">Men's Jackets</option>
-                                    <option value="new">New-Drop</option>
+                                    <option value="newd">New-Drop</option>
                                     <option value="best">Best-selling</option>
-                                    <option value="jewellery">Jewellery</option>
+                                    
                                     <option value="shoes">Shoes</option>
                                     <option value="bags">Bags</option>
                                     <option value="gifts">Gift Cards</option>
