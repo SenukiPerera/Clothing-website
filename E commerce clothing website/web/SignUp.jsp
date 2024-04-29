@@ -33,7 +33,7 @@ and open the template in the editor.
         <div class="containers">
             <table class="tbl">
                 
-                <h1>Signup Form</h1><br>
+                <h1>SIGNUP</h1><br>
                 
                 
                 
@@ -49,10 +49,32 @@ and open the template in the editor.
                 <td><input type="password" name="pws" placeholder="Create a Password"></td></tr><tr>
                 <td><input type="password" name="rpws" placeholder="Re-Enter password"></td>
             </tr>
+            <!--<tr>
+           <td>
+                        <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">I accepted all terms and conditions</label>
+                        </div>
+                    </div>
+           </td>
+           </tr>-->
+
             <tr>
                 <td><button type="submit" onclick="return x()">Submit</button></td>
                
             </tr>
+            <tr>
+            <td>
+                <center>
+                    <div class="login-signup">
+                        <span class="text"><p class="white-text" style="color: white">Already a member?
+                            <a href="Login.jsp" class="text login-link">Login Now</a></p>
+                        </span>
+                    </div>
+                </center>
+            </td>
+        </tr>
         </table>
         </div>
         </form></center>
