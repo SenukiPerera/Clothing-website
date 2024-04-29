@@ -116,7 +116,11 @@ and open the template in the editor.
         <table>
             <tr>
                 <td><input type="text" name="fname" placeholder="First Name"></td></tr><tr>
+<<<<<<< HEAD
+                <td><input type="text" name="mail" placeholder="E-mail"></td>
+=======
                 <td><input type="email" name="email" placeholder="Email"></td>
+>>>>>>> 9d966a3afb3f1cedc0fa63017fbc13e13cd95e79
             </tr>
             
             <tr>
