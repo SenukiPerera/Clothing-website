@@ -80,6 +80,7 @@
                 }
             .member-card img{
                 width: 260px;
+                height:300px;
             }
             .img-container{
                 margin-top: 10px;
@@ -171,12 +172,12 @@
                     </div>
                     <div class="col-md-3">
                         <div class="member-card">
-                            <img src="img/senuki.jpg" alt="1">
+                            <img src="img/chinthaka.jpg" alt="1">
                             <div class="img-container">
                               <h4>M C Ramanayake</h4>
                               <p class="card-title">Software Developer</p>
                               <p class="university">NSBM Green University</p>
-                              <p class="email">pereraasm@students.nsbm.ac.lk</p>
+                              <p class="email">mcramanayaka@students.nsbm.ac.lk</p>
                             </div>
                         </div>
                     </div>
@@ -187,7 +188,7 @@
                               <h4>M L P Kodithuwakku</h4>
                               <p class="card-title">Software Developer</p>
                               <p class="university">NSBM Green University</p>
-                              <p class="email">pereraasm@students.nsbm.ac.lk</p>
+                              <p class="email">mlpkodithuwakku@students.nsbm.ac.lk</p>
                             </div>
                         </div>
                     </div>
@@ -196,12 +197,12 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="member-card">
-                            <img src="img/isira.jpg" alt="1">
+                            <img src="img/nimsara.jpg" alt="1">
                             <div class="img-container">
                               <h4>G M S Nimsara</h4>
                               <p class="card-title">Software Developer</p>
                               <p class="university">NSBM Green University</p>
-                              <p class="email">iwickramasinghe@students.nsbm.ac.lk</p>
+                              <p class="email">gmsnimsara@students.nsbm.ac.lk</p>
                             </div>
                         </div>
                     </div>
@@ -212,18 +213,18 @@
                               <h4>S Sanjula</h4>
                               <p class="card-title">Software Developer</p>
                               <p class="university">NSBM Green University</p>
-                              <p class="email">pereraasm@students.nsbm.ac.lk</p>
+                              <p class="email">hdssanjula@students.nsbm.ac.lk</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="member-card">
-                            <img src="img/senuki.jpg" alt="1">
+                            <img src="img/awanthi.jpg" alt="1">
                             <div class="img-container">
                               <h4>M A Y Malawanage</h4>
                               <p class="card-title">Software Developer</p>
                               <p class="university">NSBM Green University</p>
-                              <p class="email">pereraasm@students.nsbm.ac.lk</p>
+                              <p class="email">Malawanagemay@students.nsbm.ac.lk</p>
                             </div>
                         </div>
                     </div>
@@ -233,23 +234,23 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="member-card">
-                            <img src="img/isira.jpg" alt="1">
+                            <img src="img/prabasha.jpg" alt="1">
                             <div class="img-container">
                               <h4>J P Rashmitha</h4>
                               <p class="card-title">Software Developer</p>
                               <p class="university">NSBM Green University</p>
-                              <p class="email">iwickramasinghe@students.nsbm.ac.lk</p>
+                              <p class="email">jkprashmitha@students.nsbm.ac.lk</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="member-card">
-                            <img src="img/senuki.jpg" alt="1">
+                            <img src="img/ruwanthi.jpg" alt="1">
                             <div class="img-container">
                               <h4>B H R Yashodara</h4>
                               <p class="card-title">Software Developer</p>
                               <p class="university">NSBM Green University</p>
-                              <p class="email">pereraasm@students.nsbm.ac.lk</p>
+                              <p class="email">bhryashodara@students.nsbm.ac.lk</p>
                             </div>
                         </div>
                     </div>
