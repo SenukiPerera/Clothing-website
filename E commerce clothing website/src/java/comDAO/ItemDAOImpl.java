@@ -154,13 +154,13 @@ public class ItemDAOImpl implements ItemDAO {
          ItemDetails i =null;
          
          try{
-             String sql = "select * from item_details where item_category?";
+             String sql = "select * from item_details where item_category=?";
              PreparedStatement ps = conn.prepareStatement(sql);
-             ps.setString(1, "New-Drop");
+             ps.setString(1, "newd");
              
              ResultSet rs = ps.executeQuery();
              int x=1;
-             while(rs.next() && x<12){
+             while(rs.next() && x<=4){
                  i = new ItemDetails();
                  i.setItem_name(rs.getString(1));
                 i.setPhoto(rs.getString(2));

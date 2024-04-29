@@ -11,11 +11,15 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="all_component/newarr.css">
-<<<<<<< Updated upstream
-        <title>JSP Page</title>
-=======
+        <style>
+            .container .card .card-body p{
+                color: black;
+            }
+        </style>
+
+
         <title>New Arrival</title>
->>>>>>> Stashed changes
+
         <%@include file="all_component/allCss.jsp" %>
     </head>
     <body>
@@ -54,7 +58,7 @@
                     <div class="card">
                         <img alt="" src="img/lc1.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Geo Print Tee & Waist Shorts</b></p>
+                            <p style="font-weight: bold;">Geo Print Tee & Waist Shorts</p>
                             <p>LKR 5,650.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -65,7 +69,7 @@
                     <div class="card">
                         <img alt="" src="img/lc2.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Colourblock Tee & Waist Shorts</b></p>
+                            <p style="font-weight: bold;">Colourblock Tee & Waist Shorts</p>
                             <p>LKR 5,650.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -76,7 +80,7 @@
                     <div class="card">
                         <img alt="" src="img/lc3.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Women Letter Graphic Crop Blouse</b></p>
+                            <p style="font-weight: bold;">Women Letter Graphic Crop Blouse</p>
                             <p>LKR 3,000.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -87,7 +91,7 @@
                     <div class="card">
                         <img alt="" src="img/lc5.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Men Colourblock Tee & Track Shorts</b></p>
+                            <p style="font-weight: bold;">Men Colourblock Tee & Track Shorts</p>
                             <p>LKR 7,350.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -100,7 +104,7 @@
                     <div class="card">
                         <img alt="" src="img/lc6.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Men Drop Shoulder Colorblock Tee</b></p>
+                            <p style="font-weight: bold;">Men Drop Shoulder Colorblock Tee</p>
                             <p>LKR 5,650.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -111,7 +115,7 @@
                     <div class="card">
                         <img alt="" src="img/lc9.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Floral Mesh Yoke Ruffle Sleeve Blouse</b></p>
+                            <p style="font-weight: bold;">Floral Mesh Yoke Ruffle Sleeve Blouse</p>
                             <p>LKR 5,650.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -122,7 +126,7 @@
                     <div class="card">
                         <img alt="" src="img/lc11.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Men Letter Graphic Contrast Trim Tshirt</b></p>
+                            <p style="font-weight: bold;">Men Letter Graphic Contrast Trim Tshirt</p>
                             <p>LKR 5,000.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -133,7 +137,7 @@
                     <div class="card">
                         <img alt="" src="img/lc8.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Colourblock Ruffle Trim Dress</b></p>
+                            <p style="font-weight: bold;">Colourblock Ruffle Trim Dress</p>
                             <p>LKR 7,350.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -146,7 +150,7 @@
                     <div class="card">
                         <img alt="" src="img/lc12.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Butterfly Embroidered Reversible Bucket Hat</b></p>
+                            <p style="font-weight: bold;">Butterfly Embroidered Reversible Bucket Hat</p>
                             <p>LKR 1,650.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -157,7 +161,7 @@
                     <div class="card">
                         <img alt="" src="img/lc13.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Daisy Floral Graphic Slide Sandals</b></p>
+                            <p style="font-weight: bold;">Daisy Floral Graphic Slide Sandals</p>
                             <p>LKR 4,550.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -168,7 +172,7 @@
                     <div class="card">
                         <img alt="" src="img/lc16.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Female Hoop Clip Earrings Gold Color</b></p>
+                            <p style="font-weight: bold;">Female Hoop Clip Earrings Gold Color</p>
                             <p>LKR 3,500.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -179,7 +183,7 @@
                     <div class="card">
                         <img alt="" src="img/lc15.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Minimalist Large Capacity Duffel Bag</b></p>
+                            <p style="font-weight: bold;">Minimalist Large Capacity Duffel Bag</p>
                             <p>LKR 7,350.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -196,7 +200,7 @@
                     <div class="card">
                         <img alt="" src="img/lc1.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Geo Print Tee & Waist Shorts</b></p>
+                            <p style="font-weight: bold;">Geo Print Tee & Waist Shorts</p>
                             <p>LKR 5,650.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -207,7 +211,7 @@
                     <div class="card">
                         <img alt="" src="img/lc2.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Colourblock Tee & Waist Shorts</b></p>
+                            <p style="font-weight: bold;">Colourblock Tee & Waist Shorts/p>
                             <p>LKR 5,650.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -218,7 +222,7 @@
                     <div class="card">
                         <img alt="" src="img/lc3.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Women Letter Graphic Crop Blouse</b></p>
+                            <p style="font-weight: bold;">Women Letter Graphic Crop Blouse</p>
                             <p>LKR 3,000.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -229,7 +233,7 @@
                     <div class="card">
                         <img alt="" src="img/lc5.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Men Colourblock Tee & Track Shorts</b></p>
+                            <p style="font-weight: bold;">Men Colourblock Tee & Track Shorts</p>
                             <p>LKR 7,350.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -242,7 +246,7 @@
                     <div class="card">
                         <img alt="" src="img/lc6.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Men Drop Shoulder Colorblock Tee</b></p>
+                            <p style="font-weight: bold;">Men Drop Shoulder Colorblock Tee</p>
                             <p>LKR 5,650.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -253,7 +257,7 @@
                     <div class="card">
                         <img alt="" src="img/lc9.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Floral Mesh Yoke Ruffle Sleeve Blouse</b></p>
+                            <p style="font-weight: bold;">Floral Mesh Yoke Ruffle Sleeve Blouse</p>
                             <p>LKR 5,650.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -264,7 +268,7 @@
                     <div class="card">
                         <img alt="" src="img/lc11.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Men Letter Graphic Contrast Trim Tshirt</b></p>
+                            <p style="font-weight: bold;">Men Letter Graphic Contrast Trim Tshirt</p>
                             <p>LKR 5,000.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -275,7 +279,7 @@
                     <div class="card">
                         <img alt="" src="img/lc8.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Colourblock Ruffle Trim Dress</b></p>
+                            <p style="font-weight: bold;">Colourblock Ruffle Trim Dress</p>
                             <p>LKR 7,350.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -288,7 +292,7 @@
                     <div class="card">
                         <img alt="" src="img/lc12.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Butterfly Embroidered Reversible Bucket Hat</b></p>
+                            <p style="font-weight: bold;">Butterfly Embroidered Reversible Bucket Hat</p>
                             <p>LKR 1,650.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -299,7 +303,7 @@
                     <div class="card">
                         <img alt="" src="img/lc13.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Daisy Floral Graphic Slide Sandals</b></p>
+                            <p style="font-weight: bold;">Daisy Floral Graphic Slide Sandals</p>
                             <p>LKR 4,550.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -310,7 +314,7 @@
                     <div class="card">
                         <img alt="" src="img/lc16.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Female Hoop Clip Earrings Gold Color</b></p>
+                            <p style="font-weight: bold;">Female Hoop Clip Earrings Gold Color</p>
                             <p>LKR 3,500.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -321,7 +325,7 @@
                     <div class="card">
                         <img alt="" src="img/lc15.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Minimalist Large Capacity Duffel Bag</b></p>
+                            <p style="font-weight: bold;">Minimalist Large Capacity Duffel Bag</p>
                             <p>LKR 7,350.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
