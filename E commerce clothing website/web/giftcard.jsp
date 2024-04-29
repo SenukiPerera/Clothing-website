@@ -15,8 +15,8 @@
         
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            margin: 10px;
+            padding: 10px;
             background-color: #f2f2f2;
             text-align: center;
         }
@@ -32,7 +32,7 @@
         }
 
         main {
-            margin-top: 40px;
+            margin-top: 20px;
         }
 
         .card-container {
@@ -80,7 +80,7 @@
         footer {
             background-color: #4CAF50;
             color: white;
-            padding: 10px 0;
+            padding: 40px 0;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -98,40 +98,40 @@
         <div class="card-container">
             <!-- Rs. 1000 Gift Card -->
             <div class="card">
-                <img src="GiftCard23.jpeg" alt="Rs. 1000 Gift Card">
-                <h3>Rs. 1000 Gift Card</h3>
+                <img src="img/GiftCard23.jpeg" alt="Rs. 1000 Gift Card">
+                <h3>Rs. 1,000   Gift Card</h3>
                 <p>Give the gift of choice!</p>
                 <button>Buy Now</button>
             </div>
 
             <!-- Rs. 2000 Gift Card -->
             <div class="card">
-                <img src="GiftCard23.jpeg" alt="Rs. 2000 Gift Card">
-                <h3>Rs. 2000 Gift Card</h3>
+                <img src="img/GiftCard23.jpeg" alt="Rs. 2000 Gift Card">
+                <h3>Rs. 2,000   Gift Card</h3>
                 <p>Give the gift of choice!</p>
                 <button>Buy Now</button>
             </div>
 
             <!-- Rs. 5000 Gift Card -->
             <div class="card">
-                <img src="GiftCard23.jpeg" alt="Rs. 5000 Gift Card">
-                <h3>Rs. 5000 Gift Card</h3>
+                <img src="img/GiftCard23.jpeg" alt="Rs. 5000 Gift Card">
+                <h3>Rs. 5,000   Gift Card</h3>
                 <p>Give the gift of choice!</p>
                 <button>Buy Now</button>
             </div>
 
             <!-- Rs. 10000 Gift Card -->
             <div class="card">
-                <img src="GiftCard23.jpeg" alt="Rs. 10000 Gift Card">
-                <h3>Rs. 10000 Gift Card</h3>
+                <img src="img/GiftCard23.jpeg" alt="Rs. 10000 Gift Card">
+                <h3>Rs. 10,000 Gift Card</h3>
                 <p>Give the gift of choice!</p>
                 <button>Buy Now</button>
             </div>
 
             <!-- Rs. 20000 Gift Card -->
             <div class="card">
-                <img src="GiftCard23.jpeg" alt="Rs. 20000 Gift Card">
-                <h3>Rs. 20000 Gift Card</h3>
+                <img src="img/GiftCard23.jpeg" alt="Rs. 20000 Gift Card">
+                <h3>Rs. 20,000 Gift Card</h3>
                 <p>Give the gift of choice!</p>
                 <button>Buy Now</button>
             </div>
