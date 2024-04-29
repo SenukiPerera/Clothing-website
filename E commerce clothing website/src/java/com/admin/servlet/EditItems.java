@@ -28,7 +28,7 @@ public class EditItems extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try{
             
-            String item_name = req.getParameter("iname");
+            String itemName = req.getParameter("iname");
             String price = req.getParameter("iprice");
             String size = req.getParameter("isize");
             String category = req.getParameter("icategory");
