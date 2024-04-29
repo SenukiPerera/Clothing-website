@@ -23,4 +23,6 @@ public interface ItemDAO {
      public boolean updateEdit_items(ItemDetails i);
      
      public boolean deleteItems(String item_name);
+     
+     public List<ItemDetails> getLatest();
 }
