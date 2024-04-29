@@ -39,7 +39,7 @@ and open the template in the editor.
                 
             <tr>
                 <td><input type="text" name="fname" placeholder="First Name"></td></tr><tr>
-                <td><input type="text" name="lname" placeholder="Last Name"></td>
+                <td><input type="text" name="mail" placeholder="E-mail"></td>
             </tr>
            
             <tr>
