@@ -147,4 +147,34 @@ public class ItemDAOImpl implements ItemDAO {
         
         return f;
     }
+
+    @Override
+    public List<ItemDetails> getLatest() {
+         List<ItemDetails> list = new ArrayList<ItemDetails>();
+         ItemDetails i =null;
+         
+         try{
+             String sql = "select * from item_details where item_category?";
+             PreparedStatement ps = conn.prepareStatement(sql);
+             ps.setString(1, "New-Drop");
+             
+             ResultSet rs = ps.executeQuery();
+             int x=1;
+             while(rs.next() && x<12){
+                 i = new ItemDetails();
+                 i.setItem_name(rs.getString(1));
+                i.setPhoto(rs.getString(2));
+                i.setSize(rs.getString(3));
+                i.setItem_category(rs.getString(4));
+                i.setPrice(rs.getString(5));
+                list.add(i);
+                x++;
+             }
+             
+         } catch(Exception e){
+            e.printStackTrace();
+        }
+         
+         return list;
+    }
 }
