@@ -98,7 +98,7 @@
         <div class="card-container">
             <!-- Rs. 1000 Gift Card -->
             <div class="card">
-                <img src="path_to_1000_gift_card_image.jpg" alt="Rs. 1000 Gift Card">
+                <img src="GiftCard23.jpeg" alt="Rs. 1000 Gift Card">
                 <h3>Rs. 1000 Gift Card</h3>
                 <p>Give the gift of choice!</p>
                 <button>Buy Now</button>
@@ -106,7 +106,7 @@
 
             <!-- Rs. 2000 Gift Card -->
             <div class="card">
-                <img src="path_to_2000_gift_card_image.jpg" alt="Rs. 2000 Gift Card">
+                <img src="GiftCard23.jpeg" alt="Rs. 2000 Gift Card">
                 <h3>Rs. 2000 Gift Card</h3>
                 <p>Give the gift of choice!</p>
                 <button>Buy Now</button>
@@ -114,7 +114,7 @@
 
             <!-- Rs. 5000 Gift Card -->
             <div class="card">
-                <img src="path_to_5000_gift_card_image.jpg" alt="Rs. 5000 Gift Card">
+                <img src="GiftCard23.jpeg" alt="Rs. 5000 Gift Card">
                 <h3>Rs. 5000 Gift Card</h3>
                 <p>Give the gift of choice!</p>
                 <button>Buy Now</button>
@@ -122,7 +122,7 @@
 
             <!-- Rs. 10000 Gift Card -->
             <div class="card">
-                <img src="path_to_10000_gift_card_image.jpg" alt="Rs. 10000 Gift Card">
+                <img src="GiftCard23.jpeg" alt="Rs. 10000 Gift Card">
                 <h3>Rs. 10000 Gift Card</h3>
                 <p>Give the gift of choice!</p>
                 <button>Buy Now</button>
@@ -130,7 +130,7 @@
 
             <!-- Rs. 20000 Gift Card -->
             <div class="card">
-                <img src="path_to_20000_gift_card_image.jpg" alt="Rs. 20000 Gift Card">
+                <img src="GiftCard23.jpeg" alt="Rs. 20000 Gift Card">
                 <h3>Rs. 20000 Gift Card</h3>
                 <p>Give the gift of choice!</p>
                 <button>Buy Now</button>
