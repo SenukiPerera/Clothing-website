@@ -15,13 +15,18 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
         <%@include file="all_component/allCss.jsp" %>
-        <link rel="stylesheet" href="Accessories.css">
+
+        
         <title>Accessories Page</title>
          <style>
             .container .card .card-body p{
                 color: black;
             }
         </style>
+
+        <link rel="stylesheet" href="all_component/Accessories.css">
+        
+
     </head>
     <body>
         <%-- nav bar --%>
