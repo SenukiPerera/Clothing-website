@@ -32,7 +32,7 @@
         }
 
         main {
-            margin-top: 20px;
+            margin-top: 40px;
         }
 
         .card-container {
@@ -145,7 +145,7 @@
         
         
         
-     
+        
           <%-- footer --%>
         <%@include file="all_component/footer.jsp" %>
         <%-- footer end --%>
