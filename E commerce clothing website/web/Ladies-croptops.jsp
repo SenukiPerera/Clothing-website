@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Ladies_t-shirt.jsp
-    Created on : Apr 28, 2024, 9:14:14 PM
+    Document   : Ladies-croptops
+    Created on : Apr 29, 2024, 10:58:28 PM
     Author     : Ruwanthi
 --%>
 
@@ -8,11 +8,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <title>Ladies T-Shirt</title>
-        
+        <title>Ladies Crop-Tops</title>
          <style>
             
            
@@ -55,36 +52,36 @@
             }
             .L-T-1
             {
-                background-image: url('img/L-T-1.jpg');
+                background-image: url('img/L-C-1.jpg');
             }
             .L-T-2
             {
-               background-image: url('img/L-T-2.jpg'); 
+               background-image: url('img/L-C-2.jpg'); 
             }
             .L-T-3
             {
-               background-image: url('img/L-T-3.jpg'); 
+               background-image: url('img/L-C-3.jpg'); 
   
             }
             .L-T-4
             {
-               background-image: url('img/L-T-4.jpg');  
+               background-image: url('img/L-C-4.jpg');  
             }
             .L-T-5
             {
-                background-image: url('img/L-T-5.jpg');  
+                background-image: url('img/L-C-5.jpg');  
             }
             .L-T-6
             {
-                background-image: url('img/L-T-6.jpg');  
+                background-image: url('img/L-C-6.jpg');  
             }
             .L-T-7
             {
-                background-image: url('img/L-T-7.jpg');  
+                background-image: url('img/L-C-7.jpg');  
             }
             .L-T-8
             {
-                background-image: url('img/L-T-8.jpg');  
+                background-image: url('img/L-C-8.jpg');  
             }
             .button-container{
                 display: flex;
@@ -114,7 +111,6 @@
             
             </style>
     </head>
-    
     <body>
          <%@include file="all_component/allCss.jsp" %>
         
@@ -130,8 +126,8 @@
                 <div class="card-image L-T-1">
                     
                 </div>
-                <p class="title">Cotton-Printed Pink T-Shirt</p>
-                <p class="price">LKR 2700.00</p>
+                <p class="title">Flax Blend Dark-Blue Belly Tight Crop-Top</p>
+                <p class="price">LKR 3500.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
@@ -141,8 +137,8 @@
             <div class="card">
                 <div class="card-image L-T-2">
                    </div>
-                <p class="title">Pima Cotton-Printed White Tee</p>
-                <p class="price">LKR 3000.00</p>
+                <p class="title">Viscose Dark-Green Long-Sleeve Crop-Top</p>
+                <p class="price">LKR 4000.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
@@ -151,8 +147,8 @@
                     <td>
             <div class="card">
                 <div class="card-image L-T-3"></div>
-                <p class="title">Brown Long Sleeve Off-Shoulder</p>
-                <p class="price">LKR 5300.00</p>
+                <p class="title">Cotton White Bloom-Hand Crop-Top</p>
+                <p class="price">LKR 4700.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
@@ -163,8 +159,8 @@
                 <div class="card-image L-T-4">
                     
                 </div>
-                <p class="title">Ringspun cotton Long Sleeve dark Green Tee</p>
-                <p class="price">LKR 4700.00</p>
+                <p class="title">Flax Blend Tank Red Crop-Top</p>
+                <p class="price">LKR 3000.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
@@ -179,8 +175,8 @@
                 <td>
             <div class="card">
                 <div class="card-image L-T-5"></div>
-                <p class="title">Slub Cotton Zebra-Pattern Print Tee</p>
-                <p class="price">LKR 4800.00</p>
+                <p class="title">Syntetic Micro-Fiber Long-Sleeve Crop-Top</p>
+                <p class="price">LKR 5700.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
@@ -190,8 +186,8 @@
                 <td>
             <div class="card">
                 <div class="card-image L-T-6"></div>
-                <p class="title">Linen-Over-Size Black T-Shirt</p>
-                <p class="price">LKR 3200.00</p>
+                <p class="title">Linen V-Neck Floral Blue Crop-Top</p>
+                <p class="price">LKR 3500.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
@@ -200,8 +196,8 @@
                   <td>
             <div class="card">
                 <div class="card-image L-T-7"></div>
-                <p class="title">Long Sleeve Floral-V-Neck Tee</p>
-                <p class="price">LKR 3000.00</p>
+                <p class="title">Flax Blend High Neck Red Crop-Top</p>
+                <p class="price">LKR 4100.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
@@ -212,8 +208,8 @@
                 <div class="card-image L-T-8">
                     
                 </div>
-                <p class="title">Cotton Blue High Neck Tee</p>
-                <p class="price">LKR 3800.00</p>
+                <p class="title">Modal Blend Long-Sleeve Dark Green Crop-Top</p>
+                <p class="price">LKR 4000.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>

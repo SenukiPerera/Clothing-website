@@ -15,7 +15,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <<<<<<< Updated upstream
         <%@include file="all_component/allCss.jsp" %>
-        <link rel="stylesheet" href="Accessories.css">
+        <link rel="stylesheet" href="all_component/Accessories.css">
         <title>JSP Page</title>
     </head>
     <body>
