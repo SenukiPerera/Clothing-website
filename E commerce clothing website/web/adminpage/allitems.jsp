@@ -4,6 +4,14 @@
     Author     : User
 --%>
 
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="comDAO.ItemDAOImpl"%>
+<%@page import="java.util.List"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="com.DB.DBConnect"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -101,11 +109,18 @@
         <%-- content--%>
         <section class="home-section">
             <div class="text">All Items</div>
+            <%--
+                            <% 
+                                Connection conn = DBConnect.getConn();
+                                out.println(conn);
+                            %>
+               --%>             
             <div class="table-container">
                 <table class="table table-striped">
                     <thead style="background-color: #193E29; color: white;" >
                       <tr>
                         <th scope="col">Item Name</th>
+                        <th scope="col">Image</th>
                         <th scope="col">Size</th>
                         <th scope="col">Item Category</th>
                         <th scope="col">Price</th>
@@ -113,36 +128,62 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>
-                            <a href="#" class="btn btn-sm" style="background-color: #193E29; color: white;">Edit</a>
-                            <a href="#" class="btn btn-sm" style="background-color: black; color: white;">Delete</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>
-                            <a href="#" class="btn btn-sm" style="background-color: #193E29; color: white;">Edit</a>
-                            <a href="#" class="btn btn-sm" style="background-color: black; color: white;">Delete</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td>
-                            <a href="#" class="btn btn-sm" style="background-color: #193E29; color: white;">Edit</a>
-                            <a href="#" class="btn btn-sm" style="background-color: black; color: white;">Delete</a>
-                        </td>
-                      </tr>
+                            
+                      <%--  
+                        <% try{
+                            Class.forName("com.mysql.jdbc.Driver");
+                            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/verdevo?zeroDateTimeBehavior=convertToNull", "root", "admin123");
+                            
+                            Statement st = conn.createStatement();
+                            
+                            String str = "select * from verdevo";
+                            ResultSet rs = st.executeQuery(str);
+                            while(rs.next()){
+                            %>
+                            <tr>
+                                <td><%=rs.getString("item_name")%></td>
+                                <td><%=rs.getString("photo")%></td>
+                                <td><%=rs.getString("size")%></td>
+                                <td><%=rs.getString("item_category")%></td>
+                                <td><%=rs.getString("price")%></td>
+                                <td>
+                                    <a href="edit_items.jsp%>" class="btn btn-sm" style="background-color: #193E29; color: white;">Edit</a>
+                                    <a href="#" class="btn btn-sm" style="background-color: black; color: white;">Delete</a>
+                                </td>
+                            </tr>
+                            <%
+                            }
+                        } catch (Exception e){
+                            e.printStackTrace();
+                        }
+                        %>
+                        --%>
+                        
+                       
+                        
+                        
+                                   
+                       <%
+                       ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list = dao.getAllItems();
+                       for(ItemDetails i:list){
+                       %>
+                        <tr>
+                            <td><%=i.getItem_name()%></td>
+                            <td><img alt="" src="../items/<%=i.getPhoto()%>" style="width:80px; height: 100px;" class="img-thumblin"></td>
+                            <td><%=i.getSize()%></td>
+                            <td><%=i.getItem_category()%></td>
+                            <td><%=i.getPrice()%></td>
+                            <td>
+                                <a href="edit_items.jsp?item_name=<%=i.getItem_name()%>" class="btn btn-sm" style="background-color: #193E29; color: white;">Edit</a>
+                                <a href="#" class="btn btn-sm" style="background-color: black; color: white;">Delete</a>
+                            </td>
+                        </tr>
+                        <%
+                       }
+                       %>
+                        
+                        
                     </tbody>
                 </table>
             </div>

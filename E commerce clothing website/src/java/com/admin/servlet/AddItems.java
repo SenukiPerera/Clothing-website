@@ -8,6 +8,7 @@ package com.admin.servlet;
 import com.DB.DBConnect;
 import com.entity.ItemDetails;
 import comDAO.ItemDAOImpl;
+import java.io.File;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
@@ -36,14 +37,25 @@ public class AddItems extends HttpServlet{
             Part part = req.getPart("iphoto");
             String fileName = part.getSubmittedFileName();
             
-            ItemDetails i = new ItemDetails(itemName,fileName,size, category, price );
+            ItemDetails i = new ItemDetails(itemName,fileName,size, category, price);
+            
             ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+            
+            
+            
             
             boolean f = dao.addItems(i);
             
             HttpSession session = req.getSession();
             
             if(f){
+                
+                String path = getServletContext().getRealPath("") + "items";
+            
+                File file = new File(path);
+            
+                part.write(path + File.separator + fileName);
+                
                 session.setAttribute("succMsg", "Item add successfully");
                 resp.sendRedirect("adminpage/addnew.jsp");
             } 

@@ -1,6 +1,6 @@
 <%-- 
-    Document   : addnew
-    Created on : 24/04/2024, 6:43:12 PM
+    Document   : edit_items
+    Created on : 28/04/2024, 10:18:16 PM
     Author     : User
 --%>
 
@@ -138,7 +138,7 @@
         
         <%-- content--%>
         <section class="home-section">
-            <div class="text">Add New Item</div>
+            <div class="text">Edit Items</div>
             
             <%--success message--%>
             <c:if test="${not empty succMsg}"> 
@@ -232,3 +232,4 @@
         </script>
     </body>
 </html>
+

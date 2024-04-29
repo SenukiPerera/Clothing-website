@@ -4,7 +4,9 @@
     Author     : User
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -138,8 +140,18 @@
         <section class="home-section">
             <div class="text">Add New Item</div>
             
-             <%--success or error message--%>
-            
+            <%--success message--%>
+            <c:if test="${not empty succMsg}"> 
+                 <p class="text-center text-danger"> ${succMsg}</p>
+                 <c:remove var="succMsg" scope="session"/>
+            </c:if> 
+            <%--erorr message--%>     
+            <c:if test="${not empty failedMsg}"> 
+                 <p class="text-center text-danger"> ${failedMsg}</p>
+                 <c:remove var="failedMsg" scope="session"/>
+            </c:if> 
+                 
+            <%--form--%>     
             <div class="form-container">   
                 <form action="../addnew" method="post" enctype="multipart/form-data">
                     <h5>Base Information</h5>

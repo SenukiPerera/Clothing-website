@@ -3,13 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/src/java/comDAO/ItemDAO.java</file>
+            <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/web/adminpage/edit_items.jsp</file>
             <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/src/java/comDAO/ItemDAOImpl.java</file>
-            <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/src/java/com/DB/DBConnect.java</file>
             <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/src/java/com/admin/servlet/AddItems.java</file>
-            <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/web/index.jsp</file>
-            <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/web/adminpage/addnew.jsp</file>
+            <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/web/adminpage/allitems.jsp</file>
             <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/src/java/com/entity/ItemDetails.java</file>
+            <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/src/java/comDAO/ItemDAO.java</file>
+            <file>file:/C:/Users/User/Desktop/NSBM/2%20year%201%20sem/DEA/Clothing-website/E%20commerce%20clothing%20website/web/index.jsp</file>
         </group>
     </open-files>
 </project-private>
