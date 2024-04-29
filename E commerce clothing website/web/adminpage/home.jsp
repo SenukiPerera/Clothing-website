@@ -43,7 +43,22 @@
                 height: 550px;
                 border: none;
             }
-            
+            @media(max-width: 574px){
+                .home-container{
+                    display: block;
+                }
+                .card{
+                    margin-top: 10px; 
+                }
+                .second-container{
+                    align-items: center;
+                    justify-content: center;
+                    padding-left: 15px;
+                }
+                .ts-card{
+                    margin-left: 20px;
+                }
+            }
         </style>
     
     <body>
@@ -76,21 +91,15 @@
                <span class="tooltip">Add New Item</span>
              </li>
              <li class="list">
-               <a href="#">
+               <a href="allitems.jsp">
                  <i class='bx bx-pie-chart-alt-2' ></i>
                  <span class="links_name">All Items</span>
                </a>
                <span class="tooltip">All Items</span>
              </li>
+             
              <li class="list">
-               <a href="#">
-                 <i class='bx bx-folder' ></i>
-                 <span class="links_name">Analytics</span>
-               </a>
-               <span class="tooltip">Files</span>
-             </li>
-             <li class="list">
-               <a href="#">
+               <a href="oders.jsp">
                  <i class='bx bx-cart-alt' ></i>
                  <span class="links_name">Orders</span>
                </a>

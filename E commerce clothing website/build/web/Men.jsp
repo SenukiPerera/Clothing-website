@@ -52,6 +52,7 @@
                     justify-content: center;
         </style>
         <%@include file="all_component/allCss.jsp" %>
+        
         <%-- nav bar --%>
         <%@include file="all_component/navbar.jsp" %>
         <%-- nav bar end --%>
@@ -60,7 +61,7 @@
         <div class="container">
         <div class="row">
             <div class="card">
-                <img alt="" src="" style="width:253px; height: 350px;">
+                <img alt="" src="img/mt2.jpeg" style="width:253px; height: 350px;">
                     <div class="card-body">
                         <p><b>T-SHIRTS</b></p>
                         <a><button class="btn-cart">SHOP NOW</button></a>
@@ -70,7 +71,7 @@
         
         <%-- card 2 start--%>
             <div class="card">
-                <img alt="" src="" style="width:253px; height: 350px;">
+                <img alt="" src="img/mp1.jpeg" style="width:253px; height: 350px;">
                     <div class="card-body">
                         <p><b>PANTS</b></p>
                         <a><button class="btn-cart">SHOP NOW</button></a>
@@ -80,7 +81,7 @@
         
         <%-- card 3 start--%>
             <div class="card">
-                <img alt="" src="" style="width:253px; height: 350px;">
+                <img alt="" src="img/ms1.jpeg" style="width:253px; height: 350px;">
                     <div class="card-body">
                         <p><b>SHORTS</b></p>
                         <a><button class="btn-cart">SHOP NOW</button></a>
@@ -90,7 +91,7 @@
         
         <%-- card 4 start--%>
             <div class="card">
-                <img alt="" src="" style="width:253px; height: 350px;">
+                <img alt="" src="img/mj1.jpeg" style="width:253px; height: 350px;">
                     <div class="card-body">
                         <p><b>JACKETS</b></p>
                         <a><button class="btn-cart">SHOP NOW</button></a>

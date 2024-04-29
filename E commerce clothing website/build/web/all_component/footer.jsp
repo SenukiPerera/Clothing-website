@@ -14,25 +14,25 @@
   	 		<div class="footer-col">
   	 			<h4>MENU</h4>
   	 			<ul>
-  	 				<li><a href="#">HOME</a></li>
-  	 				<li><a href="#">WOMENS</a></li>
-  	 				<li><a href="#">MENS</a></li>
-  	 				<li><a href="#">ACCESSORIES</a></li>
+  	 				<li><a href="index.jsp">HOME</a></li>
+  	 				<li><a href="ladies.jsp">WOMENS</a></li>
+  	 				<li><a href="Men.jsp">MENS</a></li>
+  	 				<li><a href="Accessories.jsp">ACCESSORIES</a></li>
   	 			</ul>
   	 		</div>
   	 		<div class="footer-col">
   	 			<h4>SHOP LATEST</h4>
   	 			<ul>
-  	 				<li><a href="#">NEW DROP</a></li>
-  	 				<li><a href="#">BEST SELLING</a></li>
+  	 				<li><a href="newarr.jsp#latest_release">NEW DROP</a></li>
+  	 				<li><a href="newarr.jsp#top_sell">BEST SELLING</a></li>
   	 				
   	 			</ul>
   	 		</div>
   	 		<div class="footer-col">
   	 			<h4>SUPPORT</h4>
   	 			<ul>
-  	 				<li><a href="#">ABOUT US</a></li>
-  	 				<li><a href="#">CONTACT US</a></li>
+  	 				<li><a href="about.jsp">ABOUT US</a></li>
+  	 				<li><a href="contactus.jsp">CONTACT US</a></li>
   	 				<li><a href="#">FAQ</a></li>
   	 				
   	 			</ul>
@@ -40,9 +40,9 @@
   	 		<div class="footer-col">
   	 			<h4>follow us</h4>
   	 			<div class="social-links">
-  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
-  	 				<a href="#"><i class="fab fa-twitter"></i></a>
-  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+  	 				<a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
   	 				
   	 			</div>
   	 		</div>

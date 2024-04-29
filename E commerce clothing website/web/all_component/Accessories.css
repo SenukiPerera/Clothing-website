@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #193E29; /* Dark green background */
+    color: #FFFFFF; /* White text color */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #CDE8CD; /* Dark green background for header */
+    color: black; /* White text color for header */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center; /* Place items at the beginning and end of the container */
+    align-items: center; /* Center-align items vertically */
+    margin-top: 50px;
+}
+
+.left-image,
+.right-image {
+    flex-basis: 45%; /* Set initial size for each image container */
+}
+
+.left-image{
+    margin-left: 50px;
+}
+
+.right-image{
+    margin-right: 50px;
+}
+
+.image-section img {
+    max-width: 1000px; /* Ensure images resize proportionally */
+    height: 450px; /* Maintain aspect ratio */
+    border-radius: 35px; /* Add rounded corners to images */
+    margin-bottom: 20px; /* Add spacing between images */
+    padding: 20px;
+    
+}
+
+
+.image-container {
+    position: relative; /* Position relative for absolute positioning */
+    text-align: center; /* Center-align the image and button */
+    margin-bottom: 20px;
+}
+
+.image-details {
+    display: none; /* Initially hide image details */
+    background-color: rgba(21, 12, 12, 0.9); /* Semi-transparent white background */
+    padding: 10px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+}
+
+.image-container .image-details p {
+    font-family: cursive;
+}
+
+.show {
+    display: block; /* Show details when 'show' class is applied */
+}
+
+
+.see-more-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #116D46; /* Dark green background for button */
+    color: #FFFFFF; /* White text color for button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.see-more-btn:hover {
+    background-color: #feffff; /* Darken background color on hover */
+    color: black;
+}
+
+
+.details-btn {
+    display: block;
+    background-color: #116D46; /* Dark green background for button */
+    color: #FFFFFF; /* White text color for button */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+    background-color: #8bcd08; /* Darken background color on hover */
+    color: rgb(70, 67, 67);
+}
+
+
+
+.container h3{
+                margin: 5%;
+                font-weight: bolder;
+                color: white;
+            }
+            .discover button:hover{
+                color: #193E29;
+                background-color: white;
+            }
+            .card-body button{
+                color: white;
+                border: 1px solid white;
+                border-radius: 50px;
+                cursor: pointer;
+                position: relative;
+                height: 40px;
+                width: 200px;
+                font-size: 16px;
+                font-family: Inter;
+                font-weight: 700;
+                word-wrap: break-word;
+                background: #193E29;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .card-body button:hover{
+                background: transparent;
+                color: #193E29;
+                border: 1px solid #193E29;
+            }
+            .card{
+                width: 253px;
+                height: 550px;
+                border: none;
+            }
+            .container-three{
+                display: flex;
+                margin: 5%;
+            }
+            .container .card .card-body p{
+                color: black;
+            }
+            .card-body p {
+                color: #000000; /* Black text color for paragraph tags */
+            }
