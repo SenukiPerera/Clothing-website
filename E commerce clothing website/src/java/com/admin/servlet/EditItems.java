@@ -40,7 +40,7 @@ public class EditItems extends HttpServlet {
             i.setPrice("price");
             
             ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
-            boolean f=dao.updateEdit_books(i);
+            boolean f=dao.updateEdit_items(i);
             
             HttpSession session = req.getSession();
             

@@ -106,18 +106,18 @@ public class ItemDAOImpl implements ItemDAO {
     }    
 
     @Override
-    public boolean updateEdit_books(ItemDetails i) {
+    public boolean updateEdit_items(ItemDetails i) {
         boolean f = false;
         try{
             String sql = "update item_details set item_name=?, size=?, item_category=?, price=? where item_name=?";
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, i.getItem_name());
-            ps.setString(3, i.getSize());
-            ps.setString(4, i.getItem_category());
-            ps.setString(5, i.getPrice());
+            ps.setString(2, i.getSize());
+            ps.setString(3, i.getItem_category());
+            ps.setString(4, i.getPrice());
             
-            int rowsUpdated = ps.executeUpdate();
-            if(rowsUpdated == 1){
+            int x = ps.executeUpdate();
+            if(x == 1){
                 f=true;
             }
             
@@ -136,8 +136,8 @@ public class ItemDAOImpl implements ItemDAO {
             String sql = "delete from item_details where item_name=?";
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, item_name);
-            int rowsUpdated= ps.executeUpdate();
-            if(rowsUpdated == 1){
+            int x= ps.executeUpdate();
+            if(x == 1){
                 f=true;
             }
             

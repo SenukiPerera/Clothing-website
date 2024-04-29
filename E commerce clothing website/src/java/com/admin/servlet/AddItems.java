@@ -55,11 +55,11 @@ public class AddItems extends HttpServlet{
                 part.write(path + File.separator + fileName);
                 
                 session.setAttribute("succMsg", "Item add successfully");
-                resp.sendRedirect("adminpage/addnew.jsp");
+                resp.sendRedirect("addnew.jsp");
             } 
             else {
                session.setAttribute("failedMsg", "Something wrong on server");
-               resp.sendRedirect("adminpage/addnew.jsp"); 
+               resp.sendRedirect("addnew.jsp"); 
             }
             
         }catch (Exception e){

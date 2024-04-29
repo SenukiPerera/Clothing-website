@@ -20,7 +20,7 @@ public interface ItemDAO {
      
      public ItemDetails getItembyItem_name(String item_name);
      
-     public boolean updateEdit_books(ItemDetails i);
+     public boolean updateEdit_items(ItemDetails i);
      
      public boolean deleteItems(String item_name);
 }
