@@ -130,7 +130,12 @@
                 outline: none;
                 resize: none;
                 border-radius: 0;
+<<<<<<< Updated upstream
                 color: black;
+=======
+                color: #193E29;
+                
+>>>>>>> Stashed changes
             }
             .contactform .inputbox input[type="submit"] {
                 width: 100%;
@@ -194,23 +199,41 @@
                 
                 <div class="contactform">
                     <form action="https://api.web3forms.com/submit" method="POST">
+<<<<<<< Updated upstream
  
+=======
+>>>>>>> Stashed changes
                         <h2>Send Message</h2>
                         
                         
                         <div class="inputbox">
+<<<<<<< Updated upstream
                             <input type="text" name="name" required="required">
+=======
+                            <input type="text" name="customer_name" required="required">
+>>>>>>> Stashed changes
                             <span>Full Name</span>
                         </div>
                         <input type="hidden" name="access_key" value="22d9b8f8-6426-45f3-8184-85143f9e7fd6">
                         <div class="inputbox">
+<<<<<<< Updated upstream
                             <input type="text" name="number" required="required">
                             <span>Contact Number</span>
                         </div>
                         <div class="inputbox">
                             <input type="text" name="mail" required="required">
+=======
+                            <input type="text" name="contact_number" required="required">
+                            <span>Contact Number</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" name="email" required="required">
+>>>>>>> Stashed changes
                             <span>E-mail</span>
                         </div>
+                        
+                         <input type="hidden" name="access_key" value="22d9b8f8-6426-45f3-8184-85143f9e7fd6">
+
                         <div class="inputbox">
                             <textarea type="text" name="messages" required="required"></textarea>
                             <span>Message</span>
@@ -227,6 +250,8 @@
         <%-- footer --%>
         <%@include file="all_component/footer.jsp" %>
         <%-- footer end --%>
+        
+        
     </body>
 </html>
 
