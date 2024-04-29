@@ -89,15 +89,13 @@ public class Log extends HttpServlet {
                     response.sendRedirect("Invalid.html");
                 }
             
-            
             Class.forName("com.mysql.jdbc.Driver");
-            String url="jdbc:mysql://localhost:3306/verdevo";
-            Connection con=DriverManager.getConnection(url,"root","");
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/verdevo?zeroDateTimeBehavior=convertToNull","root","admin123");
             Statement st=con.createStatement();
             
          
             
-            String q2="SELECT * FROM Users";
+            String q2="SELECT * FROM users";
             ResultSet rs2=st.executeQuery(q2);
             while (rs2.next())
             {
@@ -105,6 +103,9 @@ public class Log extends HttpServlet {
                 {
                     response.sendRedirect("index.jsp");
                 }
+                Object uname = null;
+                //admin panel
+                
             }
             
             

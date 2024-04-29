@@ -22,25 +22,53 @@ and open the template in the editor.
         <style>
             body{
                 background-image: url('img/bg1.jpg');
-            background-size: cover;
+                background-size: cover;
             }
-        .log {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
             
-        }
-
-        form {
-            background-image: url('Image/form.jpg');
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-        }
-
+            .login{
+                font-family: 'poppings',sans-serif;
+                position: relative;
+                min-height: 100vh;
+                padding: 60px 30%;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction: column;
+            }
+            .login .content{
+                max-width: 800px;
+                text-align:center;
+            }
+            .login .content h2{
+                font-size: 36px;
+                font-weight: 500;
+                padding-top: 40px;
+                color:#fff;
+                
+            }
+            .login .content h1{
+                font-weight: 300;
+                color:#fff;
+                font-family: Helvetica;
+            }
+            .login-container{
+                width:100%;
+                justify-content: center;
+                align-items:center;
+                margin-top: 30px;
+            }
+        
+            .form{
+                    width: 100%;
+                    padding: 40px;
+                    background: #fff;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top:10% ;
+                    background: #CDE8CD;
+                    border-radius: 10px;
+            }
+        
         input[type="text"],
         input[type="password"],
         button {
@@ -51,34 +79,34 @@ and open the template in the editor.
             border-radius: 5px;
             box-sizing: border-box;
         }
-
+        .form .login-table{
+            width: 400px;
+            text-align: center;
+            margin-left: 10px;
+        }
+        
         button {
-            background-color: red;
+            background-color: #193E29;
             color: white;
             cursor: pointer;
-            width: 120px;
+            width: 100%;
         }
 
         button:hover {
-            background-color: #0056b3;
+            background-color: #ffff;
+            color: #193E29;
+            border: 2px solid #193E29;
         }
         p {
-<<<<<<< HEAD
+
             font-size: 15px;
-            color: white;
-=======
-            font-size: 18px;
->>>>>>> c509932e0d9834c889e9b24120491c29aa15dc8a
-            color: white;
+            color: black ;
+
         }
         input {
             text-align: center;
         }
-        h1{
-            color: white;
-            font-family: Helvetica;
-            font-size: 50px;
-        }
+        
 
         </style>
     </head>
@@ -88,16 +116,25 @@ and open the template in the editor.
         <%@include file="all_component/navbar.jsp" %>
         <%-- nav bar end --%>
         
-        <form name="form" action="Log" method="post" class="log">
-            <table>
-                <tr><td><h1>Get Start</h1></td></tr>
-                <tr><td><input type="text" name="uname" placeholder="Username"></td></tr>
-                <tr><td><input type="password" name="psw" placeholder="Password"></td></tr>
-                <tr><td><button type="submit">LogIn</button></td></tr>
-                <tr><td><p>Don't have an account <a href="SignUp.jsp">signup</a></p></td></tr>
-            </table>
-        </form>
-        
+        <section class="login">
+            <div class="login-container">
+                 <div class="content">
+                    <center><h2><img src="img/logo.png" style=" width: 250px; height: 150px;"></h2></center>
+                    <h1 class="text-center">Let's Get Start!</h1>
+                </div>
+
+                <div class="form">
+                    <form name="form" action="Log" method="post">
+                        <table class="login-table">
+                            <tr><td><input type="text" name="uname" placeholder="Username"></td></tr>
+                            <tr><td><input type="password" name="psw" placeholder="Password"></td></tr>
+                            <tr><td><button type="submit">LogIn</button></td></tr>
+                            <tr><td><p>Don't have an account? <a href="SignUp.jsp">signup</a></p></td></tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </section>
         
         <%-- footer --%>
         <%@include file="all_component/footer.jsp" %>
