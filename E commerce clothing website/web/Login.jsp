@@ -63,7 +63,12 @@ and open the template in the editor.
             background-color: #0056b3;
         }
         p {
-            font-size: 12px;
+<<<<<<< HEAD
+            font-size: 15px;
+            color: white;
+=======
+            font-size: 18px;
+>>>>>>> c509932e0d9834c889e9b24120491c29aa15dc8a
             color: white;
         }
         input {
@@ -72,6 +77,7 @@ and open the template in the editor.
         h1{
             color: white;
             font-family: Helvetica;
+            font-size: 50px;
         }
 
         </style>
