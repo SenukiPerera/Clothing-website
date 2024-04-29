@@ -168,10 +168,8 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("          ACCESSORIES\r\n");
       out.write("        </a>\r\n");
       out.write("        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\" style=\"background-color: #193E29;\">\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Jewellery</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Hats</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shoes</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Bags</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"#shoes\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shoes</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"#bags\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Bags</a>\r\n");
       out.write("          \r\n");
       out.write("        </div>\r\n");
       out.write("      </li>\r\n");
@@ -208,7 +206,7 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <div class=\"container\">\r\n");
       out.write("        <div class=\"row\">\r\n");
       out.write("            <div class=\"card\">\r\n");
-      out.write("                <img alt=\"\" src=\"\" style=\"width:253px; height: 350px;\">\r\n");
+      out.write("                <img alt=\"\" src=\"img/mt2.jpeg\" style=\"width:253px; height: 350px;\">\r\n");
       out.write("                    <div class=\"card-body\">\r\n");
       out.write("                        <p><b>T-SHIRTS</b></p>\r\n");
       out.write("                        <a><button class=\"btn-cart\">SHOP NOW</button></a>\r\n");
@@ -220,7 +218,7 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        ");
       out.write("\r\n");
       out.write("            <div class=\"card\">\r\n");
-      out.write("                <img alt=\"\" src=\"\" style=\"width:253px; height: 350px;\">\r\n");
+      out.write("                <img alt=\"\" src=\"img/mp1.jpeg\" style=\"width:253px; height: 350px;\">\r\n");
       out.write("                    <div class=\"card-body\">\r\n");
       out.write("                        <p><b>PANTS</b></p>\r\n");
       out.write("                        <a><button class=\"btn-cart\">SHOP NOW</button></a>\r\n");
@@ -232,7 +230,7 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        ");
       out.write("\r\n");
       out.write("            <div class=\"card\">\r\n");
-      out.write("                <img alt=\"\" src=\"\" style=\"width:253px; height: 350px;\">\r\n");
+      out.write("                <img alt=\"\" src=\"img/ms1.jpeg\" style=\"width:253px; height: 350px;\">\r\n");
       out.write("                    <div class=\"card-body\">\r\n");
       out.write("                        <p><b>SHORTS</b></p>\r\n");
       out.write("                        <a><button class=\"btn-cart\">SHOP NOW</button></a>\r\n");
@@ -244,7 +242,7 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        ");
       out.write("\r\n");
       out.write("            <div class=\"card\">\r\n");
-      out.write("                <img alt=\"\" src=\"\" style=\"width:253px; height: 350px;\">\r\n");
+      out.write("                <img alt=\"\" src=\"img/mj1.jpeg\" style=\"width:253px; height: 350px;\">\r\n");
       out.write("                    <div class=\"card-body\">\r\n");
       out.write("                        <p><b>JACKETS</b></p>\r\n");
       out.write("                        <a><button class=\"btn-cart\">SHOP NOW</button></a>\r\n");

@@ -91,11 +91,11 @@ public class ItemDAOImpl implements ItemDAO {
              while(rs.next())
              {
                 i = new ItemDetails();
-                i.setItem_name(rs.getNString(1));
-                i.setPhoto(rs.getNString(2));
-                i.setSize(rs.getNString(3));
-                i.setItem_category(rs.getNString(4));
-                i.setPrice(rs.getNString(5));
+                i.setItem_name(rs.getString(1));
+                i.setPhoto(rs.getString(2));
+                i.setSize(rs.getString(3));
+                i.setItem_category(rs.getString(4));
+                i.setPrice(rs.getString(5));
              }
             
         } catch (Exception e){
@@ -104,4 +104,47 @@ public class ItemDAOImpl implements ItemDAO {
         
         return i;
     }    
+
+    @Override
+    public boolean updateEdit_books(ItemDetails i) {
+        boolean f = false;
+        try{
+            String sql = "update item_details set item_name=?, size=?, item_category=?, price=? where item_name=?";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setString(1, i.getItem_name());
+            ps.setString(3, i.getSize());
+            ps.setString(4, i.getItem_category());
+            ps.setString(5, i.getPrice());
+            
+            int rowsUpdated = ps.executeUpdate();
+            if(rowsUpdated == 1){
+                f=true;
+            }
+            
+        }catch(Exception e){
+            e.printStackTrace(); 
+        }
+        
+        return f;
+    }
+
+    @Override
+    public boolean deleteItems(String item_name) {
+        boolean f= false;
+        
+        try{
+            String sql = "delete from item_details where item_name=?";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setString(1, item_name);
+            int rowsUpdated= ps.executeUpdate();
+            if(rowsUpdated == 1){
+                f=true;
+            }
+            
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+        
+        return f;
+    }
 }

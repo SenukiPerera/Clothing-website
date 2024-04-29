@@ -174,7 +174,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputItemName">Size</label>
-                                <input name="isize" type="text" class="form-control" id="exampleInputItemName" aria-describedby="emailHelp" required>
+                                <input name="isize" type="text" class="form-control" id="exampleInputItemName" aria-describedby="emailHelp" >
                             </div>
                             <div class="form-group">
                                 <label for="inputState">Category</label>

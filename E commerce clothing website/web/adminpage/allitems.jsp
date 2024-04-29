@@ -13,6 +13,8 @@
 <%@page import="com.entity.ItemDetails"%>
 <%@page import="com.DB.DBConnect"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -115,6 +117,19 @@
                                 out.println(conn);
                             %>
                --%>             
+               
+              <%--success message--%>
+            <c:if test="${not empty succMsg}"> 
+                 <p class="text-center text-success"> ${succMsg}</p>
+                 <c:remove var="succMsg" scope="session"/>
+            </c:if> 
+            <%--erorr message--%>     
+            <c:if test="${not empty failedMsg}"> 
+                 <p class="text-center text-danger"> ${failedMsg}</p>
+                 <c:remove var="failedMsg" scope="session"/>
+            </c:if> 
+               
+               
             <div class="table-container">
                 <table class="table table-striped">
                     <thead style="background-color: #193E29; color: white;" >
@@ -129,40 +144,8 @@
                     </thead>
                     <tbody>
                             
-                      <%--  
-                        <% try{
-                            Class.forName("com.mysql.jdbc.Driver");
-                            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/verdevo?zeroDateTimeBehavior=convertToNull", "root", "admin123");
-                            
-                            Statement st = conn.createStatement();
-                            
-                            String str = "select * from verdevo";
-                            ResultSet rs = st.executeQuery(str);
-                            while(rs.next()){
-                            %>
-                            <tr>
-                                <td><%=rs.getString("item_name")%></td>
-                                <td><%=rs.getString("photo")%></td>
-                                <td><%=rs.getString("size")%></td>
-                                <td><%=rs.getString("item_category")%></td>
-                                <td><%=rs.getString("price")%></td>
-                                <td>
-                                    <a href="edit_items.jsp%>" class="btn btn-sm" style="background-color: #193E29; color: white;">Edit</a>
-                                    <a href="#" class="btn btn-sm" style="background-color: black; color: white;">Delete</a>
-                                </td>
-                            </tr>
-                            <%
-                            }
-                        } catch (Exception e){
-                            e.printStackTrace();
-                        }
-                        %>
-                        --%>
-                        
-                       
-                        
-                        
-                                   
+                     
+                                 
                        <%
                        ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
                        List<ItemDetails> list = dao.getAllItems();
@@ -176,7 +159,7 @@
                             <td><%=i.getPrice()%></td>
                             <td>
                                 <a href="edit_items.jsp?item_name=<%=i.getItem_name()%>" class="btn btn-sm" style="background-color: #193E29; color: white;">Edit</a>
-                                <a href="#" class="btn btn-sm" style="background-color: black; color: white;">Delete</a>
+                                <a href="../delete?item_name=<%=i.getItem_name()%>" class="btn btn-sm" style="background-color: black; color: white;">Delete</a>
                             </td>
                         </tr>
                         <%

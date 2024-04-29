@@ -42,8 +42,6 @@ public class AddItems extends HttpServlet{
             ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
             
             
-            
-            
             boolean f = dao.addItems(i);
             
             HttpSession session = req.getSession();
@@ -60,7 +58,7 @@ public class AddItems extends HttpServlet{
                 resp.sendRedirect("adminpage/addnew.jsp");
             } 
             else {
-               session.setAttribute("failedMsg", "Something wrong on servlet");
+               session.setAttribute("failedMsg", "Something wrong on server");
                resp.sendRedirect("adminpage/addnew.jsp"); 
             }
             

@@ -4,6 +4,9 @@
     Author     : User
 --%>
 
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="com.DB.DBConnect"%>
+<%@page import="comDAO.ItemDAOImpl"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page isELIgnored="false" %>
@@ -11,7 +14,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Add New Items</title>
+        <title>Edit Items</title>
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="navbar.css">
         
@@ -140,25 +143,22 @@
         <section class="home-section">
             <div class="text">Edit Items</div>
             
-            <%--success message--%>
-            <c:if test="${not empty succMsg}"> 
-                 <p class="text-center text-danger"> ${succMsg}</p>
-                 <c:remove var="succMsg" scope="session"/>
-            </c:if> 
-            <%--erorr message--%>     
-            <c:if test="${not empty failedMsg}"> 
-                 <p class="text-center text-danger"> ${failedMsg}</p>
-                 <c:remove var="failedMsg" scope="session"/>
-            </c:if> 
+            
+                 
+            <% 
+                String item_name = request.getParameter("item_name");
+                ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                ItemDetails i =dao.getItembyItem_name(item_name);
+            %>     
                  
             <%--form--%>     
             <div class="form-container">   
-                <form action="../addnew" method="post" enctype="multipart/form-data">
+                <form action="../edit_items" method="post">
                     <h5>Base Information</h5>
                         <div class="form-data">
                             <div class="form-group">
                                 <label for="exampleInputItemName">Item Name</label>
-                                <input name="iname" type="text" class="form-control" id="exampleInputItemName" aria-describedby="emailHelp" required>
+                                <input name="iname" type="text" class="form-control" id="exampleInputItemName" aria-describedby="emailHelp" value="<%=i.getItem_name()%>" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlFile">Pictures</label>
@@ -170,15 +170,15 @@
                         <div class="form-data">
                             <div class="form-group">
                                 <label for="exampleInputItemName">Price</label>
-                                <input name="iprice" type="text" class="form-control" id="exampleInputItemName" aria-describedby="emailHelp" required>
+                                <input name="iprice" type="text" class="form-control" id="exampleInputItemName" aria-describedby="emailHelp" value="<%=i.getPrice()%>" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputItemName">Size</label>
-                                <input name="isize" type="text" class="form-control" id="exampleInputItemName" aria-describedby="emailHelp" required>
+                                <input name="isize" type="text" class="form-control" id="exampleInputItemName" aria-describedby="emailHelp" value="<%=i.getSize()%>" required>
                             </div>
                             <div class="form-group">
                                 <label for="inputState">Category</label>
-                                <select id="inputState" name="icategory" class="form-control" required>
+                                <select id="inputState" name="icategory" class="form-control" value="<%=i.getItem_category()%>" required>
                                     <option selected="">Select Category</option> 
                                     <option value="women">Women's</option>
                                     <option value="womenT">Women's T-shirts</option>
@@ -200,7 +200,7 @@
                                 </select>
                             </div>
                         </div>
-                    <input type="submit" value="Add" name="submitbtn" class="submitbtn">
+                    <input type="submit" value="Update" name="submitbtn" class="submitbtn">
                 </form>
             </div>
         </section>
