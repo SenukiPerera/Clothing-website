@@ -79,31 +79,32 @@ public class SignUp extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-                try {
+              try {
             //processRequest(request, response);
              String fname = request.getParameter("fname");
-             String lname = request.getParameter("lname");
+             String email = request.getParameter("email");
             
              String phone = request.getParameter("phone");
              String pass = request.getParameter("pws");
             
             Class.forName("com.mysql.jdbc.Driver");
-            String url = "jdbc:mysql://localhost:3306/verdevo?zeroDateTimeBehavior=convertToNull";
-            Connection con = DriverManager.getConnection(url, "root", "admin123");
+            String url = "jdbc:mysql://localhost:3306/verdevo";
+            Connection con = DriverManager.getConnection(url, "root", "");
             Statement st=con.createStatement();
             
-            String q3="INSERT INTO users VALUES ('"+fname+"','"+lname+"','"+phone+"','"+pass+"')";
+            String q3="INSERT INTO Users VALUES ('"+fname+"','"+email+"','"+phone+"','"+pass+"')";
             st.executeUpdate(q3);
             response.sendRedirect("Login.jsp");
             
-            //
             
-        } catch (ClassNotFoundException | SQLException ex) {
+        } catch (Exception ex) {
             Logger.getLogger(SignUp.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         
     }
+        
+    
     /**
      * Returns a short description of the servlet.
      *

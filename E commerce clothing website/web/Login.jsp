@@ -19,13 +19,13 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        <style>
+      <style>
             body{
                 background-image: url('img/bg1.jpg');
                 background-size: cover;
             }
             
-            .login{
+            login{
                 font-family: 'poppings',sans-serif;
                 position: relative;
                 min-height: 100vh;
@@ -58,9 +58,9 @@ and open the template in the editor.
                 margin-top: 30px;
             }
         
-            .form{
-                    width: 100%;
-                    padding: 40px;
+            form{
+                    width: 20%;
+                    padding: 20px;
                     background: #fff;
                     align-items: center;
                     justify-content: center;
@@ -110,34 +110,16 @@ and open the template in the editor.
 
         </style>
     </head>
-   <body>
-       
-       <%-- nav bar --%>
-        <%@include file="all_component/navbar.jsp" %>
-        <%-- nav bar end --%>
+  <body>
         
-        <section class="login">
-            <div class="login-container">
-                 <div class="content">
-                    <center><h2><img src="img/logo.png" style=" width: 250px; height: 150px;"></h2></center>
-                    <h1 class="text-center">Let's Get Start!</h1>
-                </div>
-
-                <div class="form">
-                    <form name="form" action="Log" method="post">
-                        <table class="login-table">
-                            <tr><td><input type="text" name="uname" placeholder="Username"></td></tr>
-                            <tr><td><input type="password" name="psw" placeholder="Password"></td></tr>
-                            <tr><td><button type="submit">LogIn</button></td></tr>
-                            <tr><td><p>Don't have an account? <a href="SignUp.jsp">signup</a></p></td></tr>
-                        </table>
-                    </form>
-                </div>
-            </div>
-        </section>
-        
-        <%-- footer --%>
-        <%@include file="all_component/footer.jsp" %>
-        <%-- footer end --%>
+        <form name="form" action="Log" method="post">
+            <table>
+                <tr><td><h1>Get Start</h1></td></tr>
+                <tr><td><input type="text" name="uname" placeholder="Username"></td></tr>
+                <tr><td><input type="password" name="psw" placeholder="Password"></td></tr>
+                <tr><td><button type="submit">LogIn</button></td></tr>
+                <tr><td><p>Don't have an account <a href="SignUp.jsp">signup</a></p></td></tr>
+            </table>
+        </form>
     </body>
 </html>

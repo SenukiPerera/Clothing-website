@@ -17,31 +17,112 @@ and open the template in the editor.
         <title>SignUp</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        <%@include file="all_component/allCss.jsp" %>
-        <link rel="stylesheet" href="all_component/signup.css">
+        <style>
+            body{
+                background-image: url('img/bg1.jpg');
+                background-size: cover;
+            }
+            
+            .login{
+                font-family: 'poppings',sans-serif;
+                position: relative;
+                min-height: 100vh;
+                padding: 60px 30%;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction: column;
+            }
+            .login .content{
+                max-width: 800px;
+                text-align:center;
+            }
+            .login .content h2{
+                font-size: 36px;
+                font-weight: 500;
+                padding-top: 40px;
+                color:#fff;
+                
+            }
+            .login .content h1{
+                font-weight: 300;
+                color:#fff;
+                font-family: Helvetica;
+            }
+            .login-container{
+                width:100%;
+                justify-content: center;
+                align-items:center;
+                margin-top: 30px;
+            }
+        
+            .form{
+                    width: 100%;
+                    padding: 40px;
+                    background: #fff;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top:10% ;
+                    background: #CDE8CD;
+                    border-radius: 10px;
+            }
+        
+        input[type="text"],
+        input[type="password"],
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .form .login-table{
+            width: 400px;
+            text-align: center;
+            margin-left: 10px;
+        }
+        
+        button {
+            background-color: #193E29;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #ffff;
+            color: #193E29;
+            border: 2px solid #193E29;
+        }
+        p {
+
+            font-size: 15px;
+            color: black ;
+
+        }
+        input {
+            text-align: center;
+        }
+        
+
+        </style>
+        
+       
     </head>
-    <body style="background-image: url('img/bg1.jpg'); background-size: cover; background-position: center;">
-        
-        <%-- nav bar --%>
-        <%@include file="all_component/navbar.jsp" %>
-        <%-- nav bar end --%><br><br><br><br><br>
-        
-    <center><form name="siup" action="" method="post" class="forms">
-          
-  
-        <div class="containers">
-            <table class="tbl">
-                
-                <h1>SIGNUP</h1><br>
-                
-                
-                
+    <body>
+    <form name="siup" action="SignUp" method="post">
+        <h1>Signup Form</h1>
+        <table>
             <tr>
                 <td><input type="text" name="fname" placeholder="First Name"></td></tr><tr>
+<<<<<<< HEAD
                 <td><input type="text" name="mail" placeholder="E-mail"></td>
+=======
+                <td><input type="email" name="email" placeholder="Email"></td>
+>>>>>>> 9d966a3afb3f1cedc0fa63017fbc13e13cd95e79
             </tr>
-           
+            
             <tr>
                 <td><input type="text" name="phone" placeholder="Phone number"></td>
             </tr>
@@ -49,39 +130,12 @@ and open the template in the editor.
                 <td><input type="password" name="pws" placeholder="Create a Password"></td></tr><tr>
                 <td><input type="password" name="rpws" placeholder="Re-Enter password"></td>
             </tr>
-            <!--<tr>
-           <td>
-                        <div class="checkbox-text">
-                        <div class="checkbox-content">
-                            <input type="checkbox" id="termCon">
-                            <label for="termCon" class="text">I accepted all terms and conditions</label>
-                        </div>
-                    </div>
-           </td>
-           </tr>-->
-
             <tr>
                 <td><button type="submit" onclick="return x()">Submit</button></td>
                
             </tr>
-            <tr>
-            <td>
-                <center>
-                    <div class="login-signup">
-                        <span class="text"><p class="white-text" style="color: white">Already a member?
-                            <a href="Login.jsp" class="text login-link">Login Now</a></p>
-                        </span>
-                    </div>
-                </center>
-            </td>
-        </tr>
         </table>
-        </div>
-        </form></center>
-    
-    <%-- footer --%>
-        <%@include file="all_component/footer.jsp" %>
-        <%-- footer end --%>
+    </form>
 </body>
 </html>
    
