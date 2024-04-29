@@ -11,6 +11,7 @@ header {
     color: black; /* White text color for header */
     padding: 20px;
     text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 .image-section {

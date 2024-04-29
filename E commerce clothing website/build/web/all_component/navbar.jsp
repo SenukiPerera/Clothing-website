@@ -68,7 +68,7 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             </li>!-->
             <li class="nav-item">
-              <a class="nav-link disabled" href="#"><box-icon name='user-circle'  color='#ffffff' ></box-icon></a>
+              <a class="nav-link disabled" href="Login.jsp"><box-icon name='user-circle'  color='#ffffff' ></box-icon></a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#"><box-icon name='cart-alt' color='#ffffff'></box-icon></a>

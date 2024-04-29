@@ -25,8 +25,8 @@
         
         
         <header>
-        <h1>Accessories</h1>
-    </header>
+            <h1><b>Accessories</b></h1>
+        </header>
 
     <!-- Images section -->
     <div class="image-section">
