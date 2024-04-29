@@ -21,11 +21,13 @@
                 display: flex;
                 justify-content: center;
                 padding-top: 100px;
+                flex-wrap: wrap;
             }
             .container-2
             {
                display: flex;
-               justify-content: center; 
+               justify-content: center;
+               flex-wrap: wrap;
             }
             .card
             {
@@ -35,6 +37,7 @@
                 color: black;
                 margin:50px;
                 border: none !important;
+               
                 
                 
             }
@@ -44,6 +47,11 @@
                 height: 350px;
                 margin-bottom: 20px;
                 background-size: cover;
+                transition: transform 0.5s;
+            }
+            .card:hover .card-image {
+                transform: scale(1.05); 
+                cursor: pointer;
             }
             .L-T-1
             {

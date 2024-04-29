@@ -8,8 +8,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        
+        <title>Ladies T-Shirt</title>
+        
          <style>
             
            
@@ -19,11 +22,13 @@
                display: flex;
                justify-content: center;
                padding-top: 100px;
+               flex-wrap: wrap;
             }
             .container-2
             {
                display: flex;
-               justify-content: center; 
+               justify-content: center;
+               flex-wrap: wrap;
             }
             .card
             {
@@ -42,6 +47,11 @@
                 height: 350px;
                 margin-bottom: 20px;
                 background-size: cover;
+                transition: transform 0.5s;
+            }
+            .card:hover .card-image {
+                transform: scale(1.05); 
+                cursor: pointer;
             }
             .L-T-1
             {
@@ -102,10 +112,9 @@
             }
             
             
-            
-            
-        </style>
+            </style>
     </head>
+    
     <body>
          <%@include file="all_component/allCss.jsp" %>
         
