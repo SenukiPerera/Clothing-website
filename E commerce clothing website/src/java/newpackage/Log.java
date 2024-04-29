@@ -79,23 +79,25 @@ public class Log extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //processRequest(request, response);
-       try {
+      try {
             //processRequest(request, response);
             String user=request.getParameter("uname");
             String psw=request.getParameter("psw");
             
             if(user.equals("") && psw.equals(""))
                 {
-                    response.sendRedirect("Invalid.html");
+                    response.sendRedirect("Invalid.jsp");
                 }
             
+            
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/verdevo?zeroDateTimeBehavior=convertToNull","root","admin123");
+            String url="jdbc:mysql://localhost:3306/verdevo";
+            Connection con=DriverManager.getConnection(url,"root","");
             Statement st=con.createStatement();
             
-         
             
-            String q2="SELECT * FROM users";
+            
+            String q2="SELECT * FROM Users";
             ResultSet rs2=st.executeQuery(q2);
             while (rs2.next())
             {
@@ -103,9 +105,6 @@ public class Log extends HttpServlet {
                 {
                     response.sendRedirect("index.jsp");
                 }
-                Object uname = null;
-                //admin panel
-                
             }
             
             
