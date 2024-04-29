@@ -62,6 +62,7 @@ and open the template in the editor.
         p {
 <<<<<<< HEAD
             font-size: 15px;
+            color: white;
 =======
             font-size: 18px;
 >>>>>>> c509932e0d9834c889e9b24120491c29aa15dc8a
