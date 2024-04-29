@@ -33,7 +33,7 @@
   	 			<ul>
   	 				<li><a href="about.jsp">ABOUT US</a></li>
   	 				<li><a href="contactus.jsp">CONTACT US</a></li>
-  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="help.jsp">FAQ</a></li>
   	 				
   	 			</ul>
   	 		</div>

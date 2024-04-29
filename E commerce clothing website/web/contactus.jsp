@@ -73,6 +73,9 @@
                 flex-direction: column;
                 font-weight: 300;
             }
+            .contact-container .contactInfo .box .text p{ 
+                color: #fff;
+            }
             .contact-container .contactInfo .box .text h3{
                 font-weight: 500;
                 color:#ffff;
@@ -130,6 +133,7 @@
                 outline: none;
                 resize: none;
                 border-radius: 0;
+                color: #193E29;
             }
             .contactform .inputbox input[type="submit"] {
                 width: 100%;
