@@ -35,12 +35,12 @@
         </div>
       </li>
       <li class="nav-item dropdown active" >
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="newarr.jsp" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           SHOP LATEST
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #193E29;">
-          <a class="dropdown-item" href="#" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">New Drop</a>
-          <a class="dropdown-item" href="#" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Best Selling</a>
+          <a class="dropdown-item" href="newarr.jsp#latest_release" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">New Drop</a>
+          <a class="dropdown-item" href="newarr.jsp#top_sell" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Best Selling</a>
           
         </div>
       </li>
@@ -49,8 +49,8 @@
           ACCESSORIES
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #193E29;">
-          <a class="dropdown-item" href="#shoes" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Shoes</a>
-          <a class="dropdown-item" href="#bags" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Bags</a>
+          <a class="dropdown-item" href="Accessories.jsp#shoes" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Shoes</a>
+          <a class="dropdown-item" href="Accessories.jsp#bags" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Bags</a>
           
         </div>
       </li>
@@ -68,7 +68,7 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             </li>!-->
             <li class="nav-item">
-              <a class="nav-link disabled" href="#"><box-icon name='user-circle'  color='#ffffff' ></box-icon></a>
+              <a class="nav-link disabled" href="Login.jsp"><box-icon name='user-circle'  color='#ffffff' ></box-icon></a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#"><box-icon name='cart-alt' color='#ffffff'></box-icon></a>
