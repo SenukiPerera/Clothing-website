@@ -20,6 +20,10 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         <style>
+            body{
+                background-image: url('img/bg1.jpg');
+            background-size: cover;
+            }
         .log {
             font-family: Arial, sans-serif;
             display: flex;
@@ -27,8 +31,7 @@ and open the template in the editor.
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-image: url('img/bg1.jpg');
-            background-size: cover;
+            
         }
 
         form {
