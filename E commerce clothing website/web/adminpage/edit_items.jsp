@@ -4,6 +4,7 @@
     Author     : User
 --%>
 
+<%@page import="java.sql.Connection"%>
 <%@page import="com.entity.ItemDetails"%>
 <%@page import="com.DB.DBConnect"%>
 <%@page import="comDAO.ItemDAOImpl"%>
@@ -143,7 +144,6 @@
         <section class="home-section">
             <div class="text">Edit Items</div>
             
-            
                  
             <% 
                 String item_name = request.getParameter("item_name");
@@ -160,10 +160,7 @@
                                 <label for="exampleInputItemName">Item Name</label>
                                 <input name="iname" type="text" class="form-control" id="exampleInputItemName" aria-describedby="emailHelp" value="<%=i.getItem_name()%>" required>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlFile">Pictures</label>
-                                <input name="iphoto" type="file" class="form-control" id="exampleFormControlFile" aria-describedby="emailHelp" required>
-                            </div>
+                            
                         </div>
                     
                     <h5>Details</h5>

@@ -30,14 +30,14 @@ public class AddItems extends HttpServlet{
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try{
-            String itemName = req.getParameter("iname");
+            String item_name = req.getParameter("iname");
             String price = req.getParameter("iprice");
             String size = req.getParameter("isize");
             String category = req.getParameter("icategory");
             Part part = req.getPart("iphoto");
             String fileName = part.getSubmittedFileName();
             
-            ItemDetails i = new ItemDetails(itemName,fileName,size, category, price);
+            ItemDetails i = new ItemDetails(item_name,fileName,size, category, price);
             
             ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
             
@@ -55,11 +55,11 @@ public class AddItems extends HttpServlet{
                 part.write(path + File.separator + fileName);
                 
                 session.setAttribute("succMsg", "Item add successfully");
-                resp.sendRedirect("adminpage/addnew.jsp");
+                resp.sendRedirect("addnew.jsp");
             } 
             else {
                session.setAttribute("failedMsg", "Something wrong on server");
-               resp.sendRedirect("adminpage/addnew.jsp"); 
+               resp.sendRedirect("addnew.jsp"); 
             }
             
         }catch (Exception e){

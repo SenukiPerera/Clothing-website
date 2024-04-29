@@ -8,8 +8,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        
+        <title>Ladies T-Shirt</title>
+        
          <style>
             
            
@@ -19,11 +22,13 @@
                display: flex;
                justify-content: center;
                padding-top: 100px;
+               flex-wrap: wrap;
             }
             .container-2
             {
                display: flex;
-               justify-content: center; 
+               justify-content: center;
+               flex-wrap: wrap;
             }
             .card
             {
@@ -42,6 +47,11 @@
                 height: 350px;
                 margin-bottom: 20px;
                 background-size: cover;
+                transition: transform 0.5s;
+            }
+            .card:hover .card-image {
+                transform: scale(1.05); 
+                cursor: pointer;
             }
             .L-T-1
             {
@@ -102,10 +112,9 @@
             }
             
             
-            
-            
-        </style>
+            </style>
     </head>
+    
     <body>
          <%@include file="all_component/allCss.jsp" %>
         
@@ -122,7 +131,7 @@
                     
                 </div>
                 <p class="title">Cotton-Printed Pink T-Shirt</p>
-                <p class="price">Description</p>
+                <p class="price">LKR 2700.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
@@ -133,7 +142,7 @@
                 <div class="card-image L-T-2">
                    </div>
                 <p class="title">Pima Cotton-Printed White Tee</p>
-                <p class="price">Description</p>
+                <p class="price">LKR 3000.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
@@ -143,7 +152,7 @@
             <div class="card">
                 <div class="card-image L-T-3"></div>
                 <p class="title">Brown Long Sleeve Off-Shoulder</p>
-                <p class="price">Description</p>
+                <p class="price">LKR 5300.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
@@ -155,7 +164,7 @@
                     
                 </div>
                 <p class="title">Ringspun cotton Long Sleeve dark Green Tee</p>
-                <p class="price">Description</p>
+                <p class="price">LKR 4700.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
@@ -171,7 +180,7 @@
             <div class="card">
                 <div class="card-image L-T-5"></div>
                 <p class="title">Slub Cotton Zebra-Pattern Print Tee</p>
-                <p class="price">Description</p>
+                <p class="price">LKR 4800.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
@@ -182,7 +191,7 @@
             <div class="card">
                 <div class="card-image L-T-6"></div>
                 <p class="title">Linen-Over-Size Black T-Shirt</p>
-                <p class="price">Description</p>
+                <p class="price">LKR 3200.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
@@ -192,7 +201,7 @@
             <div class="card">
                 <div class="card-image L-T-7"></div>
                 <p class="title">Long Sleeve Floral-V-Neck Tee</p>
-                <p class="price">Description</p>
+                <p class="price">LKR 3000.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
@@ -204,7 +213,7 @@
                     
                 </div>
                 <p class="title">Cotton Blue High Neck Tee</p>
-                <p class="price">Description</p>
+                <p class="price">LKR 3800.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>

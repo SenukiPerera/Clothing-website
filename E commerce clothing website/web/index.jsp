@@ -93,6 +93,9 @@
                 height: 550px;
                 border: none;
             }
+            .card p{
+                color: black;
+            }
             .container-three{
                 display: flex;
                 margin: 5%;
@@ -252,19 +255,19 @@
                 <div class="col-md-3">
                     <div class="card">
                         <img alt="" src="img/lc1.jpg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
+                        <div class="card-body text-center">
                             <p><b>Geo Print Tee & Waist Shorts</b></p>
                             <p>LKR 5,650.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
                     </div>
                 </div>
-                
+                <%--
                 <div class="col-md-3">
                     <div class="card">
                         <img alt="" src="img/lc2.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Colourblock Tee & Waist Shorts</b></p>
+                            <p style="color:black;"><b>Colourblock Tee & Waist Shorts</b></p>
                             <p>LKR 5,650.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -384,6 +387,7 @@
                         </div>
                     </div>
                 </div>
+                --%>
             </div>
         </div>
         <%-- latest release end--%>

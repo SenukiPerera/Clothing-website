@@ -28,7 +28,7 @@ public class EditItems extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try{
             
-            String itemName = req.getParameter("iname");
+            String item_name = req.getParameter("iname");
             String price = req.getParameter("iprice");
             String size = req.getParameter("isize");
             String category = req.getParameter("icategory");
@@ -40,7 +40,7 @@ public class EditItems extends HttpServlet {
             i.setPrice("price");
             
             ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
-            boolean f=dao.updateEdit_books(i);
+            boolean f=dao.updateEdit_items(i);
             
             HttpSession session = req.getSession();
             
