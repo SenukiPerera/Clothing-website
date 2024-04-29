@@ -27,7 +27,7 @@ and open the template in the editor.
                 font-family: 'poppings',sans-serif;
                 position: relative;
                 min-height: 100vh;
-                padding: 60px 30%;
+                padding: 60px 35%;
                 display:flex;
                 justify-content:center;
                 align-items:center;
@@ -37,17 +37,12 @@ and open the template in the editor.
                 max-width: 800px;
                 text-align:center;
             }
-            .login .content h2{
-                font-size: 36px;
-                font-weight: 500;
-                padding-top: 40px;
-                color:#fff;
-                
-            }
+            
             .login .content h1{
-                font-weight: 300;
-                color:#fff;
+                font-weight: bold;
+                color:#193E29;
                 font-family: Helvetica;
+                
             }
             .login-container{
                 width:100%;
@@ -67,41 +62,43 @@ and open the template in the editor.
                     border-radius: 10px;
             }
         
-        input[type="text"],
-        input[type="password"],
-        button {
-            width: 100%;
+        .form input[type="text"],
+        .form input[type="password"],
+        .form button {
+            width: 350px;
             padding: 10px;
             margin-bottom: 10px;
             border: none;
             border-radius: 5px;
             box-sizing: border-box;
+            font-size: 16px;
         }
         .form .login-table{
             width: 400px;
             text-align: center;
-            margin-left: 10px;
+            padding: 10px;
         }
         
-        button {
+        .form button {
+            margin-top: 20px;
             background-color: #193E29;
             color: white;
             cursor: pointer;
             width: 100%;
         }
 
-        button:hover {
+        .form button:hover {
             background-color: #ffff;
             color: #193E29;
             border: 2px solid #193E29;
         }
-        p {
+        .form p {
 
             font-size: 15px;
             color: black ;
 
         }
-        input {
+        .form input {
             text-align: center;
         }
         
@@ -111,31 +108,39 @@ and open the template in the editor.
        
     </head>
     <body>
-    <form name="siup" action="SignUp" method="post">
-        <h1>Signup Form</h1>
-        <table>
-            <tr>
-                <td><input type="text" name="fname" placeholder="First Name"></td></tr><tr>
-<<<<<<< HEAD
-                <td><input type="text" name="mail" placeholder="E-mail"></td>
-=======
-                <td><input type="email" name="email" placeholder="Email"></td>
->>>>>>> 9d966a3afb3f1cedc0fa63017fbc13e13cd95e79
-            </tr>
+        <section class="login">
             
-            <tr>
-                <td><input type="text" name="phone" placeholder="Phone number"></td>
-            </tr>
-            <tr>
-                <td><input type="password" name="pws" placeholder="Create a Password"></td></tr><tr>
-                <td><input type="password" name="rpws" placeholder="Re-Enter password"></td>
-            </tr>
-            <tr>
-                <td><button type="submit" onclick="return x()">Submit</button></td>
-               
-            </tr>
-        </table>
-    </form>
+                
+            <div class="form">
+                <div class="content">
+                    <h1>Signup Form</h1>
+                </div>
+                <form name="siup" action="SignUp" method="post">
+                    <table class="login-table">
+                        <tr>
+                            <td><input type="text" name="fname" placeholder="First Name"></td></tr><tr>
+
+                            <td><input type="text" name="mail" placeholder="E-mail"></td>
+
+                           
+
+                        </tr>
+
+                        <tr>
+                            <td><input type="text" name="phone" placeholder="Phone number"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" name="pws" placeholder="Create a Password"></td></tr><tr>
+                            <td><input type="password" name="rpws" placeholder="Re-Enter password"></td>
+                        </tr>
+                        <tr>
+                            <td><button type="submit" onclick="return x()">Submit</button></td>
+
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
 </body>
 </html>
    
