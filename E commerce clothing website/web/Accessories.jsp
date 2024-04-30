@@ -83,7 +83,7 @@
                        for(ItemDetails i:list){ %>
                             <div class="col-md-3">
                                 <div class="card">
-                                    <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
+                                    <img alt="" src="items/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
                                     <div class="card-body text-center ">
                                         <p style="font-weight:bold;"><%=i.getItem_name()%></p>
                                         <p><%=i.getPrice()%></p>
