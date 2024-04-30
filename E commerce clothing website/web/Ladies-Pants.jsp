@@ -125,7 +125,7 @@
                     
                 </div>
                 <p class="title">Casual White Ladies Short</p>
-                <p class="price">LKR 5,000.00</p>
+                <p class="price">LKR 11,000.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
                 </div>

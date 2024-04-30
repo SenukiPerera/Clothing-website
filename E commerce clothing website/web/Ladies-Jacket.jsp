@@ -155,7 +155,7 @@
                     
                 </div>
                 <p class="title">Denim Long-Sleeve Dark-Blue jacket</p>
-                <p class="price">LKR 7,500.00</p>
+                <p class="price">LKR 9,500.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
                 </div>
@@ -168,7 +168,7 @@
             <div class="card">
                 <div class="card-image L-T-5"></div>
                 <p class="title">Denim Powder-White jacket</p>
-                <p class="price">LKR 4,800.00</p>
+                <p class="price">LKR 11,800.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
                 </div>
@@ -177,7 +177,7 @@
             <div class="card">
                 <div class="card-image L-T-6"></div>
                 <p class="title">Solid Open Front Crop Black Overcoat</p>
-                <p class="price">LKR 6,500.00</p>
+                <p class="price">LKR 15,500.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
                 </div>
@@ -186,7 +186,7 @@
             <div class="card">
                 <div class="card-image L-T-7"></div>
                 <p class="title">Allover White Floral Crop Jacket</p>
-                <p class="price">LKR 5,100.00</p>
+                <p class="price">LKR 14,100.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
                 </div>
@@ -197,7 +197,7 @@
                     
                 </div>
                 <p class="title">Spring Contrast Color Long Sleeve Zipper Jacket</p>
-                <p class="price">LKR 9,000.00</p>
+                <p class="price">LKR 16,000.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
                 </div>
