@@ -130,7 +130,7 @@
         <%-- nav bar end --%>
         
           <section class="container-1">
-<<<<<<< HEAD
+
            
             <div class="card">
                 <div class="card-image L-T-1">
@@ -142,30 +142,7 @@
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
             </div>
-                   
-=======
-            <table>
-                <tr>
-                    <td>
-                       <%--for admin page --%>
-                        <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
-                       List<ItemDetails> list = dao.getWomenTshirt();
-                       for(ItemDetails i:list){ %>
-                            <div class="card">
-                                <div class="card-image L-T-1">
-                                     <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
-                                </div>
-                                <p class="title"><%=i.getItem_name()%></p>
-                                <p class="price"><%=i.getPrice()%></p>
-                                <div class="button-container">
-                                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
-                                </div>
-                            </div>
-             <%}
-                       %>
-                    </td>
-                    <td>
->>>>>>> c1a953d7f96b7fe60d46c1a5268e05f01e4b0717
+           
             <div class="card">
                 <div class="card-image L-T-2">
                    </div>
