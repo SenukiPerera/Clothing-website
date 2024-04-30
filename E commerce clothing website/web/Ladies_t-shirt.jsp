@@ -22,19 +22,14 @@
             
            
             
-            .container-1
+            .container
             {
                display: flex;
                justify-content: center;
-               padding-top: 100px;
+               padding-top: 10%;
                flex-wrap: wrap;
             }
-            .container-2
-            {
-               display: flex;
-               justify-content: center;
-               flex-wrap: wrap;
-            }
+            
             .card
             {
                 background-color: white;
@@ -129,9 +124,32 @@
         <%@include file="all_component/navbar.jsp" %>
         <%-- nav bar end --%>
         
-          <section class="container-1">
-
-           
+        <div class="container">
+            <h3 class="text-center">WOMEN'S TSHIRTS</h3>
+            <div class="row">
+                
+                    
+                    <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list = dao.getLatest();
+                       for(ItemDetails i:list){ %>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
+                                    <div class="card-body text-center ">
+                                        <p style="font-weight:bold;"><%=i.getItem_name()%></p>
+                                        <p><%=i.getPrice()%></p>
+                                        <a><button class="btn-cart">QUICK ADD</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+             <%}
+                       %>
+               
+            </div>
+        </div>
+            
+        <%--   
             <div class="card">
                 <div class="card-image L-T-1">
                     
@@ -216,7 +234,7 @@
                     
          </section>
             
-            
+         --%>   
             
         
         

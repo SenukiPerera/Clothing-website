@@ -88,7 +88,7 @@
         <h2>T-SHIRTS</h2>
         <br>
         <div class="row">
-<<<<<<< HEAD
+
             <div class="card">
                 <div class="card-img">
                 <div  class="cardh"><img alt="" src="img/mt6.jpeg" style="width:253px; height: 350px;"></div>
@@ -99,7 +99,7 @@
                         <a><button>ADD TO CART</button></a>
                     </div>
             </div>
-=======
+
             
             <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
                        List<ItemDetails> list = dao.getMenTshirt();
@@ -107,7 +107,7 @@
                        
                             <div class="card">
                                 <div class="card-img">
-                                <div  class="cardh"><img alt="" src="img/mt6.jpeg" style="width:253px; height: 350px;"></div>
+                                <div  class="cardh"><img alt="" src="items/<%=i.getPhoto()%>" style="width:253px; height: 350px;"></div>
                                 </div>
                                     <div class="card-body">
                                         <p style="font-weight:bold;"><%=i.getItem_name()%></p>
@@ -119,7 +119,7 @@
              <%}
                        %>
             
->>>>>>> 244fc7e2d22c5c62f213c2adacf513a19e30287f
+
             
             <div class="card">
                 <div class="card-img">
