@@ -110,7 +110,7 @@
                 </div>
                     <div class="card-body">
                         <p><b>Black Lether Casual Jacket</b></p>
-                            <p>LKR 2,900.00</p>
+                            <p>LKR 12,900.00</p>
                         <a><button>ADD TO CART</button></a>
                     </div>
             </div>
