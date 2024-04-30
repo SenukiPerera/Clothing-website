@@ -119,9 +119,7 @@
         <%-- nav bar end --%>
         
           <section class="container-1">
-            <table>
-                <tr>
-                    <td>
+            
             <div class="card">
                 <div class="card-image L-T-1">
                     
@@ -132,8 +130,7 @@
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
             </div>
-                    </td>
-                    <td>
+                    
             <div class="card">
                 <div class="card-image L-T-2">
                    </div>
@@ -143,8 +140,7 @@
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
             </div>
-                    </td>
-                    <td>
+                   
             <div class="card">
                 <div class="card-image L-T-3"></div>
                 <p class="title">Cotton White Bloom-Hand Crop-Top</p>
@@ -153,8 +149,7 @@
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
             </div>
-                    </td>
-                    <td>
+                    
             <div class="card">
                 <div class="card-image L-T-4">
                     
@@ -165,14 +160,11 @@
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
             </div>
-                    </td>
-            </tr>
-            </table>
+                   
+            
             </section>
         <section class="container-2">
-            <table>
-            <tr>
-                <td>
+           
             <div class="card">
                 <div class="card-image L-T-5"></div>
                 <p class="title">Syntetic Micro-Fiber Long-Sleeve Crop-Top</p>
@@ -181,9 +173,7 @@
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
             </div>
-                </td>
-            
-                <td>
+              
             <div class="card">
                 <div class="card-image L-T-6"></div>
                 <p class="title">Linen V-Neck Floral Blue Crop-Top</p>
@@ -192,8 +182,7 @@
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
             </div>
-                </td>
-                  <td>
+               
             <div class="card">
                 <div class="card-image L-T-7"></div>
                 <p class="title">Flax Blend High Neck Red Crop-Top</p>
@@ -202,8 +191,7 @@
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
             </div>
-                </td>
-                <td>
+                
             <div class="card">
                 <div class="card-image L-T-8">
                     
@@ -214,12 +202,7 @@
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
             </div>
-                    </td>
-                    
-               
-            </tr>
-            
-            </table>
+                   
          </section>
             
             
