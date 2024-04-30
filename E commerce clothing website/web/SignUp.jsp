@@ -17,6 +17,7 @@ and open the template in the editor.
         <title>SignUp</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <%@include file="all_component/allCss.jsp" %>
         <style>
             body{
                 background-image: url('img/bg1.jpg');
@@ -108,6 +109,11 @@ and open the template in the editor.
        
     </head>
     <body>
+        
+        <%-- nav bar --%>
+        <%@include file="all_component/navbar.jsp" %>
+        <%-- nav bar end --%>
+        
         <section class="login">
             
                 
@@ -120,7 +126,7 @@ and open the template in the editor.
                         <tr>
                             <td><input type="text" name="fname" placeholder="First Name"></td></tr><tr>
 
-                            <td><input type="text" name="mail" placeholder="E-mail"></td>
+                            <td><input type="text" name="email" placeholder="E-mail"></td>
 
                            
 
@@ -135,12 +141,18 @@ and open the template in the editor.
                         </tr>
                         <tr>
                             <td><button type="submit" onclick="return x()">Submit</button></td>
+                     <tr><td><p>Already a member? <a href="Login.jsp">Login</a></p></td></tr>
 
                         </tr>
                     </table>
                 </form>
             </div>
         </section>
+        
+        <%-- footer --%>
+        <%@include file="all_component/footer.jsp" %>
+        <%-- footer end --%>
+        
 </body>
 </html>
    
