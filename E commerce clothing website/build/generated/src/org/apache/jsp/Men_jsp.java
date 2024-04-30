@@ -113,13 +113,13 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("<link rel=\"stylesheet\" href=\"https://unicons.iconscout.com/release/v4.0.8/css/line.css\">\r\n");
       out.write("\r\n");
-<<<<<<< HEAD
+ 
       out.write("\n");
       out.write("        \n");
-=======
+ 
       out.write("\r\n");
       out.write("        \r\n");
->>>>>>> 244fc7e2d22c5c62f213c2adacf513a19e30287f
+ 
       out.write("        ");
       out.write("\n");
       out.write("        ");
@@ -174,13 +174,13 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("          ACCESSORIES\r\n");
       out.write("        </a>\r\n");
       out.write("        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\" style=\"background-color: #193E29;\">\r\n");
-<<<<<<< HEAD
+ 
       out.write("          <a class=\"dropdown-item\" href=\"#shoes\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shoes</a>\r\n");
       out.write("          <a class=\"dropdown-item\" href=\"#bags\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Bags</a>\r\n");
-=======
+ 
       out.write("          <a class=\"dropdown-item\" href=\"Accessories.jsp#shoes\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shoes</a>\r\n");
       out.write("          <a class=\"dropdown-item\" href=\"Accessories.jsp#bags\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Bags</a>\r\n");
->>>>>>> 244fc7e2d22c5c62f213c2adacf513a19e30287f
+ 
       out.write("          \r\n");
       out.write("        </div>\r\n");
       out.write("      </li>\r\n");
@@ -213,7 +213,7 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("        \n");
       out.write("        ");
-<<<<<<< HEAD
+ 
       out.write("\n");
       out.write("        <div class=\"container\">\n");
       out.write("        <div class=\"row\">\n");
@@ -224,7 +224,7 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <a><button class=\"btn-cart\">SHOP NOW</button></a>\n");
       out.write("                    </div>\n");
       out.write("            </div>\n");
-=======
+ 
       out.write("\r\n");
       out.write("        <div class=\"container\">\r\n");
       out.write("        <div class=\"row\">\r\n");
@@ -235,12 +235,12 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <a><button class=\"btn-cart\">SHOP NOW</button></a>\r\n");
       out.write("                    </div>\r\n");
       out.write("            </div>\r\n");
->>>>>>> 244fc7e2d22c5c62f213c2adacf513a19e30287f
+ 
       out.write("        ");
       out.write("\n");
       out.write("        \n");
       out.write("        ");
-<<<<<<< HEAD
+ 
       out.write("\n");
       out.write("            <div class=\"card\">\n");
       out.write("                <img alt=\"\" src=\"img/mp1.jpeg\" style=\"width:253px; height: 350px;\">\n");
@@ -249,7 +249,7 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <a><button class=\"btn-cart\">SHOP NOW</button></a>\n");
       out.write("                    </div>\n");
       out.write("            </div>\n");
-=======
+ 
       out.write("\r\n");
       out.write("            <div class=\"card\">\r\n");
       out.write("                <img alt=\"\" src=\"img/mp1.jpeg\" style=\"width:253px; height: 350px;\">\r\n");
@@ -258,12 +258,12 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <a><button class=\"btn-cart\">SHOP NOW</button></a>\r\n");
       out.write("                    </div>\r\n");
       out.write("            </div>\r\n");
->>>>>>> 244fc7e2d22c5c62f213c2adacf513a19e30287f
+ 
       out.write("        ");
       out.write("\n");
       out.write("        \n");
       out.write("        ");
-<<<<<<< HEAD
+ 
       out.write("\n");
       out.write("            <div class=\"card\">\n");
       out.write("                <img alt=\"\" src=\"img/ms1.jpeg\" style=\"width:253px; height: 350px;\">\n");
@@ -272,7 +272,7 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <a><button class=\"btn-cart\">SHOP NOW</button></a>\n");
       out.write("                    </div>\n");
       out.write("            </div>\n");
-=======
+ 
       out.write("\r\n");
       out.write("            <div class=\"card\">\r\n");
       out.write("                <img alt=\"\" src=\"img/ms1.jpeg\" style=\"width:253px; height: 350px;\">\r\n");
@@ -281,12 +281,12 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <a><button class=\"btn-cart\">SHOP NOW</button></a>\r\n");
       out.write("                    </div>\r\n");
       out.write("            </div>\r\n");
->>>>>>> 244fc7e2d22c5c62f213c2adacf513a19e30287f
+ 
       out.write("        ");
       out.write("\n");
       out.write("        \n");
       out.write("        ");
-<<<<<<< HEAD
+ 
       out.write("\n");
       out.write("            <div class=\"card\">\n");
       out.write("                <img alt=\"\" src=\"img/mj1.jpeg\" style=\"width:253px; height: 350px;\">\n");
@@ -297,7 +297,7 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </div>\n");
       out.write("        </div>\n");
       out.write("        </div>\n");
-=======
+ 
       out.write("\r\n");
       out.write("            <div class=\"card\">\r\n");
       out.write("                <img alt=\"\" src=\"img/mj1.jpeg\" style=\"width:253px; height: 350px;\">\r\n");
@@ -308,7 +308,7 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </div>\r\n");
       out.write("        </div>\r\n");
       out.write("        </div>\r\n");
->>>>>>> 244fc7e2d22c5c62f213c2adacf513a19e30287f
+ 
       out.write("        ");
       out.write("\n");
       out.write("        \n");

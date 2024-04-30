@@ -98,7 +98,7 @@
                 
                     
                     <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
-                       List<ItemDetails> list = dao.getWomenTshirt();
+                       List<ItemDetails> list = dao.getLatest();
                        for(ItemDetails i:list){ %>
                             <div class="col-md-3">
                                 <div class="card">
