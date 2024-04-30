@@ -111,7 +111,12 @@ and open the template in the editor.
         </style>
     </head>
   <body>
-        
+      
+      <%-- nav bar --%>
+        <%@include file="all_component/navbar.jsp" %>
+        <%-- nav bar end --%>
+      
+  <center>
         <form name="form" action="Log" method="post">
             <table>
                 <tr><td><h1>Get Start</h1></td></tr>
@@ -121,5 +126,11 @@ and open the template in the editor.
                 <tr><td><p>Don't have an account <a href="SignUp.jsp">signup</a></p></td></tr>
             </table>
         </form>
+  </center>
+  
+  <%-- footer --%>
+        <%@include file="all_component/footer.jsp" %>
+        <%-- footer end --%>
+  
     </body>
 </html>

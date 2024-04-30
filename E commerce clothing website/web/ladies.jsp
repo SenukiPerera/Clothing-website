@@ -112,9 +112,7 @@
        
         
                 <section class="container-1">
-            <table>
-                <tr>
-                    <td>
+           
             <div class="card">
                 <div class="card-image L-T-1">
                     
@@ -125,8 +123,7 @@
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
             </div>
-                    </td>
-                    <td>
+                    
             <div class="card">
                 <div class="card-image L-C-1">
                    </div>
@@ -136,8 +133,7 @@
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
             </div>
-                    </td>
-                    <td>
+                    
             <div class="card">
                 <div class="card-image L-J-1"></div>
                 <p class="title">Jackets</p>
@@ -146,14 +142,10 @@
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
             </div>
-                    </td>
-            </tr>
-            </table>
+           
             </section>
         <section class="container-2">
-            <table>
-            <tr>
-                <td>
+           
             <div class="card">
                 <div class="card-image L-S-1"></div>
                 <p class="title">Shorts</p>
@@ -162,9 +154,7 @@
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
             </div>
-                </td>
-            
-                <td>
+               
             <div class="card">
                 <div class="card-image L-P-1"></div>
                 <p class="title">Pants</p>
@@ -173,14 +163,9 @@
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
             </div>
-                </td>
                 
-               
-            </tr>
-            
-            </table>
-            
-            
+                
+          
             
         </section>
         <%-- footer --%>
