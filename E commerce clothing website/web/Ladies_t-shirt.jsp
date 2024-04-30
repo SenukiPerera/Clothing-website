@@ -58,7 +58,7 @@
                 transform: scale(1.05); 
                 cursor: pointer;
             }
-            /*
+            
             .L-T-1
             {
                 background-image: url('img/L-T-1.jpg');
@@ -92,7 +92,7 @@
             {
                 background-image: url('img/L-T-8.jpg');  
             }
-            */
+            
             .button-container{
                 display: flex;
                 justify-content: center;
@@ -130,48 +130,38 @@
         <%-- nav bar end --%>
         
           <section class="container-1">
-            <table>
-                <tr>
-                    <td>
-                       <%--for admin page --%>
-                        <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
-                       List<ItemDetails> list = dao.getWomenTshirt();
-                       for(ItemDetails i:list){ %>
-                            <div class="card">
-                                <div class="card-image L-T-1">
-                                     <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
-                                </div>
-                                <p class="title"><%=i.getItem_name()%></p>
-                                <p class="price"><%=i.getPrice()%></p>
-                                <div class="button-container">
-                                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
-                                </div>
-                            </div>
-             <%}
-                       %>
-                    </td>
-                    <td>
+
+           
+            <div class="card">
+                <div class="card-image L-T-1">
+                    
+                </div>
+                <p class="title">Cotton-Printed Pink T-Shirt</p>
+                <p class="price">LKR 2700.00</p>
+                <div class="button-container">
+                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
+                </div>
+            </div>
+           
             <div class="card">
                 <div class="card-image L-T-2">
                    </div>
                 <p class="title">Pima Cotton-Printed White Tee</p>
                 <p class="price">LKR 3000.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
                 </div>
             </div>
-                    </td>
-                    <td>
+                   
             <div class="card">
                 <div class="card-image L-T-3"></div>
                 <p class="title">Brown Long Sleeve Off-Shoulder</p>
                 <p class="price">LKR 5300.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
                 </div>
             </div>
-                    </td>
-                    <td>
+                   
             <div class="card">
                 <div class="card-image L-T-4">
                     
@@ -179,48 +169,40 @@
                 <p class="title">Ringspun cotton Long Sleeve dark Green Tee</p>
                 <p class="price">LKR 4700.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
                 </div>
             </div>
-                    </td>
-            </tr>
-            </table>
+           
             </section>
         <section class="container-2">
-            <table>
-            <tr>
-                <td>
+            
             <div class="card">
                 <div class="card-image L-T-5"></div>
                 <p class="title">Slub Cotton Zebra-Pattern Print Tee</p>
                 <p class="price">LKR 4800.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
                 </div>
             </div>
-                </td>
-            
-                <td>
+              
             <div class="card">
                 <div class="card-image L-T-6"></div>
                 <p class="title">Linen-Over-Size Black T-Shirt</p>
                 <p class="price">LKR 3200.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
                 </div>
             </div>
-                </td>
-                  <td>
+               
             <div class="card">
                 <div class="card-image L-T-7"></div>
                 <p class="title">Long Sleeve Floral-V-Neck Tee</p>
                 <p class="price">LKR 3000.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
                 </div>
             </div>
-                </td>
-                <td>
+               
             <div class="card">
                 <div class="card-image L-T-8">
                     
@@ -228,15 +210,10 @@
                 <p class="title">Cotton Blue High Neck Tee</p>
                 <p class="price">LKR 3800.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
                 </div>
             </div>
-                    </td>
                     
-               
-            </tr>
-            
-            </table>
          </section>
             
             
