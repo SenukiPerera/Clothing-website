@@ -16,25 +16,28 @@
             
            
             
-            .container
+            .container-1
             {
                 display: flex;
                 justify-content: center;
                 padding-top: 100px;
+                flex-wrap: wrap;
             }
-            .container-1
+            .container-2
             {
                display: flex;
-               justify-content: center; 
+               justify-content: center;
+               flex-wrap: wrap;
             }
             .card
             {
                 background-color: white;
                 width: 300px;
-                height: 550px;
+                height: 500px;
                 color: black;
                 margin:50px;
                 border: none !important;
+               
                 
                 
             }
@@ -44,6 +47,11 @@
                 height: 350px;
                 margin-bottom: 20px;
                 background-size: cover;
+                transition: transform 0.5s;
+            }
+            .card:hover .card-image {
+                transform: scale(1.05); 
+                cursor: pointer;
             }
             .L-T-1
             {
@@ -80,7 +88,7 @@
                 font-weight: bold;
                 align-items: center;
             }
-            .title,.price,button
+            .title,button
             {
               text-align:  center;  
             }
@@ -97,80 +105,67 @@
         </style>
     </head>
     <body>
+        <%@include file="all_component/allCss.jsp" %>
          <%-- nav bar --%>
         <%@include file="all_component/navbar.jsp" %>
          <%-- nav bar --%>
-        <%@include file="all_component/allCss.jsp" %>
+       
         
-                <section class="container">
-            <table>
-                <tr>
-                    <td>
+                <section class="container-1">
+           
             <div class="card">
                 <div class="card-image L-T-1">
                     
                 </div>
                 <p class="title">T-Shirts</p>
-                <p class="price">Description</p>
+               
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >Shop Now</button>
+                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
             </div>
-                    </td>
-                    <td>
+                    
             <div class="card">
                 <div class="card-image L-C-1">
                    </div>
                 <p class="title">Crop-Tops</p>
-                <p class="price">Description</p>
+                
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">Shop Now</button>
-                </div>
-            </div>
-                    </td>
-                    <td>
-            <div class="card">
-                <div class="card-image L-J-1"></div>
-                <p class="title">Jackets</p>
-                <p class="price">Description</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >Shop Now</button>
-                </div>
-            </div>
-                    </td>
-            </tr>
-            </table>
-            </section>
-        <section class="container-1">
-            <table>
-            <tr>
-                <td>
-            <div class="card">
-                <div class="card-image L-S-1"></div>
-                <p class="title">Shorts</p>
-                <p class="price">Description</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">Shop Now</button>
-                </div>
-            </div>
-                </td>
-            
-                <td>
-            <div class="card">
-                <div class="card-image L-P-1"></div>
-                <p class="title">Pants</p>
-                <p class="price">Description</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">Shop Now</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
             </div>
                     
+            <div class="card">
+                <div class="card-image L-J-1"></div>
+                <p class="title">Jackets</p>
                
-            </tr>
-            
-            </table>
-            
-            
+                <div class="button-container">
+                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
+                </div>
+            </div>
+           
+            </section>
+        <section class="container-2">
+           
+            <div class="card">
+                <div class="card-image L-S-1"></div>
+                <p class="title">Shorts</p>
+                
+                <div class="button-container">
+                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
+                </div>
+            </div>
+               
+            <div class="card">
+                <div class="card-image L-P-1"></div>
+                <p class="title">Pants</p>
+                
+                <div class="button-container">
+                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
+                </div>
+            </div>
+                
+                
+          
             
         </section>
         <%-- footer --%>

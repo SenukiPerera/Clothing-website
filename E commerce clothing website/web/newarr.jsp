@@ -4,6 +4,11 @@
     Author     : M.C Ramanayake
 --%>
 
+<%@page import="com.DB.DBConnect"%>
+<%@page import="java.util.List"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="comDAO.ItemDAOImpl"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -11,7 +16,15 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="all_component/newarr.css">
-        <title>JSP Page</title>
+        <style>
+            .container .card .card-body p{
+                color: black;
+            }
+        </style>
+
+
+        <title>New Arrival</title>
+
         <%@include file="all_component/allCss.jsp" %>
     </head>
     <body>
@@ -27,14 +40,14 @@
         <div class="details">
             <center><h2>New Arrivals</h2></center>
             <p>Discover our latest arrivals, handpicked just for you. From trendy fashion pieces to timeless classics, our new collection offers something for everyone. Whether you're looking for stylish apparel, chic accessories, or versatile footwear, explore our curated selection and stay ahead of the fashion curve. Shop now and elevate your wardrobe with the season's must-have pieces.</p>
-            <center><button class="btn">Explore</button></center>
+            <center><a href="#latest_release"><button class="btn">Explore</button></a></center>
         </div>
         </div>
         <div class="containerf">
         <div class="details">
-            <center><h2>Vacation Vibes</h2></center>
-            <p>Embrace the allure of sun-kissed sands and salty breezes with our Vacation Vibes collection. Dive into a world of effortless elegance and laid-back luxury, where every piece evokes the essence of carefree wanderlust. From flowing maxi dresses to chic beach cover-ups, our curated selection is your passport to endless summer adventures.</p>
-            <center><button class="btn">Explore</button></center>
+            <center><h2>Top Selling</h2></center>
+            <p>Discover our top-selling collection curated just for you. From trendy essentials to timeless classics, explore our most sought-after items that are loved by our customers worldwide. Elevate your style with pieces that are guaranteed to make a statement and add a touch of luxury to your wardrobe. Shop now and experience the epitome of fashion excellence.</p>
+            <center><a href="#top_sell"><button class="btn">Explore</button></a></center>
         </div>
         <div class="imageh">
             <img src="img/image3.png" alt="Image 2" style="width: 100%; height: 100%; object-fit: cover;">
@@ -43,52 +56,27 @@
         </div>
         
         
-   <div class="container">
-            <h3 class="text-center">LATEST RELEASE</h3>
+   <div class="container" id="latest_release">
+       <h3 class="text-center">LATEST RELEASE</h3>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/lc1.jpg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p><b>Geo Print Tee & Waist Shorts</b></p>
-                            <p>LKR 5,650.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
+                <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list = dao.getLatest();
+                       for(ItemDetails i:list){ %>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
+                                    <div class="card-body text-center ">
+                                        <p style="font-weight:bold;"><%=i.getItem_name()%></p>
+                                        <p><%=i.getPrice()%></p>
+                                        <a><button class="btn-cart">QUICK ADD</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+             <%}
+                       %>
                 
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/lc2.jpg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p><b>Colourblock Tee & Waist Shorts</b></p>
-                            <p>LKR 5,650.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
                 
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/lc3.jpg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p><b>Women Letter Graphic Crop Blouse</b></p>
-                            <p>LKR 3,000.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/lc5.jpg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p><b>Men Colourblock Tee & Track Shorts</b></p>
-                            <p>LKR 7,350.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
             </div>
             <br>
             <div class="row">
@@ -96,7 +84,7 @@
                     <div class="card">
                         <img alt="" src="img/lc6.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Men Drop Shoulder Colorblock Tee</b></p>
+                            <p style="font-weight: bold;">Men Drop Shoulder Colorblock Tee</p>
                             <p>LKR 5,650.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -107,7 +95,7 @@
                     <div class="card">
                         <img alt="" src="img/lc9.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Floral Mesh Yoke Ruffle Sleeve Blouse</b></p>
+                            <p style="font-weight: bold;">Floral Mesh Yoke Ruffle Sleeve Blouse</p>
                             <p>LKR 5,650.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -118,7 +106,7 @@
                     <div class="card">
                         <img alt="" src="img/lc11.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Men Letter Graphic Contrast Trim Tshirt</b></p>
+                            <p style="font-weight: bold;">Men Letter Graphic Contrast Trim Tshirt</p>
                             <p>LKR 5,000.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -129,7 +117,7 @@
                     <div class="card">
                         <img alt="" src="img/lc8.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Colourblock Ruffle Trim Dress</b></p>
+                            <p style="font-weight: bold;">Colourblock Ruffle Trim Dress</p>
                             <p>LKR 7,350.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -142,7 +130,7 @@
                     <div class="card">
                         <img alt="" src="img/lc12.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Butterfly Embroidered Reversible Bucket Hat</b></p>
+                            <p style="font-weight: bold;">Butterfly Embroidered Reversible Bucket Hat</p>
                             <p>LKR 1,650.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -153,7 +141,7 @@
                     <div class="card">
                         <img alt="" src="img/lc13.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Daisy Floral Graphic Slide Sandals</b></p>
+                            <p style="font-weight: bold;">Daisy Floral Graphic Slide Sandals</p>
                             <p>LKR 4,550.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -164,7 +152,7 @@
                     <div class="card">
                         <img alt="" src="img/lc16.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Female Hoop Clip Earrings Gold Color</b></p>
+                            <p style="font-weight: bold;">Female Hoop Clip Earrings Gold Color</p>
                             <p>LKR 3,500.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
@@ -175,7 +163,155 @@
                     <div class="card">
                         <img alt="" src="img/lc15.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                         <div class="card-body text-center ">
-                            <p><b>Minimalist Large Capacity Duffel Bag</b></p>
+                            <p style="font-weight: bold;">Minimalist Large Capacity Duffel Bag</p>
+                            <p>LKR 7,350.00</p>
+                            <a><button class="btn-cart">QUICK ADD</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   </div><br>
+        
+        
+        <div class="container">
+            <h3 class="text-center" id="top_sell">TOP SELLING</h3>
+            <div class="row">
+                <% ItemDAOImpl dao2 = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list2 = dao.getBestSell();
+                       for(ItemDetails i:list){ %>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
+                                    <div class="card-body text-center ">
+                                        <p style="font-weight:bold;"><%=i.getItem_name()%></p>
+                                        <p><%=i.getPrice()%></p>
+                                        <a><button class="btn-cart">QUICK ADD</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+             <%}
+                       %>
+                
+                <div class="col-md-3">
+                    <div class="card">
+                        <img alt="" src="img/lc2.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                        <div class="card-body text-center ">
+                            <p style="font-weight: bold;">Colourblock Tee & Waist Shorts/p>
+                            <p>LKR 5,650.00</p>
+                            <a><button class="btn-cart">QUICK ADD</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="card">
+                        <img alt="" src="img/lc3.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                        <div class="card-body text-center ">
+                            <p style="font-weight: bold;">Women Letter Graphic Crop Blouse</p>
+                            <p>LKR 3,000.00</p>
+                            <a><button class="btn-cart">QUICK ADD</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="card">
+                        <img alt="" src="img/lc5.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                        <div class="card-body text-center ">
+                            <p style="font-weight: bold;">Men Colourblock Tee & Track Shorts</p>
+                            <p>LKR 7,350.00</p>
+                            <a><button class="btn-cart">QUICK ADD</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img alt="" src="img/lc6.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                        <div class="card-body text-center ">
+                            <p style="font-weight: bold;">Men Drop Shoulder Colorblock Tee</p>
+                            <p>LKR 5,650.00</p>
+                            <a><button class="btn-cart">QUICK ADD</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="card">
+                        <img alt="" src="img/lc9.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                        <div class="card-body text-center ">
+                            <p style="font-weight: bold;">Floral Mesh Yoke Ruffle Sleeve Blouse</p>
+                            <p>LKR 5,650.00</p>
+                            <a><button class="btn-cart">QUICK ADD</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="card">
+                        <img alt="" src="img/lc11.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                        <div class="card-body text-center ">
+                            <p style="font-weight: bold;">Men Letter Graphic Contrast Trim Tshirt</p>
+                            <p>LKR 5,000.00</p>
+                            <a><button class="btn-cart">QUICK ADD</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="card">
+                        <img alt="" src="img/lc8.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                        <div class="card-body text-center ">
+                            <p style="font-weight: bold;">Colourblock Ruffle Trim Dress</p>
+                            <p>LKR 7,350.00</p>
+                            <a><button class="btn-cart">QUICK ADD</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img alt="" src="img/lc12.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                        <div class="card-body text-center ">
+                            <p style="font-weight: bold;">Butterfly Embroidered Reversible Bucket Hat</p>
+                            <p>LKR 1,650.00</p>
+                            <a><button class="btn-cart">QUICK ADD</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="card">
+                        <img alt="" src="img/lc13.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                        <div class="card-body text-center ">
+                            <p style="font-weight: bold;">Daisy Floral Graphic Slide Sandals</p>
+                            <p>LKR 4,550.00</p>
+                            <a><button class="btn-cart">QUICK ADD</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="card">
+                        <img alt="" src="img/lc16.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                        <div class="card-body text-center ">
+                            <p style="font-weight: bold;">Female Hoop Clip Earrings Gold Color</p>
+                            <p>LKR 3,500.00</p>
+                            <a><button class="btn-cart">QUICK ADD</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="card">
+                        <img alt="" src="img/lc15.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                        <div class="card-body text-center ">
+                            <p style="font-weight: bold;">Minimalist Large Capacity Duffel Bag</p>
                             <p>LKR 7,350.00</p>
                             <a><button class="btn-cart">QUICK ADD</button></a>
                         </div>
