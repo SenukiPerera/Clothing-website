@@ -15,10 +15,10 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #193E29;">
             <a class="dropdown-item" href="Ladies_t-shirt.jsp" style="color: white;" onmouseover="this.style.color='#193E29' " onmouseout="this.style.color='white'">T-Shirts</a>
-          <a class="dropdown-item" href="#" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Crop-Tops</a>
-          <a class="dropdown-item" href="#" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Pants</a>
-          <a class="dropdown-item" href="#" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Shorts</a>
-          <a class="dropdown-item" href="#" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Jackets</a>
+          <a class="dropdown-item" href="Ladies-croptops.jsp" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Crop-Tops</a>
+          <a class="dropdown-item" href="Ladies-Pants.jsp" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Pants</a>
+          <a class="dropdown-item" href="Ladies-Shorts.jsp" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Shorts</a>
+          <a class="dropdown-item" href="Ladies-Jacket.jsp" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Jackets</a>
           
         </div>
       </li>
