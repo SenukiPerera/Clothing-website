@@ -452,7 +452,7 @@ public class ItemDAOImpl implements ItemDAO {
 
     @Override
     public List<ItemDetails> getBestSell() {
-        List<ItemDetails> list = new ArrayList<ItemDetails>();
+        List<ItemDetails> list2 = new ArrayList<ItemDetails>();
          ItemDetails i =null;
          
          try{
@@ -469,14 +469,14 @@ public class ItemDAOImpl implements ItemDAO {
                 i.setSize(rs.getString(3));
                 i.setItem_category(rs.getString(4));
                 i.setPrice(rs.getString(5));
-                list.add(i);
+                list2.add(i);
                 
              }
              
          } catch(Exception e){
             e.printStackTrace();
         }
-        return list;
+        return list2;
     }
 
     @Override

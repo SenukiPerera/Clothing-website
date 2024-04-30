@@ -4,6 +4,12 @@
     Author     : Ruwanthi
 --%>
 
+<%@page import="com.DB.DBConnect"%>
+<%@page import="java.util.List"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="comDAO.ItemDAOImpl"%>
+<%@page import="comDAO.ItemDAOImpl"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -20,6 +26,7 @@
                justify-content: center;
                padding-top: 100px;
                flex-wrap: wrap;
+               margin-left: 0;
             }
             .container-2
             {
@@ -50,39 +57,7 @@
                 transform: scale(1.05); 
                 cursor: pointer;
             }
-            .L-T-1
-            {
-                background-image: url('img/L-S-1.jpg');
-            }
-            .L-T-2
-            {
-               background-image: url('img/L-S-2.jpg'); 
-            }
-            .L-T-3
-            {
-               background-image: url('img/L-S-3.jpg'); 
-  
-            }
-            .L-T-4
-            {
-               background-image: url('img/L-S-4.jpg');  
-            }
-            .L-T-5
-            {
-                background-image: url('img/L-S-5.jpg');  
-            }
-            .L-T-6
-            {
-                background-image: url('img/L-S-6.jpg');  
-            }
-            .L-T-7
-            {
-                background-image: url('img/L-S-7.jpg');  
-            }
-            .L-T-8
-            {
-                background-image: url('img/L-S-8.jpg');  
-            }
+           
             .button-container{
                 display: flex;
                 justify-content: center;
@@ -118,92 +93,32 @@
         <%@include file="all_component/navbar.jsp" %>
         <%-- nav bar end --%>
         
-          <section class="container-1">
-            
-            <div class="card">
-                <div class="card-image L-T-1">
-                    
-                </div>
-                <p class="title">Casual White Ladies Short</p>
-                <p class="price">LKR 8,000.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
-                </div>
-            </div>
-                    
-            <div class="card">
-                <div class="card-image L-T-2">
-                   </div>
-                <p class="title">Polyester Elegant Casual Ladies Shorts </p>
-                <p class="price">LKR 15,000.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
-                </div>
-            </div>
-                   
-            <div class="card">
-                <div class="card-image L-T-3"></div>
-                <p class="title">Elegant High Waist Pleated Straight Leg Summer Shorts </p>
-                <p class="price">LKR 10,000.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
-                </div>
-            </div>
-                    
-            <div class="card">
-                <div class="card-image L-T-4">
-                    
-                </div>
-                <p class="title">High Waist Korean Style Women Summer Short   </p>
-                <p class="price">LKR 12,500.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
-                </div>
-            </div>
-                   
-            
-            </section>
-        <section class="container-2">
-           
-            <div class="card">
-                <div class="card-image L-T-5"></div>
-                <p class="title">Elegant High Waist Pink Ladies Short</p>
-                <p class="price">LKR 11,500.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
-                </div>
-            </div>
-              
-            <div class="card">
-                <div class="card-image L-T-6"></div>
-                <p class="title">Plus Drawstring Waist Denim Short</p>
-                <p class="price">LKR 17,500.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
-                </div>
-            </div>
-               
-            <div class="card">
-                <div class="card-image L-T-7"></div>
-                <p class="title">Casual High Waist Pattern Ladies Short</p>
-                <p class="price">LKR 14,000.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
-                </div>
-            </div>
+        
+            <div class="container-1">
+            <h3 class="text-center">WOMEN'S SHORTS </h3>
+            <div class="row">
                 
-            <div class="card">
-                <div class="card-image L-T-8">
                     
-                </div>
-                <p class="title">Casual White Ladies Summer Short</p>
-                <p class="price">LKR 13,000.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
-                </div>
+                    <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list = dao.getWomenShorts();
+                       for(ItemDetails i:list){ %>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
+                                    <div class="card-body text-center ">
+                                        <p style="font-weight:bold;"><%=i.getItem_name()%></p>
+                                        <p><%=i.getPrice()%></p>
+                                        <a><button class="btn-cart">QUICK ADD</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+             <%}
+                       %>
+               
             </div>
-                   
-         </section>
+        </div>
+         
             
         <%-- footer --%>
         <%@include file="all_component/footer.jsp" %>
