@@ -1,6 +1,6 @@
 <%-- 
-    Document   : MenShorts
-    Created on : Apr 30, 2024, 7:31:10 PM
+    Document   : MenJackets
+    Created on : Apr 30, 2024, 11:58:01 PM
     Author     : Nimsara
 --%>
 
@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Men Shorts</title>
+        <title>Men Jackets</title>
     </head>
     <body>
         <style>
@@ -79,37 +79,37 @@
         
         <%-- card 1 start--%>
         <div class="container">
-        <h2>SHORTS</h2>
+        <h2>JACKETS</h2>
         <br>
         <div class="row">
             <div class="card">
                 <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/ms2.jpeg" style="width:253px; height: 350px;"></div>
+                <div  class="cardh"><img alt="" src="img/mj2.jpeg" style="width:253px; height: 350px;"></div>
                 </div>
                     <div class="card-body">
-                        <p><b>White Color Casual Short</b></p>
-                        <p>LKR 3,350.00</p>
+                        <p><b>White Color Casual Jacket</b></p>
+                        <p>LKR 11,650.00</p>
                         <a><button>ADD TO CART</button></a>
                     </div>
             </div>
             
             <div class="card">
                 <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/ms3.jpeg" style="width:253px; height: 350px;"></div>
+                <div  class="cardh"><img alt="" src="img/mj3.jpeg" style="width:253px; height: 350px;"></div>
                 </div>
                         <div class="card-body">
-                            <p><b>Black Color Casual Jacket</b></p>
-                            <p>LKR 3,450.00</p>
+                            <p><b>Cotton Casual Jacket</b></p>
+                            <p>LKR 9,450.00</p>
                         <a><button>ADD TO CART</button></a>
                     </div>
             </div>
             
             <div class="card">
                 <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/ms4.jpeg" style="width:253px; height: 350px;"></div>
+                <div  class="cardh"><img alt="" src="img/mj4.jpeg" style="width:253px; height: 350px;"></div>
                 </div>
                     <div class="card-body">
-                        <p><b>Cotton Casual Short</b></p>
+                        <p><b>Black Lether Casual Jacket</b></p>
                             <p>LKR 2,900.00</p>
                         <a><button>ADD TO CART</button></a>
                     </div>
@@ -117,11 +117,11 @@
             
             <div class="card">
                 <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/ms5.jpeg" style="width:253px; height: 350px;"></div>
+                <div  class="cardh"><img alt="" src="img/mj5.jpeg" style="width:253px; height: 350px;"></div>
                 </div>
                     <div class="card-body">
-                        <p><b>Linnen Casual Short</b></p>
-                            <p>LKR 3,800.00</p>
+                        <p><b>Black Casual Jacket</b></p>
+                            <p>LKR 9,900.00</p>
                         <a><button>ADD TO CART</button></a>
                     </div>
             </div>
@@ -132,43 +132,43 @@
         <div class="row">
             <div class="card">
                 <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/ms6.jpeg" style="width:253px; height: 350px;"></div>
+                <div  class="cardh"><img alt="" src="img/mj6.jpeg" style="width:253px; height: 350px;"></div>
                 </div>
                     <div class="card-body">
-                        <p><b>Brown Color Short</b></p>
-                            <p>LKR 3,500.00</p>
+                        <p><b>Denim Casual Jacket</b></p>
+                            <p>LKR 10,500.00</p>
                         <a><button>ADD TO CART</button></a>
                     </div>
             </div>
             
             <div class="card">
                 <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/ms7.jpeg" style="width:253px; height: 350px;"></div>
+                <div  class="cardh"><img alt="" src="img/mj7.jpeg" style="width:253px; height: 350px;"></div>
                 </div>
                     <div class="card-body">
-                        <p><b>Light Blue Casual Short</b></p>
-                            <p>LKR 4,400.00</p>
+                        <p><b>Dark Green Casual Jacket</b></p>
+                            <p>LKR 8,200.00</p>
                         <a><button>ADD TO CART</button></a>
                     </div>
             </div>
             
             <div class="card">
                 <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/ms8.jpeg" style="width:253px; height: 350px;"></div>
+                <div  class="cardh"><img alt="" src="img/mj8.jpeg" style="width:253px; height: 350px;"></div>
                 </div>
                     <div class="card-body">
-                        <p><b>White Color Patch Short</b></p>
-                            <p>LKR 3,900.00</p>
+                        <p><b>Long Trench Coat Jacket</b></p>
+                            <p>LKR 13,500.00</p>
                         <a><button>ADD TO CART</button></a>
                     </div>
             </div>
             <div class="card">
                 <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/ms9.jpeg" style="width:253px; height: 350px;"></div>
+                <div  class="cardh"><img alt="" src="img/mj9.jpeg" style="width:253px; height: 350px;"></div>
                 </div>
                     <div class="card-body">
-                        <p><b>Denim Casual Short</b></p>
-                            <p>LKR 5,000.00</p>
+                        <p><b>Casual Light Green Jacket</b></p>
+                            <p>LKR 8,000.00</p>
                         <a><button>ADD TO CART</button></a>
                     </div>
             </div>
