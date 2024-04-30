@@ -211,6 +211,7 @@
         
         
          <%-- footer --%>
+         
         <%@include file="all_component/footer.jsp" %>
         <%-- footer end --%>
         
