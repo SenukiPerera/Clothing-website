@@ -23,7 +23,7 @@
                 display: flex;
             }
             .about-content{
-                color: white;
+                color: #fff;
                 font-weight: 300;
                 width: 60%;
                 align-items: center;
@@ -37,6 +37,7 @@
             }
             .about-content p{
                 padding-top: 10px;
+                color:#fff;
             }
             .discover{
                 padding-top: 15px;
@@ -87,9 +88,11 @@
             }
             .img-container h4{
                 font-size: 20px;
+                color: #FFF;
             }
             .img-container p{
                 font-size: 14px;
+                color: #FFF;
             }
             
             @media (max-width: 991px){
