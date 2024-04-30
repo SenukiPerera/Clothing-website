@@ -1,20 +1,30 @@
 <%-- 
-    Document   : oders
-    Created on : 27/04/2024, 6:48:15 PM
+    Document   : userlist
+    Created on : 01/05/2024, 1:06:29 AM
     Author     : User
 --%>
 
+<%@page import="com.entity.users"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="comDAO.ItemDAOImpl"%>
+<%@page import="java.util.List"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="com.DB.DBConnect"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Oders</title>
+        <title>Users</title>
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="navbar.css">
         
         <%@include file="allCss.jsp" %>
-        
         <style>
             .table-container{
                 padding: 40px 80px;
@@ -65,13 +75,7 @@
                </a>
                <span class="tooltip">Orders</span>
              </li>
-             <li class="list">
-               <a href="#">
-                 <i class='bx bx-heart' ></i>
-                 <span class="links_name">Reviews</span>
-               </a>
-               <span class="tooltip">Reviews</span>
-             </li>
+            
              <li class="list">
                <a href="userlist.jsp">
                  <i class='bx bx-user' ></i>
@@ -101,52 +105,49 @@
         <%-- nav bar end--%>
         <%-- content--%>
         <section class="home-section">
-            <div class="text">Oders</div>
+            <div class="text">All Items</div>
+            <%--
+                            <% 
+                                Connection conn = DBConnect.getConn();
+                                out.println(conn);
+                            %>
+               --%>             
+               
+              
+               
+               
             <div class="table-container">
                 <table class="table table-striped">
                     <thead style="background-color: #193E29; color: white;" >
                       <tr>
-                        <th scope="col">Oder ID</th>
-                        <th scope="col">Name</th>
+                        <th scope="col">Username</th>
                         <th scope="col">Email</th>
                         <th scope="col">Contact Number</th>
-                        <th scope="col">Item Name</th>
-                        <th scope="col">Size</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Payment Method</th>
+                        <th scope="col">Password</th>
+                        
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row">0001</th>
-                        <td>Senuki</td>
-                        <td>abc@gmail.com</td>
-                        <td>0123456789</td>
-                        <td>Cargo Pant</td>
-                        <td>M</td>
-                        <td>Rs.5000</td>
-                        <td>COD</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">0002</th>
-                        <td>Senuki</td>
-                        <td>abc@gmail.com</td>
-                        <td>0123456789</td>
-                        <td>Cargo Pant</td>
-                        <td>M</td>
-                        <td>Rs.5000</td>
-                        <td>COD</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">0003</th>
-                        <td>Senuki</td>
-                        <td>abc@gmail.com</td>
-                        <td>0123456789</td>
-                        <td>Cargo Pant</td>
-                        <td>M</td>
-                        <td>Rs.5000</td>
-                        <td>COD</td>
-                      </tr>
+                            
+                     
+                                 
+                       <%
+                       ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                       List<users> list = dao.getUsers();
+                       for(users u:list){
+                       %>
+                        <tr>
+                            <td><%=u.getFname()%></td>
+                            <td><%=u.getEmail()%></td>
+                            <td><%=u.getPhone()%></td>
+                            <td><%=u.getPassword()%></td>
+                            
+                        </tr>
+                        <%
+                       }
+                       %>
+                        
+                        
                     </tbody>
                 </table>
             </div>
@@ -179,3 +180,4 @@
         </script>
     </body>
 </html>
+
