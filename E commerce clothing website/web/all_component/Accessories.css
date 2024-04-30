@@ -148,7 +148,9 @@ header {
                 display: flex;
                 margin: 5%;
             }
-            
+            .container .card .card-body p{
+                color: black;
+            }
             .card-body p {
                 color: #000000; /* Black text color for paragraph tags */
             }

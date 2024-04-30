@@ -4,6 +4,11 @@
     Author     : Ruwanthi
 --%>
 
+<%@page import="com.DB.DBConnect"%>
+<%@page import="java.util.List"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="comDAO.ItemDAOImpl"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -53,6 +58,7 @@
                 transform: scale(1.05); 
                 cursor: pointer;
             }
+            /*
             .L-T-1
             {
                 background-image: url('img/L-T-1.jpg');
@@ -86,6 +92,7 @@
             {
                 background-image: url('img/L-T-8.jpg');  
             }
+            */
             .button-container{
                 display: flex;
                 justify-content: center;
@@ -123,6 +130,7 @@
         <%-- nav bar end --%>
         
           <section class="container-1">
+<<<<<<< HEAD
            
             <div class="card">
                 <div class="card-image L-T-1">
@@ -135,6 +143,29 @@
                 </div>
             </div>
                    
+=======
+            <table>
+                <tr>
+                    <td>
+                       <%--for admin page --%>
+                        <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list = dao.getWomenTshirt();
+                       for(ItemDetails i:list){ %>
+                            <div class="card">
+                                <div class="card-image L-T-1">
+                                     <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
+                                </div>
+                                <p class="title"><%=i.getItem_name()%></p>
+                                <p class="price"><%=i.getPrice()%></p>
+                                <div class="button-container">
+                                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
+                                </div>
+                            </div>
+             <%}
+                       %>
+                    </td>
+                    <td>
+>>>>>>> c1a953d7f96b7fe60d46c1a5268e05f01e4b0717
             <div class="card">
                 <div class="card-image L-T-2">
                    </div>
