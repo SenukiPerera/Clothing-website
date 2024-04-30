@@ -24,7 +24,7 @@
                 width: 253px;
                 height: 550px;
                 border: none;
-                margin: 15px;
+                margin: 18px;
             }
             .card-body button{
                 color: white;
@@ -68,14 +68,14 @@
                 color: black;
             }
             .row{
-                    display: block;
-                    align-items: center;
-                    justify-content: center;
+                display: block;
+                align-items: center;
+                justify-content: center;
             }
-            h3{
-                margin: 5%;
+            h2{
                 font-weight: bolder;
                 color: #193E29;
+                text-align: center;
             }
         </style>
         <%@include file="all_component/allCss.jsp" %>
@@ -85,8 +85,21 @@
         
         <%-- card 1 start--%>
         <div class="container">
-        <h3 class="text-center">T-SHIRTS</h3>
+        <h2>T-SHIRTS</h2>
+        <br>
         <div class="row">
+<<<<<<< HEAD
+            <div class="card">
+                <div class="card-img">
+                <div  class="cardh"><img alt="" src="img/mt6.jpeg" style="width:253px; height: 350px;"></div>
+                </div>
+                    <div class="card-body">
+                        <p><b>White Color Small Printed Tshirt</b></p>
+                        <p>LKR 3,650.00</p>
+                        <a><button>ADD TO CART</button></a>
+                    </div>
+            </div>
+=======
             
             <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
                        List<ItemDetails> list = dao.getMenTshirt();
@@ -106,6 +119,7 @@
              <%}
                        %>
             
+>>>>>>> 244fc7e2d22c5c62f213c2adacf513a19e30287f
             
             <div class="card">
                 <div class="card-img">
@@ -114,7 +128,7 @@
                         <div class="card-body">
                             <p style="font-weight:bold;">Cotton Printed Tee & Waist Shorts</p>
                             <p>LKR 5,450.00</p>
-                        <a><button class="btn-cart">ADD TO CART</button></a>
+                        <a><button>ADD TO CART</button></a>
                     </div>
             </div>
             
@@ -125,7 +139,7 @@
                     <div class="card-body">
                         <p style="font-weight:bold;">Men Colourblock Tee & Track Shorts</p>
                             <p>LKR 7,350.00</p>
-                        <a><button class="btn-cart">ADD TO CART</button></a>
+                        <a><button>ADD TO CART</button></a>
                     </div>
             </div>
             
@@ -136,10 +150,14 @@
                     <div class="card-body">
                         <p style="font-weight:bold;">Men Drop Shoulder Colorblock Tee</p>
                             <p>LKR 5,650.00</p>
-                        <a><button class="btn-cart">ADD TO CART</button></a>
+                        <a><button>ADD TO CART</button></a>
                     </div>
             </div>
-            
+        </div>
+        
+        <br><br>
+        
+        <div class="row">
             <div class="card">
                 <div class="card-img">
                 <div  class="cardh"><img alt="" src="img/lc11.jpg" style="width:253px; height: 350px;"></div>
@@ -147,7 +165,7 @@
                     <div class="card-body">
                         <p style="font-weight:bold;">Men Letter Graphic Contrast Trim Tshirt</p>
                             <p>LKR 5,000.00</p>
-                        <a><button class="btn-cart">ADD TO CART</button></a>
+                        <a><button>ADD TO CART</button></a>
                     </div>
             </div>
             
@@ -158,7 +176,7 @@
                     <div class="card-body">
                         <p style="font-weight:bold;">Casual Printed with Short Sleeve Tshirt</p>
                             <p>LKR 4,600.00</p>
-                        <a><button class="btn-cart">ADD TO CART</button></a>
+                        <a><button>ADD TO CART</button></a>
                     </div>
             </div>
             
@@ -169,7 +187,7 @@
                     <div class="card-body">
                         <p style="font-weight:bold;">Summer Loose Fit Cotton Printed Tshirt</p>
                             <p>LKR 4,800.00</p>
-                        <a><button class="btn-cart">ADD TO CART</button></a>
+                        <a><button>ADD TO CART</button></a>
                     </div>
             </div>
             <div class="card">
@@ -179,7 +197,7 @@
                     <div class="card-body">
                         <p style="font-weight:bold;">PARIS Print Tee & Waist Shorts</p>
                             <p>LKR 5,000.00</p>
-                        <a><button class="btn-cart">ADD TO CART</button></a>
+                        <a><button>ADD TO CART</button></a>
                     </div>
             </div>
         </div>
