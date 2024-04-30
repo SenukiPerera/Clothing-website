@@ -105,13 +105,7 @@
                </a>
                <span class="tooltip">Orders</span>
              </li>
-             <li class="list">
-               <a href="#">
-                 <i class='bx bx-heart' ></i>
-                 <span class="links_name">Reviews</span>
-               </a>
-               <span class="tooltip">Reviews</span>
-             </li>
+             
              <li class="list">
                <a href="#">
                  <i class='bx bx-user' ></i>
