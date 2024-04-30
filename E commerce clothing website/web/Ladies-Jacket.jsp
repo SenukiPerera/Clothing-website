@@ -1,23 +1,15 @@
 <%-- 
-    Document   : Ladies_t-shirt.jsp
-    Created on : Apr 28, 2024, 9:14:14 PM
+    Document   : Ladies-Jacket
+    Created on : Apr 30, 2024, 10:42:57 AM
     Author     : Ruwanthi
 --%>
 
-<%@page import="com.DB.DBConnect"%>
-<%@page import="java.util.List"%>
-<%@page import="com.entity.ItemDetails"%>
-<%@page import="com.entity.ItemDetails"%>
-<%@page import="comDAO.ItemDAOImpl"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <title>Ladies T-Shirt</title>
-        
+        <title>Ladies Jacket</title>
          <style>
             
            
@@ -58,41 +50,39 @@
                 transform: scale(1.05); 
                 cursor: pointer;
             }
-            
             .L-T-1
             {
-                background-image: url('img/L-T-1.jpg');
+                background-image: url('img/L-J-1.jpg');
             }
             .L-T-2
             {
-               background-image: url('img/L-T-2.jpg'); 
+               background-image: url('img/L-J-2.jpg'); 
             }
             .L-T-3
             {
-               background-image: url('img/L-T-3.jpg'); 
+               background-image: url('img/L-J-3.jpg'); 
   
             }
             .L-T-4
             {
-               background-image: url('img/L-T-4.jpg');  
+               background-image: url('img/L-J-4.jpg');  
             }
             .L-T-5
             {
-                background-image: url('img/L-T-5.jpg');  
+                background-image: url('img/L-J-5.jpg');  
             }
             .L-T-6
             {
-                background-image: url('img/L-T-6.jpg');  
+                background-image: url('img/L-J-6.jpg');  
             }
             .L-T-7
             {
-                background-image: url('img/L-T-7.jpg');  
+                background-image: url('img/L-J-7.jpg');  
             }
             .L-T-8
             {
-                background-image: url('img/L-T-8.jpg');  
+                background-image: url('img/L-J-8.jpg');  
             }
-            
             .button-container{
                 display: flex;
                 justify-content: center;
@@ -121,56 +111,31 @@
             
             </style>
     </head>
-    
     <body>
-         <%@include file="all_component/allCss.jsp" %>
+          <%@include file="all_component/allCss.jsp" %>
         
         <%-- nav bar --%>
         <%@include file="all_component/navbar.jsp" %>
         <%-- nav bar end --%>
         
           <section class="container-1">
-<<<<<<< HEAD
-           
+            
             <div class="card">
                 <div class="card-image L-T-1">
                     
                 </div>
-                <p class="title">Cotton-Printed Pink T-Shirt</p>
-                <p class="price">LKR 2700.00</p>
+                <p class="title">Flax Blend Dark-Blue Belly Tight Crop-Top</p>
+                <p class="price">LKR 3500.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
             </div>
-                   
-=======
-            <table>
-                <tr>
-                    <td>
-                       <%--for admin page --%>
-                        <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
-                       List<ItemDetails> list = dao.getWomenTshirt();
-                       for(ItemDetails i:list){ %>
-                            <div class="card">
-                                <div class="card-image L-T-1">
-                                     <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
-                                </div>
-                                <p class="title"><%=i.getItem_name()%></p>
-                                <p class="price"><%=i.getPrice()%></p>
-                                <div class="button-container">
-                                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
-                                </div>
-                            </div>
-             <%}
-                       %>
-                    </td>
-                    <td>
->>>>>>> c1a953d7f96b7fe60d46c1a5268e05f01e4b0717
+                    
             <div class="card">
                 <div class="card-image L-T-2">
                    </div>
-                <p class="title">Pima Cotton-Printed White Tee</p>
-                <p class="price">LKR 3000.00</p>
+                <p class="title">Viscose Dark-Green Long-Sleeve Crop-Top</p>
+                <p class="price">LKR 4000.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
@@ -178,31 +143,32 @@
                    
             <div class="card">
                 <div class="card-image L-T-3"></div>
-                <p class="title">Brown Long Sleeve Off-Shoulder</p>
-                <p class="price">LKR 5300.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
-                </div>
-            </div>
-                   
-            <div class="card">
-                <div class="card-image L-T-4">
-                    
-                </div>
-                <p class="title">Ringspun cotton Long Sleeve dark Green Tee</p>
+                <p class="title">Cotton White Bloom-Hand Crop-Top</p>
                 <p class="price">LKR 4700.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
             </div>
-           
+                    
+            <div class="card">
+                <div class="card-image L-T-4">
+                    
+                </div>
+                <p class="title">Flax Blend Tank Red Crop-Top</p>
+                <p class="price">LKR 3000.00</p>
+                <div class="button-container">
+                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
+                </div>
+            </div>
+                   
+            
             </section>
         <section class="container-2">
-            
+           
             <div class="card">
                 <div class="card-image L-T-5"></div>
-                <p class="title">Slub Cotton Zebra-Pattern Print Tee</p>
-                <p class="price">LKR 4800.00</p>
+                <p class="title">Syntetic Micro-Fiber Long-Sleeve Crop-Top</p>
+                <p class="price">LKR 5700.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
@@ -210,8 +176,8 @@
               
             <div class="card">
                 <div class="card-image L-T-6"></div>
-                <p class="title">Linen-Over-Size Black T-Shirt</p>
-                <p class="price">LKR 3200.00</p>
+                <p class="title">Linen V-Neck Floral Blue Crop-Top</p>
+                <p class="price">LKR 3500.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
@@ -219,24 +185,24 @@
                
             <div class="card">
                 <div class="card-image L-T-7"></div>
-                <p class="title">Long Sleeve Floral-V-Neck Tee</p>
-                <p class="price">LKR 3000.00</p>
+                <p class="title">Flax Blend High Neck Red Crop-Top</p>
+                <p class="price">LKR 4100.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
                 </div>
             </div>
-               
+                
             <div class="card">
                 <div class="card-image L-T-8">
                     
                 </div>
-                <p class="title">Cotton Blue High Neck Tee</p>
-                <p class="price">LKR 3800.00</p>
+                <p class="title">Modal Blend Long-Sleeve Dark Green Crop-Top</p>
+                <p class="price">LKR 4000.00</p>
                 <div class="button-container">
                 <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
                 </div>
             </div>
-                    
+                   
          </section>
             
             
@@ -246,5 +212,7 @@
          <%-- footer --%>
         <%@include file="all_component/footer.jsp" %>
         <%-- footer end --%>
+        
+        
     </body>
 </html>
