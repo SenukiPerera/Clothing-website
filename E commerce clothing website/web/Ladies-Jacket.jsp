@@ -124,29 +124,29 @@
                 <div class="card-image L-T-1">
                     
                 </div>
-                <p class="title">Flax Blend Dark-Blue Belly Tight Crop-Top</p>
-                <p class="price">LKR 3500.00</p>
+                <p class="title">Velvet Frot-Pocket Black Jacket</p>
+                <p class="price">LKR 7,000.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
                 </div>
             </div>
                     
             <div class="card">
                 <div class="card-image L-T-2">
                    </div>
-                <p class="title">Viscose Dark-Green Long-Sleeve Crop-Top</p>
-                <p class="price">LKR 4000.00</p>
+                <p class="title">Elegant Double-Breasted Purple Jacket</p>
+                <p class="price">LKR 12,000.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
                 </div>
             </div>
                    
             <div class="card">
                 <div class="card-image L-T-3"></div>
-                <p class="title">Cotton White Bloom-Hand Crop-Top</p>
-                <p class="price">LKR 4700.00</p>
+                <p class="title">Olivia Mark - Floral Print Long Sleeve Blazer </p>
+                <p class="price">LKR 13,000.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
                 </div>
             </div>
                     
@@ -154,10 +154,10 @@
                 <div class="card-image L-T-4">
                     
                 </div>
-                <p class="title">Flax Blend Tank Red Crop-Top</p>
-                <p class="price">LKR 3000.00</p>
+                <p class="title">Denim Long-Sleeve Dark-Blue jacket</p>
+                <p class="price">LKR 7,500.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
                 </div>
             </div>
                    
@@ -167,28 +167,28 @@
            
             <div class="card">
                 <div class="card-image L-T-5"></div>
-                <p class="title">Syntetic Micro-Fiber Long-Sleeve Crop-Top</p>
-                <p class="price">LKR 5700.00</p>
+                <p class="title">Denim Powder-White jacket</p>
+                <p class="price">LKR 4,800.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
                 </div>
             </div>
               
             <div class="card">
                 <div class="card-image L-T-6"></div>
-                <p class="title">Linen V-Neck Floral Blue Crop-Top</p>
-                <p class="price">LKR 3500.00</p>
+                <p class="title">Solid Open Front Crop Black Overcoat</p>
+                <p class="price">LKR 6,500.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
                 </div>
             </div>
                
             <div class="card">
                 <div class="card-image L-T-7"></div>
-                <p class="title">Flax Blend High Neck Red Crop-Top</p>
-                <p class="price">LKR 4100.00</p>
+                <p class="title">Allover White Floral Crop Jacket</p>
+                <p class="price">LKR 5,100.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
                 </div>
             </div>
                 
@@ -196,10 +196,10 @@
                 <div class="card-image L-T-8">
                     
                 </div>
-                <p class="title">Modal Blend Long-Sleeve Dark Green Crop-Top</p>
-                <p class="price">LKR 4000.00</p>
+                <p class="title">Spring Contrast Color Long Sleeve Zipper Jacket</p>
+                <p class="price">LKR 9,000.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
                 </div>
             </div>
                    

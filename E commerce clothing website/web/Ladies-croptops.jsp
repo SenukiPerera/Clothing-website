@@ -127,7 +127,7 @@
                 <p class="title">Flax Blend Dark-Blue Belly Tight Crop-Top</p>
                 <p class="price">LKR 3500.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
                 </div>
             </div>
                     
@@ -137,7 +137,7 @@
                 <p class="title">Viscose Dark-Green Long-Sleeve Crop-Top</p>
                 <p class="price">LKR 4000.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
                 </div>
             </div>
                    
@@ -146,7 +146,7 @@
                 <p class="title">Cotton White Bloom-Hand Crop-Top</p>
                 <p class="price">LKR 4700.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
                 </div>
             </div>
                     
@@ -157,7 +157,7 @@
                 <p class="title">Flax Blend Tank Red Crop-Top</p>
                 <p class="price">LKR 3000.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
                 </div>
             </div>
                    
@@ -170,7 +170,7 @@
                 <p class="title">Syntetic Micro-Fiber Long-Sleeve Crop-Top</p>
                 <p class="price">LKR 5700.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
                 </div>
             </div>
               
@@ -179,7 +179,7 @@
                 <p class="title">Linen V-Neck Floral Blue Crop-Top</p>
                 <p class="price">LKR 3500.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
                 </div>
             </div>
                
@@ -188,7 +188,7 @@
                 <p class="title">Flax Blend High Neck Red Crop-Top</p>
                 <p class="price">LKR 4100.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
                 </div>
             </div>
                 
@@ -199,7 +199,7 @@
                 <p class="title">Modal Blend Long-Sleeve Dark Green Crop-Top</p>
                 <p class="price">LKR 4000.00</p>
                 <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >SHOP NOW</button>
+                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
                 </div>
             </div>
                    
