@@ -8,6 +8,7 @@
     Author     : Hp
 --%>
 
+<%@page import="java.sql.Connection"%>
 <%@page import="java.util.List"%>
 <%@page import="com.entity.ItemDetails"%>
 <%@page import="com.DB.DBConnect"%>
