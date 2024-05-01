@@ -98,7 +98,7 @@
                 <div  class="cardh"><img alt="" src="img/ms3.jpeg" style="width:253px; height: 350px;"></div>
                 </div>
                         <div class="card-body">
-                            <p><b>Black Color Casual Jacket</b></p>
+                            <p><b>Black Color Casual Short</b></p>
                             <p>LKR 3,450.00</p>
                         <a><button>ADD TO CART</button></a>
                     </div>
