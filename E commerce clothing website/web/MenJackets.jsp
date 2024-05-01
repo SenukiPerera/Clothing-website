@@ -4,6 +4,11 @@
     Author     : Nimsara
 --%>
 
+<%@page import="com.DB.DBConnect"%>
+<%@page import="java.util.List"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="comDAO.ItemDAOImpl"%>
+<%@page import="comDAO.ItemDAOImpl"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -82,97 +87,26 @@
         <h2>JACKETS</h2>
         <br>
         <div class="row">
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mj2.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                    <div class="card-body">
-                        <p><b>White Color Casual Jacket</b></p>
-                        <p>LKR 11,650.00</p>
-                        <a><button>ADD TO CART</button></a>
-                    </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mj3.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                        <div class="card-body">
-                            <p><b>Cotton Casual Jacket</b></p>
-                            <p>LKR 9,450.00</p>
-                        <a><button>ADD TO CART</button></a>
-                    </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mj4.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                    <div class="card-body">
-                        <p><b>Black Lether Casual Jacket</b></p>
-                            <p>LKR 2,900.00</p>
-                        <a><button>ADD TO CART</button></a>
-                    </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mj5.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                    <div class="card-body">
-                        <p><b>Black Casual Jacket</b></p>
-                            <p>LKR 9,900.00</p>
-                        <a><button>ADD TO CART</button></a>
-                    </div>
-            </div>
+            <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list = dao.getMenJackets();
+                       for(ItemDetails i:list){ %>
+                       
+                            <div class="card">
+                                <div class="card-img">
+                                <div  class="cardh"><img alt="" src="items/<%=i.getPhoto()%>" style="width:253px; height: 350px;"></div>
+                                </div>
+                                    <div class="card-body">
+                                        <p style="font-weight:bold;"><%=i.getItem_name()%></p>
+                                        <p><%=i.getPrice()%></p>
+                                        <a><button class="btn-cart">ADD TO CART</button></a>
+                                    </div>
+                            </div>
+                            
+             <%}
+                       %>
         </div>
         
-        <br><br>
         
-        <div class="row">
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mj6.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                    <div class="card-body">
-                        <p><b>Denim Casual Jacket</b></p>
-                            <p>LKR 10,500.00</p>
-                        <a><button>ADD TO CART</button></a>
-                    </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mj7.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                    <div class="card-body">
-                        <p><b>Dark Green Casual Jacket</b></p>
-                            <p>LKR 8,200.00</p>
-                        <a><button>ADD TO CART</button></a>
-                    </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mj8.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                    <div class="card-body">
-                        <p><b>Long Trench Coat Jacket</b></p>
-                            <p>LKR 13,500.00</p>
-                        <a><button>ADD TO CART</button></a>
-                    </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mj9.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                    <div class="card-body">
-                        <p><b>Casual Light Green Jacket</b></p>
-                            <p>LKR 8,000.00</p>
-                        <a><button>ADD TO CART</button></a>
-                    </div>
-            </div>
-        </div>
         </div>
         
         <%-- footer --%>

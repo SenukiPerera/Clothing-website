@@ -123,6 +123,7 @@
                <span class="tooltip">User</span>
              </li>
              
+             
              <li class="profile">
                  
                  <a href="../index.jsp"><i class='bx bx-log-out' id="log_out" ></i></a>

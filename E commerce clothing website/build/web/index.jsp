@@ -48,6 +48,11 @@
                 padding-left: 10%;
                 padding-top: 75%;   
             }
+            .content-one h1, 
+            .content-two h1,
+            .first-content p{
+                color: #fff;
+            }
             .first-girl-img{
                 background: url(img/wfimg2.jpg);
                 width: 60%;

@@ -59,4 +59,6 @@ public interface ItemDAO {
      public List<ItemDetails> getShoes();
      
      public List<users> getUsers();
+     
+     
 }

@@ -19,70 +19,67 @@
         <title>Ladies T-Shirt</title>
         
          <style>
-            
-           
-            
-            .container-1
-            {
-               display: flex;
-               justify-content: center;
-               padding-top: 10%;
-               flex-wrap: wrap;
+            body{
+                padding-top: 150px;
             }
-            
-            .card
-            {
-                background-color: white;
+            .card{
                 width: 253px;
                 height: 550px;
-                color: black;
-                margin:50px;
-                border: none !important;
-                
-                
+                border: none;
+                margin: 18px;
             }
-            .card-image
-            {
-                background-color: green;
-                height: 350px;
-                margin-bottom: 20px;
-                background-size: cover;
-                transition: transform 0.5s;
+            .card-body button{
+                color: white;
+                border: 1px solid white;
+                border-radius: 50px;
+                cursor: pointer;
+                position: relative;
+                height: 40px;
+                width: 200px;
+                font-size: 16px;
+                font-family: Inter;
+                font-weight: 700;
+                word-wrap: break-word;
+                background: #193E29;
+                font-family: 'Montserrat', sans-serif;
+                margin-top: 20px;
             }
-            .card:hover .card-image {
-                transform: scale(1.05); 
+            .card-img{
+                overflow: hidden;
+                position: relative;
+                display: inline-block;
                 cursor: pointer;
             }
+            .cardh{
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+                transition: all 1.1s;
+            }
+            .card-img:hover .cardh{
+                transform: scale(1.2);
+            }
+            .card-body button:hover{
+                background: transparent;
+                color: #193E29;
+                border: 1px solid #193E29;
+            }
             
-            
-            
-            .button-container{
-                display: flex;
+            .card p{
+                text-align: center;
+                color: black;
+            }
+            .row{
+                display: block;
+                align-items: center;
                 justify-content: center;
-                align-items: center;
             }
-            button
-            {
-                width: 200px;
-                height: 45px;
-                background-color: #193E29;
-                color: white;
-                font-weight: bold;
-                align-items: center;
+            h2{
+                font-weight: bolder;
+                color: #193E29;
+                text-align: center;
             }
-            .title,.price,button
-            {
-              text-align:  center;  
-            }
-            .title
-            {
-                font-weight: bold;
-                font-size: 20px;
-                color:black;
-            }
-            
-            
-            </style>
+        </style>
     </head>
     
     <body>
@@ -92,29 +89,35 @@
         <%@include file="all_component/navbar.jsp" %>
         <%-- nav bar end --%>
         
-        <div class="container-1">
-            <h3 class="text-center">WOMEN'S TSHIRTS</h3>
-            <div class="row">
-                
-                    
-                    <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+       <div class="container">
+        <h2>T-SHIRTS</h2>
+        <br>
+        <div class="row">
+
+           
+            
+            <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
                        List<ItemDetails> list = dao.getWomenTshirt();
                        for(ItemDetails i:list){ %>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
-                                    <div class="card-body text-center ">
+                       
+                            <div class="card">
+                                <div class="card-img">
+                                <div  class="cardh"><img alt="" src="items/<%=i.getPhoto()%>" style="width:253px; height: 350px;"></div>
+                                </div>
+                                    <div class="card-body">
                                         <p style="font-weight:bold;"><%=i.getItem_name()%></p>
                                         <p><%=i.getPrice()%></p>
-                                        <a><button class="btn-cart">QUICK ADD</button></a>
+                                        <a><button class="btn-cart">ADD TO CART</button></a>
                                     </div>
-                                </div>
                             </div>
                             
              <%}
                        %>
-               
-            </div>
+            
+
+            
+           
+        </div>
         </div>
             
        

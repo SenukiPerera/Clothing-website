@@ -4,6 +4,11 @@
     Author     : Nimsara
 --%>
 
+<%@page import="com.DB.DBConnect"%>
+<%@page import="java.util.List"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="comDAO.ItemDAOImpl"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -82,97 +87,26 @@
         <h2>PANTS</h2>
         <br>
         <div class="row">
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mp2.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                    <div class="card-body">
-                        <p><b>Dark Green Cargo Pant</b></p>
-                        <p>LKR 9,650.00</p>
-                        <a><button>ADD TO CART</button></a>
-                    </div>
-            </div>
+            <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list = dao.getMenPants();
+                       for(ItemDetails i:list){ %>
+                       
+                            <div class="card">
+                                <div class="card-img">
+                                <div  class="cardh"><img alt="" src="items/<%=i.getPhoto()%>" style="width:253px; height: 350px;"></div>
+                                </div>
+                                    <div class="card-body">
+                                        <p style="font-weight:bold;"><%=i.getItem_name()%></p>
+                                        <p><%=i.getPrice()%></p>
+                                        <a><button class="btn-cart">ADD TO CART</button></a>
+                                    </div>
+                            </div>
+                            
+             <%}
+                       %>
             
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mp3.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                        <div class="card-body">
-                            <p><b>Casual Patch Denim</b></p>
-                            <p>LKR 7,450.00</p>
-                        <a><button>ADD TO CART</button></a>
-                    </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mp4.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                    <div class="card-body">
-                        <p><b>Casual Cotton Pant</b></p>
-                            <p>LKR 7,350.00</p>
-                        <a><button>ADD TO CART</button></a>
-                    </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mp5.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                    <div class="card-body">
-                        <p><b>Black Color Casual Pant</b></p>
-                            <p>LKR 6,900.00</p>
-                        <a><button>ADD TO CART</button></a>
-                    </div>
-            </div>
         </div>
         
-        <br><br>
-        
-        <div class="row">
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mp6.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                    <div class="card-body">
-                        <p><b>Dennim Casual Pant</b></p>
-                            <p>LKR 9,500.00</p>
-                        <a><button>ADD TO CART</button></a>
-                    </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mp7.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                    <div class="card-body">
-                        <p><b>White Color Casual Pant</b></p>
-                            <p>LKR 7,600.00</p>
-                        <a><button>ADD TO CART</button></a>
-                    </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mp8.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                    <div class="card-body">
-                        <p><b>Linnen Cargo Pant</b></p>
-                            <p>LKR 7,800.00</p>
-                        <a><button>ADD TO CART</button></a>
-                    </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mp9.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                    <div class="card-body">
-                        <p><b>Gray Color Cargo Pant</b></p>
-                            <p>LKR 8,000.00</p>
-                        <a><button>ADD TO CART</button></a>
-                    </div>
-            </div>
-        </div>
         </div>
         
         <%-- footer --%>

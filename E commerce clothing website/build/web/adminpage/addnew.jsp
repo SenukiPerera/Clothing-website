@@ -4,6 +4,10 @@
     Author     : User
 --%>
 
+<%@page import="com.DB.DBConnect"%>
+<%@page import="java.util.List"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="comDAO.ItemDAOImpl"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page isELIgnored="false" %>
@@ -57,6 +61,13 @@
                 color: #193E29;
                 border: 2px solid #193E29;
             }
+            
+            .card{
+                background: transparent;
+                width: 400px;
+                border: none;
+            }
+            
             @media(max-width: 574px){
                 .form-container{
                     padding: 40px 50px;
@@ -204,13 +215,19 @@
             </div>
             <%-- first div image end--%>
             <%-- first div image--%>
-            <div class="first-girl-img">
-                 <div class="content-two">
-                    <h1>SHOP WOMENS</h1>
-                    <div class="discover">
-                        <a href="ladies.jsp"><button class="btn">SHOP NOW</button></a>
-                    </div>
-                </div>
+             <div class="form-container">
+                 
+                   <div class="form-data">
+                       <div class="item-image">
+                           <div class="col-md-3">
+                                <div class="card">
+                                    <img alt="" src="../items/limg.jpg" style="width:400px; height: 400px;" class="img-thumblin">
+                                    
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                
              </div>
             <%-- first div image end--%>
         </div>

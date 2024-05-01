@@ -89,17 +89,7 @@
         <br>
         <div class="row">
 
-            <div class="card">
-                <div class="card-img">
-                <div  class="cardh"><img alt="" src="img/mt6.jpeg" style="width:253px; height: 350px;"></div>
-                </div>
-                    <div class="card-body">
-                        <p><b>White Color Small Printed Tshirt</b></p>
-                        <p>LKR 3,650.00</p>
-                        <a><button>ADD TO CART</button></a>
-                    </div>
-            </div>
-
+           
             
             <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
                        List<ItemDetails> list = dao.getMenTshirt();
