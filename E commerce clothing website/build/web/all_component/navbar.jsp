@@ -72,7 +72,7 @@
               <a class="nav-link disabled" href="Login.jsp"><box-icon name='user-circle'  color='#ffffff' ></box-icon></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="cart.jsp"><box-icon name='cart-alt' color='#ffffff'></box-icon></a>
+              <a class="nav-link disabled" href="cartlog.jsp"><box-icon name='cart-alt' color='#ffffff'></box-icon></a>
             </li>
           </ul>
       </div>
