@@ -90,6 +90,51 @@
         <h2>JACKETS</h2>
         <br>
         <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/L-J-7.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Allover White Floral Crop Jacket</p>
+                                            <p>LKR 3,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/L-J-6.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Solid Open Front Crop Black Overcoat</p>
+                                            <p>LKR 6,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/L-J-5.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Denim Powder-White jacket</p>
+                                            <p>LKR 5,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/L-J-3.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Velvet Frot-Pocket Black Jacket</p>
+                                            <p>LKR 6,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+                <br><br>
+        <div class="row">
 
            
             
@@ -104,7 +149,7 @@
                                     <div class="card-body">
                                         <p style="font-weight:bold;"><%=i.getItem_name()%></p>
                                         <p><%=i.getPrice()%></p>
-                                        <a><button class="btn-cart">ADD TO CART</button></a>
+                                        <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                     </div>
                             </div>
                             

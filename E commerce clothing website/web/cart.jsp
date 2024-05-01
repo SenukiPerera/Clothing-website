@@ -4,6 +4,7 @@
     Author     : WCT
 --%>
 
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -173,6 +174,7 @@ table {
 }
         </style>
         
+        
           <%@include file="all_component/navbar.jsp" %>
         <%@include file="all_component/allCss.jsp" %>
     </head>
@@ -191,6 +193,7 @@ table {
     </tr>
   </thead>
   <tbody>
+      
     <tr>
       <td class="td1" rowspan="1"> 
         <div class="ix">
@@ -211,7 +214,7 @@ table {
         <span class="minus">-</span>
         <span class="number">1</span>
         <span class="plus">+</span>
-      </div> <p class="remo"><button type="reset">Remove</button></p></td>
+          </div> <p class="remo"> <a href=""> Remove</a></p></td>
       <td class="td4"> LKR 5,650.00</td>
      
     </tr>

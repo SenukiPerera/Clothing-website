@@ -87,6 +87,51 @@
         <h2>SHORTS</h2>
         <br>
         <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/ms9.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Denim Casual Short</p>
+                                            <p>LKR 3,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/ms8.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">White Color Patch Short</p>
+                                            <p>LKR 6,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/ms7.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Light Blue Casual Short</p>
+                                            <p>LKR 5,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/ms6.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Brown Color Short</p>
+                                            <p>LKR 6,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+                <br><br>
+        <div class="row">
             <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
                        List<ItemDetails> list = dao.getMenShorts();
                        for(ItemDetails i:list){ %>
@@ -98,7 +143,7 @@
                                     <div class="card-body">
                                         <p style="font-weight:bold;"><%=i.getItem_name()%></p>
                                         <p><%=i.getPrice()%></p>
-                                        <a><button class="btn-cart">ADD TO CART</button></a>
+                                        <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                     </div>
                             </div>
                             

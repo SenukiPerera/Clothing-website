@@ -90,6 +90,51 @@
         <h2>CROP TOPS</h2>
         <br>
         <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/L-C-3.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">White V Neck Crop Top</p>
+                                            <p>LKR 3,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/L-C-8.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Modal Blend Long-Sleeve Dark Green Crop-Top</p>
+                                            <p>LKR 6,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/L-C-7.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Flax Blend High Neck Red Crop-Top</p>
+                                            <p>LKR 5,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/L-C-6.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Linen V-Neck Floral Blue Crop-Top</p>
+                                            <p>LKR 6,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+                <br><br>
+        <div class="row">
 
            
             
@@ -104,7 +149,7 @@
                                     <div class="card-body">
                                         <p style="font-weight:bold;"><%=i.getItem_name()%></p>
                                         <p><%=i.getPrice()%></p>
-                                        <a><button class="btn-cart">ADD TO CART</button></a>
+                                        <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                     </div>
                             </div>
                             

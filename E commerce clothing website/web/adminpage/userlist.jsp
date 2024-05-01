@@ -115,8 +115,6 @@
                       </tr>
                     </thead>
                     <tbody>
-                            
-                     
                                  
                        <%
                        ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());

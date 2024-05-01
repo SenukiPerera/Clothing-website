@@ -6,14 +6,18 @@
 package comDAO;
 
 import com.entity.ItemDetails;
+import com.entity.oders;
 import com.entity.users;
 import java.util.List;
+import javax.mail.FetchProfile;
 
 /**
  *
  * @author User
  */
 public interface ItemDAO {
+
+    
     
      public boolean addItems(ItemDetails i);
      
@@ -59,6 +63,10 @@ public interface ItemDAO {
      public List<ItemDetails> getShoes();
      
      public List<users> getUsers();
+     
+     public List<oders> getOderList();
+     
+     public List<ItemDetails> getItemBySearch(String ch);
      
      
 }
