@@ -13,7 +13,7 @@
     <style>
         body {
             background-color: #193E29;
-            color: #f5f5f5;
+            
             font-family: Arial, sans-serif; 
             margin: 0;
             padding: 30px;
@@ -22,6 +22,7 @@
         h1 {
             text-align: center;
             padding-top: 5%;
+            color: #FFF;
         }
 
         .help-container {
@@ -47,11 +48,13 @@
             font-weight: bold;
             margin-bottom: 5px;
             font-size: 18px;
+            color: #FFF;
         }
 
         .answer {
             margin-bottom: 20px;
             font-size: 14px;
+            color: #FFF;
         }
     </style>
 </head>

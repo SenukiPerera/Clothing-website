@@ -95,42 +95,9 @@
              <%}
                        %>
                 
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/bag2.jpg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p style="font-weight: bold;">Crossbody Bag</p>
-                            <p style="font-weight: bold;">Material: Faux Leather</p>
-                            <p>LKR 3,650.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
                 
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/bag5.jpg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p style="font-weight: bold;">Backpack</p>
-                            <p style="font-weight: bold;">Material: Vegan Leather</p>
-                            <p>LKR 4,000.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
                 
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/bag4.jpg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p style="font-weight: bold;">Clutch</p>
-                            <p style="font-weight: bold;">Material: Satin</p>
-                            <p>LKR 7,350.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+               
     </div>
     <br>
     
@@ -139,7 +106,7 @@
             <div class="row">
                 <% ItemDAOImpl dao2 = new ItemDAOImpl(DBConnect.getConn());
                        List<ItemDetails> list2 = dao.getShoes();
-                       for(ItemDetails i:list){ %>
+                       for(ItemDetails i:list2){ %>
                             <div class="col-md-3">
                                 <div class="card">
                                     <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
@@ -154,41 +121,10 @@
              <%}
                        %>
                 
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/shoes3.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p style="font-weight: bold;">Sandals</p>
-                            <p style="font-weight: bold;">Material: Synthetic</p>
-                            <p>LKR 2,650.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
+               
                 
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/shoes6.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p style="font-weight: bold;">Espadrilles</p>
-                            <p style="font-weight: bold;">Material: Canvas and Jute</p>
-                            <p>LKR 3,000.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
                 
-                <div class="col-md-3">
-                    <div class="card">
-                        <img alt="" src="img/shoes5.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
-                        <div class="card-body text-center ">
-                            <p style="font-weight: bold;">Heels</p>
-                            <p style="font-weight: bold;">Material: Leather and Fabric</p>
-                            <p>LKR 7,350.00</p>
-                            <a><button class="btn-cart">QUICK ADD</button></a>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
     </div>
 

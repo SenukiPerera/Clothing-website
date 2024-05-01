@@ -139,9 +139,6 @@ public final class contactus_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                flex-direction: column;\r\n");
       out.write("                font-weight: 300;\r\n");
       out.write("            }\r\n");
-      out.write("            .contact-container .contactInfo .box .text p{ \r\n");
-      out.write("                color: #fff;\r\n");
-      out.write("            }\r\n");
       out.write("            .contact-container .contactInfo .box .text h3{\r\n");
       out.write("                font-weight: 500;\r\n");
       out.write("                color:#ffff;\r\n");
@@ -199,7 +196,6 @@ public final class contactus_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                outline: none;\r\n");
       out.write("                resize: none;\r\n");
       out.write("                border-radius: 0;\r\n");
-      out.write("                color: #193E29;\r\n");
       out.write("            }\r\n");
       out.write("            .contactform .inputbox input[type=\"submit\"] {\r\n");
       out.write("                width: 100%;\r\n");
@@ -414,7 +410,7 @@ public final class contactus_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("  \t \t\t\t<ul>\r\n");
       out.write("  \t \t\t\t\t<li><a href=\"about.jsp\">ABOUT US</a></li>\r\n");
       out.write("  \t \t\t\t\t<li><a href=\"contactus.jsp\">CONTACT US</a></li>\r\n");
-      out.write("  \t \t\t\t\t<li><a href=\"help.jsp\">FAQ</a></li>\r\n");
+      out.write("  \t \t\t\t\t<li><a href=\"#\">FAQ</a></li>\r\n");
       out.write("  \t \t\t\t\t\r\n");
       out.write("  \t \t\t\t</ul>\r\n");
       out.write("  \t \t\t</div>\r\n");

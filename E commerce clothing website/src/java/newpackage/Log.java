@@ -81,7 +81,7 @@ public class Log extends HttpServlet {
         //processRequest(request, response);
       try {
             //processRequest(request, response);
-            String user=request.getParameter("uname");
+            String user=request.getParameter("fname");
             String psw=request.getParameter("psw");
             
             if(user.equals("") && psw.equals(""))
@@ -89,15 +89,19 @@ public class Log extends HttpServlet {
                     response.sendRedirect("Invalid.jsp");
                 }
             
+             if(user.equals("admin") && psw.equals("admin123"))
+                {
+                    response.sendRedirect("adminpage/home.jsp");
+                }
             
             Class.forName("com.mysql.jdbc.Driver");
-            String url="jdbc:mysql://localhost:3306/verdevo";
-            Connection con=DriverManager.getConnection(url,"root","");
+            String url="jdbc:mysql://localhost:3306/verdevo?zeroDateTimeBehavior=convertToNull";
+            Connection con=DriverManager.getConnection(url,"root","admin123");
             Statement st=con.createStatement();
             
             
             
-            String q2="SELECT * FROM Users";
+            String q2="SELECT * FROM users";
             ResultSet rs2=st.executeQuery(q2);
             while (rs2.next())
             {

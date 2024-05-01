@@ -6,6 +6,8 @@
 package comDAO;
 
 import com.entity.ItemDetails;
+import com.entity.users;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -452,7 +454,7 @@ public class ItemDAOImpl implements ItemDAO {
 
     @Override
     public List<ItemDetails> getBestSell() {
-        List<ItemDetails> list = new ArrayList<ItemDetails>();
+        List<ItemDetails> list2 = new ArrayList<ItemDetails>();
          ItemDetails i =null;
          
          try{
@@ -469,14 +471,14 @@ public class ItemDAOImpl implements ItemDAO {
                 i.setSize(rs.getString(3));
                 i.setItem_category(rs.getString(4));
                 i.setPrice(rs.getString(5));
-                list.add(i);
+                list2.add(i);
                 
              }
              
          } catch(Exception e){
             e.printStackTrace();
         }
-        return list;
+        return list2;
     }
 
     @Override
@@ -568,4 +570,42 @@ public class ItemDAOImpl implements ItemDAO {
          
          return list;
     }
+
+    @Override
+    public List<users> getUsers() {
+        List<users> list = new ArrayList<users>();
+        users u =null;
+        
+        try{
+            String sql = "select * from users";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            
+            ResultSet rs = ps.executeQuery();
+            while(rs.next()){
+                u = new users();
+                u.setFname(rs.getString(1));
+                u.setEmail(rs.getString(2));
+                u.setPhone(rs.getString(3));
+                
+                
+                list.add(u);
+            }
+            
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        
+        return list;
+    }
+
+    
+
+    
+    
+
+    /**
+     *
+     * @return
+     */
+   
 }

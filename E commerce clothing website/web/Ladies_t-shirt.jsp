@@ -22,7 +22,7 @@
             
            
             
-            .container
+            .container-1
             {
                display: flex;
                justify-content: center;
@@ -54,39 +54,7 @@
                 cursor: pointer;
             }
             
-            .L-T-1
-            {
-                background-image: url('img/L-T-1.jpg');
-            }
-            .L-T-2
-            {
-               background-image: url('img/L-T-2.jpg'); 
-            }
-            .L-T-3
-            {
-               background-image: url('img/L-T-3.jpg'); 
-  
-            }
-            .L-T-4
-            {
-               background-image: url('img/L-T-4.jpg');  
-            }
-            .L-T-5
-            {
-                background-image: url('img/L-T-5.jpg');  
-            }
-            .L-T-6
-            {
-                background-image: url('img/L-T-6.jpg');  
-            }
-            .L-T-7
-            {
-                background-image: url('img/L-T-7.jpg');  
-            }
-            .L-T-8
-            {
-                background-image: url('img/L-T-8.jpg');  
-            }
+            
             
             .button-container{
                 display: flex;
@@ -124,7 +92,7 @@
         <%@include file="all_component/navbar.jsp" %>
         <%-- nav bar end --%>
         
-        <div class="container">
+        <div class="container-1">
             <h3 class="text-center">WOMEN'S TSHIRTS</h3>
             <div class="row">
                 
@@ -149,92 +117,7 @@
             </div>
         </div>
             
-        <%--   
-            <div class="card">
-                <div class="card-image L-T-1">
-                    
-                </div>
-                <p class="title">Cotton-Printed Pink T-Shirt</p>
-                <p class="price">LKR 2700.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
-                </div>
-            </div>
-           
-            <div class="card">
-                <div class="card-image L-T-2">
-                   </div>
-                <p class="title">Pima Cotton-Printed White Tee</p>
-                <p class="price">LKR 3000.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
-                </div>
-            </div>
-                   
-            <div class="card">
-                <div class="card-image L-T-3"></div>
-                <p class="title">Brown Long Sleeve Off-Shoulder</p>
-                <p class="price">LKR 5300.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
-                </div>
-            </div>
-                   
-            <div class="card">
-                <div class="card-image L-T-4">
-                    
-                </div>
-                <p class="title">Ringspun cotton Long Sleeve dark Green Tee</p>
-                <p class="price">LKR 4700.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
-                </div>
-            </div>
-           
-            </section>
-        <section class="container-2">
-            
-            <div class="card">
-                <div class="card-image L-T-5"></div>
-                <p class="title">Slub Cotton Zebra-Pattern Print Tee</p>
-                <p class="price">LKR 4800.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
-                </div>
-            </div>
-              
-            <div class="card">
-                <div class="card-image L-T-6"></div>
-                <p class="title">Linen-Over-Size Black T-Shirt</p>
-                <p class="price">LKR 3200.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
-                </div>
-            </div>
-               
-            <div class="card">
-                <div class="card-image L-T-7"></div>
-                <p class="title">Long Sleeve Floral-V-Neck Tee</p>
-                <p class="price">LKR 3000.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
-                </div>
-            </div>
-               
-            <div class="card">
-                <div class="card-image L-T-8">
-                    
-                </div>
-                <p class="title">Cotton Blue High Neck Tee</p>
-                <p class="price">LKR 3800.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
-                </div>
-            </div>
-                    
-         </section>
-            
-         --%>   
+       
             
         
         
