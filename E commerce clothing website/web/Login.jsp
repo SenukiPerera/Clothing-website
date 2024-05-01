@@ -52,14 +52,14 @@ and open the template in the editor.
                 font-family: Helvetica;
             }
             .login-container{
-                width:100%;
+                width:300px;
                 justify-content: center;
                 align-items:center;
                 margin-top: 30px;
             }
         
             form{
-                    width: 20%;
+                    width: 40%;
                     padding: 20px;
                     background: #fff;
                     align-items: center;
@@ -119,11 +119,11 @@ and open the template in the editor.
   <center>
         <form name="form" action="Log" method="post">
             <table>
-                <tr><td><h1>Get Start</h1></td></tr>
-                <tr><td><input type="text" name="uname" placeholder="Username"></td></tr>
+                <tr><td><h1 class="text-center">Get Start</h1></td></tr>
+                <tr><td><input type="text" name="fname" placeholder="Username"></td></tr>
                 <tr><td><input type="password" name="psw" placeholder="Password"></td></tr>
                 <tr><td><button type="submit">LogIn</button></td></tr>
-                <tr><td><p>Don't have an account <a href="SignUp.jsp">signup</a></p></td></tr>
+                <tr><td><p>Don't have an account <a href="SignUp.jsp">SignUp</a></p></td></tr>
             </table>
         </form>
   </center>

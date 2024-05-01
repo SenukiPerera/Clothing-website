@@ -17,7 +17,7 @@
             <a class="dropdown-item" href="Ladies_t-shirt.jsp" style="color: white;" onmouseover="this.style.color='#193E29' " onmouseout="this.style.color='white'">T-Shirts</a>
           <a class="dropdown-item" href="Ladies-croptops.jsp" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Crop-Tops</a>
           <a class="dropdown-item" href="Ladies-Pants.jsp" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Pants</a>
-          <a class="dropdown-item" href="Ladies-Shorts.jsp" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Shorts</a>
+          <a class="dropdown-item" href="Ladies-Short.jsp" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Shorts</a>
           <a class="dropdown-item" href="Ladies-Jacket.jsp" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Jackets</a>
           
         </div>
@@ -71,7 +71,7 @@
               <a class="nav-link disabled" href="Login.jsp"><box-icon name='user-circle'  color='#ffffff' ></box-icon></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#"><box-icon name='cart-alt' color='#ffffff'></box-icon></a>
+              <a class="nav-link disabled" href="cart.jsp"><box-icon name='cart-alt' color='#ffffff'></box-icon></a>
             </li>
           </ul>
       </div>

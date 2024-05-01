@@ -66,4 +66,6 @@ public class ItemDetails {
         return "ItemDetails [item_name=" + item_name + ", photo=" + photo + ", size=" + size + ", " 
                 + "item_category=" + item_category + ", price=" + price + " ]";
     }
+
+    
 }

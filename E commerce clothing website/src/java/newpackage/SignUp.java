@@ -88,11 +88,11 @@ public class SignUp extends HttpServlet {
              String pass = request.getParameter("pws");
             
             Class.forName("com.mysql.jdbc.Driver");
-            String url = "jdbc:mysql://localhost:3306/verdevo";
-            Connection con = DriverManager.getConnection(url, "root", "");
+            String url = "jdbc:mysql://localhost:3306/verdevo?zeroDateTimeBehavior=convertToNull";
+            Connection con = DriverManager.getConnection(url, "root", "admin123");
             Statement st=con.createStatement();
             
-            String q3="INSERT INTO Users VALUES ('"+fname+"','"+email+"','"+phone+"','"+pass+"')";
+            String q3="INSERT INTO users VALUES ('"+fname+"','"+email+"','"+phone+"','"+pass+"')";
             st.executeUpdate(q3);
             response.sendRedirect("Login.jsp");
             

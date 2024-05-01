@@ -72,7 +72,7 @@
             }
             .L-J-1
             {
-                background-image: url('img/L-J-1.jpg');  
+                background-image: url('img/L-J-2.jpg');  
             }
             .button-container{
                 display: flex;
