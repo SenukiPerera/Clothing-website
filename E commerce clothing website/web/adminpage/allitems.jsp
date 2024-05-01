@@ -4,7 +4,17 @@
     Author     : User
 --%>
 
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="comDAO.ItemDAOImpl"%>
+<%@page import="java.util.List"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="com.DB.DBConnect"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -64,15 +74,9 @@
                </a>
                <span class="tooltip">Orders</span>
              </li>
+            
              <li class="list">
-               <a href="#">
-                 <i class='bx bx-heart' ></i>
-                 <span class="links_name">Reviews</span>
-               </a>
-               <span class="tooltip">Reviews</span>
-             </li>
-             <li class="list">
-               <a href="#">
+               <a href="userlist.jsp">
                  <i class='bx bx-user' ></i>
                  <span class="links_name">User</span>
                </a>
@@ -86,14 +90,7 @@
                <span class="tooltip">Setting</span>
              </li>
              <li class="profile">
-                 <div class="profile-details">
-                   <img src="profile.jpg" alt="profileImg">
-                   <div class="name_job">
-                     <div class="name">Prem Shahi</div>
-                     <div class="job">Web designer</div>
-                   </div>
-                 </div>
-                 <i class='bx bx-log-out' id="log_out" ></i>
+                 <a href="../index.jsp"><i class='bx bx-log-out' id="log_out" ></i></a>
              </li>
             </ul>
           </div>
@@ -101,11 +98,31 @@
         <%-- content--%>
         <section class="home-section">
             <div class="text">All Items</div>
+            <%--
+                            <% 
+                                Connection conn = DBConnect.getConn();
+                                out.println(conn);
+                            %>
+               --%>             
+               
+              <%--success message--%>
+            <c:if test="${not empty succMsg}"> 
+                 <p class="text-center text-success"> ${succMsg}</p>
+                 <c:remove var="succMsg" scope="session"/>
+            </c:if> 
+            <%--erorr message--%>     
+            <c:if test="${not empty failedMsg}"> 
+                 <p class="text-center text-danger"> ${failedMsg}</p>
+                 <c:remove var="failedMsg" scope="session"/>
+            </c:if> 
+               
+               
             <div class="table-container">
                 <table class="table table-striped">
                     <thead style="background-color: #193E29; color: white;" >
                       <tr>
                         <th scope="col">Item Name</th>
+                        <th scope="col">Image</th>
                         <th scope="col">Size</th>
                         <th scope="col">Item Category</th>
                         <th scope="col">Price</th>
@@ -113,36 +130,30 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>
-                            <a href="#" class="btn btn-sm" style="background-color: #193E29; color: white;">Edit</a>
-                            <a href="#" class="btn btn-sm" style="background-color: black; color: white;">Delete</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>
-                            <a href="#" class="btn btn-sm" style="background-color: #193E29; color: white;">Edit</a>
-                            <a href="#" class="btn btn-sm" style="background-color: black; color: white;">Delete</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td>
-                            <a href="#" class="btn btn-sm" style="background-color: #193E29; color: white;">Edit</a>
-                            <a href="#" class="btn btn-sm" style="background-color: black; color: white;">Delete</a>
-                        </td>
-                      </tr>
+                            
+                     
+                                 
+                       <%
+                       ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list = dao.getAllItems();
+                       for(ItemDetails i:list){
+                       %>
+                        <tr>
+                            <td><%=i.getItem_name()%></td>
+                            <td><img alt="" src="../items/<%=i.getPhoto()%>" style="width:80px; height: 100px;" class="img-thumblin"></td>
+                            <td><%=i.getSize()%></td>
+                            <td><%=i.getItem_category()%></td>
+                            <td><%=i.getPrice()%></td>
+                            <td>
+                                <a href="edit_items.jsp?item_name=<%=i.getItem_name()%>" class="btn btn-sm" style="background-color: #193E29; color: white;">Edit</a>
+                                <a href="../delete?item_name=<%=i.getItem_name()%>" class="btn btn-sm" style="background-color: black; color: white;">Delete</a>
+                            </td>
+                        </tr>
+                        <%
+                       }
+                       %>
+                        
+                        
                     </tbody>
                 </table>
             </div>

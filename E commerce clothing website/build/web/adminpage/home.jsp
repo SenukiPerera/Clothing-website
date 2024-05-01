@@ -15,6 +15,17 @@
         
         <%@include file="allCss.jsp" %>
         <style>
+            .logo-container{
+                margin-top: 0;
+                padding-top: 0;
+            }
+            .logo-container img{
+                margin-top: 0;
+                padding-top: 0;
+            }
+            .dash-container{
+                padding-left: 20px;
+            }
             .container-fluid{
                padding: 5%;
             }
@@ -44,9 +55,7 @@
                 border: none;
             }
             @media(max-width: 574px){
-                .home-container{
-                    display: block;
-                }
+                
                 .card{
                     margin-top: 10px; 
                 }
@@ -105,13 +114,7 @@
                </a>
                <span class="tooltip">Orders</span>
              </li>
-             <li class="list">
-               <a href="#">
-                 <i class='bx bx-heart' ></i>
-                 <span class="links_name">Reviews</span>
-               </a>
-               <span class="tooltip">Reviews</span>
-             </li>
+             
              <li class="list">
                <a href="#">
                  <i class='bx bx-user' ></i>
@@ -127,14 +130,8 @@
                <span class="tooltip">Setting</span>
              </li>
              <li class="profile">
-                 <div class="profile-details">
-                   <img src="profile.jpg" alt="profileImg">
-                   <div class="name_job">
-                     <div class="name">Prem Shahi</div>
-                     <div class="job">Web designer</div>
-                   </div>
-                 </div>
-                 <i class='bx bx-log-out' id="log_out" ></i>
+                 
+                 <a href="../index.jsp"><i class='bx bx-log-out' id="log_out" ></i></a>
              </li>
             </ul>
           </div>
@@ -142,42 +139,12 @@
         <%-- content --%>
           <section class="home-section">
             <div class="text">Dashboard</div>
-            <div class="container-fluid">
+                    
+                    <center><h2><img src="image/logo-b.png" style=" width: 200px; height: 150px;"></h2></center>
+                    <h1 class="text-center">Welcome to Verdevo!</h1>
+                <div class="dash-container">
                <%-- content --%>
-                    <div class="home-container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <box-icon name='plus-square' type='solid' color='#193e29' ></box-icon> <br>
-                                        <h4>New Customers</h4>
-                                        -----------------
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <box-icon name='plus-square' type='solid' color='#193e29' ></box-icon> <br>
-                                        <h4>Active Users</h4>
-                                        -----------------
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <box-icon name='plus-square' type='solid' color='#193e29' ></box-icon> <br>
-                                        <h4>Sales</h4>
-                                        -----------------
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
-                    </div>
-                    <br>
+                   
                     <div class="second-container">
                         <div class="tsell">
                             <div class="text">

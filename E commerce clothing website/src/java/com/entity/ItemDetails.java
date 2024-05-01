@@ -26,6 +26,10 @@ public class ItemDetails {
         this.item_category = item_category;
         this.price = price;
     }
+
+    public ItemDetails(String itemName, String fileName, String size, String category, String price, String admin) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     public String getItem_name(){
         return item_name;
@@ -62,4 +66,6 @@ public class ItemDetails {
         return "ItemDetails [item_name=" + item_name + ", photo=" + photo + ", size=" + size + ", " 
                 + "item_category=" + item_category + ", price=" + price + " ]";
     }
+
+    
 }

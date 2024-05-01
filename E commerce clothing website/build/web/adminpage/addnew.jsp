@@ -4,7 +4,9 @@
     Author     : User
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -99,15 +101,9 @@
                </a>
                <span class="tooltip">Orders</span>
              </li>
+             
              <li class="list">
-               <a href="#">
-                 <i class='bx bx-heart' ></i>
-                 <span class="links_name">Reviews</span>
-               </a>
-               <span class="tooltip">Reviews</span>
-             </li>
-             <li class="list">
-               <a href="#">
+               <a href="userlist.jsp">
                  <i class='bx bx-user' ></i>
                  <span class="links_name">User</span>
                </a>
@@ -121,14 +117,7 @@
                <span class="tooltip">Setting</span>
              </li>
              <li class="profile">
-                 <div class="profile-details">
-                   <img src="profile.jpg" alt="profileImg">
-                   <div class="name_job">
-                     <div class="name">Prem Shahi</div>
-                     <div class="job">Web designer</div>
-                   </div>
-                 </div>
-                 <i class='bx bx-log-out' id="log_out" ></i>
+                <a href="../index.jsp"><i class='bx bx-log-out' id="log_out" ></i></a>
              </li>
             </ul>
           </div>
@@ -138,8 +127,18 @@
         <section class="home-section">
             <div class="text">Add New Item</div>
             
-             <%--success or error message--%>
-            
+            <%--success message--%>
+            <c:if test="${not empty succMsg}"> 
+                 <p class="text-center text-danger"> ${succMsg}</p>
+                 <c:remove var="succMsg" scope="session"/>
+            </c:if> 
+            <%--erorr message--%>     
+            <c:if test="${not empty failedMsg}"> 
+                 <p class="text-center text-danger"> ${failedMsg}</p>
+                 <c:remove var="failedMsg" scope="session"/>
+            </c:if> 
+                 
+            <%--form--%>     
             <div class="form-container">   
                 <form action="../addnew" method="post" enctype="multipart/form-data">
                     <h5>Base Information</h5>
@@ -162,7 +161,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputItemName">Size</label>
-                                <input name="isize" type="text" class="form-control" id="exampleInputItemName" aria-describedby="emailHelp" required>
+                                <input name="isize" type="text" class="form-control" id="exampleInputItemName" aria-describedby="emailHelp" >
                             </div>
                             <div class="form-group">
                                 <label for="inputState">Category</label>
@@ -179,9 +178,9 @@
                                     <option value="menP">Men's Pants</option>
                                     <option value="menS">Men's Shorts</option>
                                     <option value="menJ">Men's Jackets</option>
-                                    <option value="new">New-Drop</option>
+                                    <option value="newd">New-Drop</option>
                                     <option value="best">Best-selling</option>
-                                    <option value="jewellery">Jewellery</option>
+                                    
                                     <option value="shoes">Shoes</option>
                                     <option value="bags">Bags</option>
                                     <option value="gifts">Gift Cards</option>

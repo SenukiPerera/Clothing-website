@@ -13,12 +13,17 @@ and open the template in the editor.
 body{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
+        color: white;
 }
 *{
-	margin:0;
+        color: black;
+        margin:0;
 	padding:0;
 	box-sizing: border-box;
 }
+.white-text {
+        color: white;
+    }
 .container{
 	max-width: 1170px;
 	margin:auto;
@@ -86,6 +91,7 @@ ul{
 	color: #ffffff;
 	transition: all 0.5s ease;
 }
+
 .footer-col .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;

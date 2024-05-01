@@ -73,6 +73,9 @@
                 flex-direction: column;
                 font-weight: 300;
             }
+            .contact-container .contactInfo .box .text p{ 
+                color: #fff;
+            }
             .contact-container .contactInfo .box .text h3{
                 font-weight: 500;
                 color:#ffff;
@@ -130,6 +133,7 @@
                 outline: none;
                 resize: none;
                 border-radius: 0;
+                color: #193E29;
             }
             .contactform .inputbox input[type="submit"] {
                 width: 100%;
@@ -191,18 +195,21 @@
                     </div>
                 </div>
                 <div class="contactform">
-                    <form>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
                         <h2>Send Message</h2>
                         <div class="inputbox">
-                            <input type="text" name="" required="required">
+                            <input type="text" name="name" required="required">
                             <span>Full Name</span>
                         </div>
+                        <input type="hidden" name="access_key" value="22d9b8f8-6426-45f3-8184-85143f9e7fd6">
+
                         <div class="inputbox">
-                            <input type="text" name="" required="required">
+                            <input type="text" name="number" required="required">
                             <span>Contact Number</span>
                         </div>
                         <div class="inputbox">
-                            <input type="text" name="" required="required">
+                            <input type="text" name="mail" required="required">
                             <span>E-mail</span>
                         </div>
                         <div class="inputbox">
@@ -210,7 +217,7 @@
                             <span>Message</span>
                         </div>
                         <div class="inputbox">
-                            <input type="submit" name="" value="Send">
+                            <input type="submit" name="Massage" value="Send">
                         </div>
                     </form>
                 </div>
@@ -223,4 +230,3 @@
         <%-- footer end --%>
     </body>
 </html>
-
