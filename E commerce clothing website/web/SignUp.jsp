@@ -53,7 +53,7 @@ and open the template in the editor.
             }
         
             .form{
-                    width: 100%;
+                    width: 500px;
                     padding: 40px;
                     background: #fff;
                     align-items: center;
@@ -64,6 +64,7 @@ and open the template in the editor.
             }
         
         .form input[type="text"],
+        .form input[type="email"],
         .form input[type="password"],
         .form button {
             width: 350px;
@@ -124,9 +125,9 @@ and open the template in the editor.
                 <form name="siup" action="SignUp" method="post">
                     <table class="login-table">
                         <tr>
-                            <td><input type="text" name="fname" placeholder="First Name"></td></tr><tr>
+                            <td><input type="text" name="fname" placeholder="User Name"></td></tr><tr>
 
-                            <td><input type="text" name="email" placeholder="E-mail"></td>
+                            <td><input type="email" name="email" placeholder="E-mail"></td>
 
                            
 

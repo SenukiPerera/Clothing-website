@@ -4,6 +4,12 @@
     Author     : Ruwanthi
 --%>
 
+<%@page import="java.util.List"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="com.DB.DBConnect"%>
+<%@page import="comDAO.ItemDAOImpl"%>
+<%@page import="comDAO.ItemDAOImpl"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -118,96 +124,34 @@
         <%@include file="all_component/navbar.jsp" %>
         <%-- nav bar end --%>
         
-          <section class="container-1">
-            
-            <div class="card">
-                <div class="card-image L-T-1">
-                    
-                </div>
-                <p class="title">Casual White Ladies Short</p>
-                <p class="price">LKR 11,000.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
-                </div>
-            </div>
-                    
-            <div class="card">
-                <div class="card-image L-T-2">
-                   </div>
-                <p class="title">Elegant High Waist Brown Pants</p>
-                <p class="price">LKR 18,000.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
-                </div>
-            </div>
-                   
-            <div class="card">
-                <div class="card-image L-T-3"></div>
-                <p class="title">Casual Wide-Leg Pocket Pants</p>
-                <p class="price">LKR 15,000.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
-                </div>
-            </div>
-                    
-            <div class="card">
-                <div class="card-image L-T-4">
-                    
-                </div>
-                <p class="title">High Waist Wide-Leg Denim Pants</p>
-                <p class="price">LKR 12,500.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
-                </div>
-            </div>
-                   
-            
-            </section>
-        <section class="container-2">
-           
-            <div class="card">
-                <div class="card-image L-T-5"></div>
-                <p class="title">Army Green Casual Collar Denim Pants</p>
-                <p class="price">LKR 10,500.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
-                </div>
-            </div>
-              
-            <div class="card">
-                <div class="card-image L-T-6"></div>
-                <p class="title">Casual Patch Denim Wide-Leg Jeans</p>
-                <p class="price">LKR 13,000.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
-                </div>
-            </div>
+
+          
+           <div class="container-1">
+            <h3 class="text-center">WOMEN'S PANTS</h3>
+            <div class="row">
+
+         
+                    <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list = dao.getWomenPants();
+                       for(ItemDetails i:list){ %>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
+                                    <div class="card-body text-center ">
+                                        <p style="font-weight:bold;"><%=i.getItem_name()%></p>
+                                        <p><%=i.getPrice()%></p>
+                                        <a><button class="btn-cart">QUICK ADD</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+             <%}
+                       %>
                
-            <div class="card">
-                <div class="card-image L-T-7"></div>
-                <p class="title">Solid High Waist Dark Green Wide Leg Pants </p>
-                <p class="price">LKR 14,000.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
-                </div>
             </div>
-                
-            <div class="card">
-                <div class="card-image L-T-8">
-                    
-                </div>
-                <p class="title">Elegant High Waist Office Pants</p>
-                <p class="price">LKR 18,000.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
-                </div>
-            </div>
-                   
-         </section>
-            
-            
-            
-            
+        </div>
+                       
+         
         
         
          <%-- footer --%>

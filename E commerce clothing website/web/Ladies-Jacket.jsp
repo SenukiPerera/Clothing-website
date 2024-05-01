@@ -4,6 +4,11 @@
     Author     : Ruwanthi
 --%>
 
+<%@page import="java.util.List"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="com.entity.ItemDetails"%>
+<%@page import="com.DB.DBConnect"%>
+<%@page import="comDAO.ItemDAOImpl"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -50,39 +55,7 @@
                 transform: scale(1.05); 
                 cursor: pointer;
             }
-            .L-T-1
-            {
-                background-image: url('img/L-J-1.jpg');
-            }
-            .L-T-2
-            {
-               background-image: url('img/L-J-2.jpg'); 
-            }
-            .L-T-3
-            {
-               background-image: url('img/L-J-3.jpg'); 
-  
-            }
-            .L-T-4
-            {
-               background-image: url('img/L-J-4.jpg');  
-            }
-            .L-T-5
-            {
-                background-image: url('img/L-J-5.jpg');  
-            }
-            .L-T-6
-            {
-                background-image: url('img/L-J-6.jpg');  
-            }
-            .L-T-7
-            {
-                background-image: url('img/L-J-7.jpg');  
-            }
-            .L-T-8
-            {
-                background-image: url('img/L-J-8.jpg');  
-            }
+            
             .button-container{
                 display: flex;
                 justify-content: center;
@@ -118,95 +91,36 @@
         <%@include file="all_component/navbar.jsp" %>
         <%-- nav bar end --%>
         
-          <section class="container-1">
-            
-            <div class="card">
-                <div class="card-image L-T-1">
-                    
-                </div>
-                <p class="title">Velvet Frot-Pocket Black Jacket</p>
-                <p class="price">LKR 7,000.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
-                </div>
-            </div>
-                    
-            <div class="card">
-                <div class="card-image L-T-2">
-                   </div>
-                <p class="title">Elegant Double-Breasted Purple Jacket</p>
-                <p class="price">LKR 12,000.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
-                </div>
-            </div>
-                   
-            <div class="card">
-                <div class="card-image L-T-3"></div>
-                <p class="title">Olivia Mark - Floral Print Long Sleeve Blazer </p>
-                <p class="price">LKR 13,000.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
-                </div>
-            </div>
-                    
-            <div class="card">
-                <div class="card-image L-T-4">
-                    
-                </div>
-                <p class="title">Denim Long-Sleeve Dark-Blue jacket</p>
-                <p class="price">LKR 9,500.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
-                </div>
-            </div>
-                   
-            
-            </section>
-        <section class="container-2">
-           
-            <div class="card">
-                <div class="card-image L-T-5"></div>
-                <p class="title">Denim Powder-White jacket</p>
-                <p class="price">LKR 11,800.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
-                </div>
-            </div>
-              
-            <div class="card">
-                <div class="card-image L-T-6"></div>
-                <p class="title">Solid Open Front Crop Black Overcoat</p>
-                <p class="price">LKR 15,500.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
-                </div>
-            </div>
+
+        <div class="container-1">
+            <h3 class="text-center">WOMEN'S JACKETS</h3>
+            <div class="row">
+
+                    <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                       List<ItemDetails> list = dao.getWomenJackets();
+                       for(ItemDetails i:list){ %>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
+                                    <div class="card-body text-center ">
+                                        <p style="font-weight:bold;"><%=i.getItem_name()%></p>
+                                        <p><%=i.getPrice()%></p>
+                                        <a><button class="btn-cart">QUICK ADD</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+             <%}
+                       %>
                
-            <div class="card">
-                <div class="card-image L-T-7"></div>
-                <p class="title">Allover White Floral Crop Jacket</p>
-                <p class="price">LKR 14,100.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;">ADD TO CART</button>
+
                 </div>
-            </div>
                 
-            <div class="card">
-                <div class="card-image L-T-8">
-                    
-                </div>
-                <p class="title">Spring Contrast Color Long Sleeve Zipper Jacket</p>
-                <p class="price">LKR 16,000.00</p>
-                <div class="button-container">
-                <button type="submit" name="sb" style="border-radius: 20px;" >ADD TO CART</button>
-                </div>
+
             </div>
-                   
-         </section>
-            
-            
-            
+        
+        
+       
         
         
          <%-- footer --%>

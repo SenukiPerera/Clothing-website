@@ -6,6 +6,7 @@
 package comDAO;
 
 import com.entity.ItemDetails;
+import com.entity.users;
 import java.util.List;
 
 /**
@@ -56,4 +57,6 @@ public interface ItemDAO {
      public List<ItemDetails> getBags();
      
      public List<ItemDetails> getShoes();
+     
+     public List<users> getUsers();
 }
