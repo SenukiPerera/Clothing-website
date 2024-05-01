@@ -281,10 +281,10 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        </a>\r\n");
       out.write("        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\" style=\"background-color: #193E29;\">\r\n");
       out.write("            <a class=\"dropdown-item\" href=\"Ladies_t-shirt.jsp\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29' \" onmouseout=\"this.style.color='white'\">T-Shirts</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Crop-Tops</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Pants</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shorts</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Jackets</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"Ladies-croptops.jsp\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Crop-Tops</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"Ladies-Pants.jsp\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Pants</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"Ladies-Short.jsp\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shorts</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"Ladies-Jacket.jsp\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Jackets</a>\r\n");
       out.write("          \r\n");
       out.write("        </div>\r\n");
       out.write("      </li>\r\n");
@@ -337,7 +337,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("              <a class=\"nav-link disabled\" href=\"Login.jsp\"><box-icon name='user-circle'  color='#ffffff' ></box-icon></a>\r\n");
       out.write("            </li>\r\n");
       out.write("            <li class=\"nav-item\">\r\n");
-      out.write("              <a class=\"nav-link disabled\" href=\"#\"><box-icon name='cart-alt' color='#ffffff'></box-icon></a>\r\n");
+      out.write("              <a class=\"nav-link disabled\" href=\"cart.jsp\"><box-icon name='cart-alt' color='#ffffff'></box-icon></a>\r\n");
       out.write("            </li>\r\n");
       out.write("          </ul>\r\n");
       out.write("      </div>\r\n");
@@ -442,7 +442,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 }
                        
       out.write("\r\n");
-      out.write("            \r\n");
       out.write("               \r\n");
       out.write("            </div>\r\n");
       out.write("        </div>\r\n");
