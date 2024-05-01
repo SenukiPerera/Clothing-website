@@ -21,21 +21,36 @@
             h5{
                 margin-bottom: 10px;
             }
+            
             .form-container{
                 padding: 40px 100px;
+                
+            }
+             .form-container input,
+            .form-container select {
+                width: 350px;
+                
+            }
+            .container-one{
+                display: flex;
             }
             .form-data{
+                
                 padding: 20px 20px;
                 border: 1px solid #193E29;
                 border-radius: 10px;
-                width: 50%;
+                width:100%;
                 margin-bottom: 20px;
+                
             }
-            
+            .form-container input[type="submit"]{
+                width: 100%;
+            }
             .submitbtn{
                 background-color: #193E29;
                 color: #FFF;
                 border: none;
+                width: 50%;
             }
             .submitbtn:hover{
                 background-color: transparent;
@@ -109,13 +124,7 @@
                </a>
                <span class="tooltip">User</span>
              </li>
-             <li class="list">
-               <a href="#">
-                 <i class='bx bx-cog' ></i>
-                 <span class="links_name">Setting</span>
-               </a>
-               <span class="tooltip">Setting</span>
-             </li>
+             
              <li class="profile">
                 <a href="../index.jsp"><i class='bx bx-log-out' id="log_out" ></i></a>
              </li>
@@ -139,7 +148,10 @@
             </c:if> 
                  
             <%--form--%>     
-            <div class="form-container">   
+            
+            <div class="container-one">
+            <%-- first div image--%>
+            <div class="form-container">
                 <form action="../addnew" method="post" enctype="multipart/form-data">
                     <h5>Base Information</h5>
                         <div class="form-data">
@@ -190,6 +202,18 @@
                     <input type="submit" value="Add" name="submitbtn" class="submitbtn">
                 </form>
             </div>
+            <%-- first div image end--%>
+            <%-- first div image--%>
+            <div class="first-girl-img">
+                 <div class="content-two">
+                    <h1>SHOP WOMENS</h1>
+                    <div class="discover">
+                        <a href="ladies.jsp"><button class="btn">SHOP NOW</button></a>
+                    </div>
+                </div>
+             </div>
+            <%-- first div image end--%>
+        </div>
         </section>
         <%-- content end--%>
         

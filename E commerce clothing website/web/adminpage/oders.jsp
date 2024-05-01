@@ -65,13 +65,7 @@
                </a>
                <span class="tooltip">Orders</span>
              </li>
-             <li class="list">
-               <a href="#">
-                 <i class='bx bx-heart' ></i>
-                 <span class="links_name">Reviews</span>
-               </a>
-               <span class="tooltip">Reviews</span>
-             </li>
+            
              <li class="list">
                <a href="userlist.jsp">
                  <i class='bx bx-user' ></i>
@@ -79,13 +73,7 @@
                </a>
                <span class="tooltip">User</span>
              </li>
-             <li class="list">
-               <a href="#">
-                 <i class='bx bx-cog' ></i>
-                 <span class="links_name">Setting</span>
-               </a>
-               <span class="tooltip">Setting</span>
-             </li>
+            
              <li class="profile">
                 <a href="../index.jsp"><i class='bx bx-log-out' id="log_out" ></i></a>
              </li>

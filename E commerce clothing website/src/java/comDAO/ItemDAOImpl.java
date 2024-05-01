@@ -586,7 +586,7 @@ public class ItemDAOImpl implements ItemDAO {
                 u.setFname(rs.getString(1));
                 u.setEmail(rs.getString(2));
                 u.setPhone(rs.getString(3));
-                
+                u.setPassword(rs.getString(4));
                 
                 list.add(u);
             }
