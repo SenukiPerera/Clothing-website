@@ -96,7 +96,7 @@
                                         <div class="card-body text-center ">
                                             <p style="font-weight:bold;">Allover White Floral Crop Jacket</p>
                                             <p>LKR 3,500.00</p>
-                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                            <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -106,7 +106,7 @@
                                         <div class="card-body text-center ">
                                             <p style="font-weight:bold;">Solid Open Front Crop Black Overcoat</p>
                                             <p>LKR 6,500.00</p>
-                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                            <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -116,7 +116,7 @@
                                         <div class="card-body text-center ">
                                             <p style="font-weight:bold;">Denim Powder-White jacket</p>
                                             <p>LKR 5,500.00</p>
-                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                            <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -126,7 +126,7 @@
                                         <div class="card-body text-center ">
                                             <p style="font-weight:bold;">Velvet Frot-Pocket Black Jacket</p>
                                             <p>LKR 6,500.00</p>
-                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                            <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>
                                     </div>
                                 </div>

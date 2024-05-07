@@ -87,14 +87,15 @@
         <div class="container">
         <h2>T-SHIRTS</h2>
         <br>
+        
         <div class="row">
                                 <div class="col-md-3">
                                     <div class="card">
                                         <img alt="" src="img/mt5.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
                                         <div class="card-body text-center ">
-                                            <p style="font-weight:bold;">Green Colour Print Tee</p>
+                                            <p style="font-weight:bold;">Men Green Colour Print Tee</p>
                                             <p>LKR 3,500.00</p>
-                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                            <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -104,7 +105,7 @@
                                         <div class="card-body text-center ">
                                             <p style="font-weight:bold;">Men Drop Shoulder Colorblock Tee</p>
                                             <p>LKR 6,500.00</p>
-                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                            <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -112,9 +113,9 @@
                                     <div class="card">
                                         <img alt="" src="img/mt2.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
                                         <div class="card-body text-center ">
-                                            <p style="font-weight:bold;">Cotton Printed White Tee</p>
+                                            <p style="font-weight:bold;">Men Cotton Printed White Tee</p>
                                             <p>LKR 5,500.00</p>
-                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                            <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -124,7 +125,7 @@
                                         <div class="card-body text-center ">
                                             <p style="font-weight:bold;">Summer Loose Fit Cotton Printed Tshirt</p>
                                             <p>LKR 6,500.00</p>
-                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                            <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -133,7 +134,7 @@
                             </div>
                 <br><br>
         <div class="row">
-
+        
            
             
             <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());

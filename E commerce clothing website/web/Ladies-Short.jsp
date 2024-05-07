@@ -97,7 +97,7 @@
                                         <div class="card-body text-center ">
                                             <p style="font-weight:bold;">Casual White Ladies Summer Short</p>
                                             <p>LKR 3,500.00</p>
-                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                            <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -107,7 +107,7 @@
                                         <div class="card-body text-center ">
                                             <p style="font-weight:bold;">Elegant High Waist Pink Ladies Short</p>
                                             <p>LKR 6,500.00</p>
-                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                            <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -117,7 +117,7 @@
                                         <div class="card-body text-center ">
                                             <p style="font-weight:bold;">Casual High Waist Pattern Ladies Short</p>
                                             <p>LKR 5,500.00</p>
-                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                            <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -127,7 +127,7 @@
                                         <div class="card-body text-center ">
                                             <p style="font-weight:bold;">Plus Drawstring Waist Denim Short</p>
                                             <p>LKR 6,500.00</p>
-                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                            <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>
                                     </div>
                                 </div>
