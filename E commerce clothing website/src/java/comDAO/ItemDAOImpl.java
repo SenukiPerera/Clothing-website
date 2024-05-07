@@ -20,10 +20,11 @@ import java.util.List;
  *
  * @author User
  */
+
 public class ItemDAOImpl implements ItemDAO {
     
     private Connection conn;
-    
+ 
     public ItemDAOImpl(Connection conn){
         super();
         this.conn = conn;
@@ -55,6 +56,7 @@ public class ItemDAOImpl implements ItemDAO {
         return f;
     }
     
+    @Override
     public List<ItemDetails> getAllItems(){
         
         List<ItemDetails> list = new ArrayList<ItemDetails>();

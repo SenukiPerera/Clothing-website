@@ -97,7 +97,7 @@
                                         <div class="card-body text-center ">
                                             <p style="font-weight:bold;">Solid High Waist Dark Green Wide Leg Pants</p>
                                             <p>LKR 3,500.00</p>
-                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                            <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -107,7 +107,7 @@
                                         <div class="card-body text-center ">
                                             <p style="font-weight:bold;">Elegant High Waist Office Pants</p>
                                             <p>LKR 6,500.00</p>
-                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                            <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -117,7 +117,7 @@
                                         <div class="card-body text-center ">
                                             <p style="font-weight:bold;">Casual Patch Denim Wide-Leg Jeans</p>
                                             <p>LKR 5,500.00</p>
-                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                            <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -127,7 +127,7 @@
                                         <div class="card-body text-center ">
                                             <p style="font-weight:bold;">Army Green Casual Collar Denim Pants</p>
                                             <p>LKR 6,500.00</p>
-                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                            <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>
                                     </div>
                                 </div>
