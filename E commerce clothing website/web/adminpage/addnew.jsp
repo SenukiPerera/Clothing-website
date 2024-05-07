@@ -4,6 +4,7 @@
     Author     : User
 --%>
 
+<%@page import="java.sql.Connection"%>
 <%@page import="com.DB.DBConnect"%>
 <%@page import="java.util.List"%>
 <%@page import="com.entity.ItemDetails"%>
@@ -147,9 +148,11 @@
         <section class="home-section">
             <div class="text">Add New Item</div>
             
+            
+            
             <%--success message--%>
             <c:if test="${not empty succMsg}"> 
-                 <p class="text-center text-danger"> ${succMsg}</p>
+                 <p class="text-center text-success"> ${succMsg}</p>
                  <c:remove var="succMsg" scope="session"/>
             </c:if> 
             <%--erorr message--%>     
