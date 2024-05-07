@@ -88,7 +88,7 @@
                             <div class="card-body">
                                 <h3>Rs. 1,000   Gift Card</h3>
                                 <p>Give the gift of choice!</p>
-                                <a><button>Buy Now</button></a>
+                                <a href="addtocart?id"><button>Buy Now</button></a>
                             </div>
                         
                        
@@ -101,7 +101,7 @@
                         <div class="card-body">
                             <h3>Rs. 2,000   Gift Card</h3>
                             <p>Give the gift of choice!</p>
-                            <a><button>Buy Now</button></a>
+                            <a href="addtocart?id"><button>Buy Now</button></a>
                         </div>
                         
                         
@@ -114,7 +114,7 @@
                             <div class="card-body">
                                 <h3>Rs. 5,000   Gift Card</h3>
                                 <p>Give the gift of choice!</p>
-                                <a><button>Buy Now</button></a>
+                                <a href="addtocart?id"><button>Buy Now</button></a>
                             </div>
                         
                     </div>
@@ -126,7 +126,7 @@
                             <div class="card-body">
                                 <h3>Rs. 10,000   Gift Card</h3>
                                 <p>Give the gift of choice!</p>
-                                <a><button>Buy Now</button></a>
+                                <a href="addtocart?id"><button>Buy Now</button></a>
                             </div>
                         
                     </div>

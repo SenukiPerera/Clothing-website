@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #193E29; /* Dark green background */
-    color: #FFFFFF; /* White text color */
+    color: #FFF; /* White text color */
     margin: 0;
     padding: 0;
 }
@@ -64,8 +64,11 @@ header {
 
 .image-container .image-details p {
     font-family: cursive;
+    
 }
-
+.image-details p{
+    color: #fff;
+}
 .show {
     display: block; /* Show details when 'show' class is applied */
 }

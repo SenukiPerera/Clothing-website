@@ -83,13 +83,7 @@
                </a>
                <span class="tooltip">User</span>
              </li>
-             <li class="list">
-               <a href="#">
-                 <i class='bx bx-cog' ></i>
-                 <span class="links_name">Setting</span>
-               </a>
-               <span class="tooltip">Setting</span>
-             </li>
+             
              <li class="profile">
                  <a href="../index.jsp"><i class='bx bx-log-out' id="log_out" ></i></a>
              </li>
@@ -121,8 +115,6 @@
                       </tr>
                     </thead>
                     <tbody>
-                            
-                     
                                  
                        <%
                        ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());

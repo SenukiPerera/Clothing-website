@@ -48,6 +48,11 @@
                 padding-left: 10%;
                 padding-top: 75%;   
             }
+            .content-one h1, 
+            .content-two h1,
+            .first-content p{
+                color: #fff;
+            }
             .first-girl-img{
                 background: url(img/wfimg2.jpg);
                 width: 60%;
@@ -200,10 +205,13 @@
         <%-- search bar --%>
         <div class="container-fluid back-img">
             <div class="searchbar">
-                <input type="text" name="box" placeholder="What are you looking for?">
-                <div class="button">
-                    <box-icon name='search-alt' color='#ffffff'></box-icon>
-                </div>
+                <form action="searchItem" method="POST">
+                    <input type="text" name="ch" placeholder="What are you looking for?">
+                    <div class="button">
+                        <box-icon name='search-alt' color='#ffffff'></box-icon>
+                    </div>
+                </form>
+                
             </div>
         </div>
         <%-- search bar end--%>
