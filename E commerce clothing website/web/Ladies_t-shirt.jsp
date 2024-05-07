@@ -127,7 +127,7 @@
                                     <div class="card">
                                         <img alt="" src="img/L-T-8.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                                         <div class="card-body text-center ">
-                                            <p style="font-weight:bold;">Cotton Blue High Neck Tee</p>
+                                            <p style="font-weight:bold;">Cotton-Rib Blue High Neck Tee</p>
                                             <p>LKR 6,500.00</p>
                                             <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>

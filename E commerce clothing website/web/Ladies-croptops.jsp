@@ -94,7 +94,9 @@
                                     <div class="card">
                                         <img alt="" src="img/L-C-3.jpg" style="width:253px; height: 350px;" class="img-thumblin">
                                         <div class="card-body text-center ">
-                                            <p style="font-weight:bold;">White Color V Neck Crop Top</p>
+
+                                            <p style="font-weight:bold;">Cotton White Bloom-Hand Crop</p>
+                                           
                                             <p>LKR 3,500.00</p>
                                             <a href="addtocart?id"><button class="btn-cart">ADD TO CART</button></a>
                                         </div>
