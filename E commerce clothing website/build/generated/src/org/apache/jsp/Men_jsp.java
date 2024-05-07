@@ -113,13 +113,8 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("<link rel=\"stylesheet\" href=\"https://unicons.iconscout.com/release/v4.0.8/css/line.css\">\r\n");
       out.write("\r\n");
- 
       out.write("\n");
       out.write("        \n");
- 
-      out.write("\r\n");
-      out.write("        \r\n");
- 
       out.write("        ");
       out.write("\n");
       out.write("        ");
@@ -132,30 +127,30 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\r\n");
       out.write("    <ul class=\"navbar-nav mr-auto\">\r\n");
       out.write("      <li class=\"nav-item\">\r\n");
-      out.write("        <a class=\"nav-link\" href=\"#\">HOME<span class=\"sr-only\">(current)</span></a>\r\n");
+      out.write("        <a class=\"nav-link\" href=\"index.jsp\">HOME<span class=\"sr-only\">(current)</span></a>\r\n");
       out.write("      </li>\r\n");
       out.write("      <li class=\"nav-item active dropdown\">\r\n");
-      out.write("        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n");
+      out.write("        <a class=\"nav-link dropdown-toggle\" href=\"ladies.jsp\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n");
       out.write("          WOMEN'S\r\n");
       out.write("        </a>\r\n");
       out.write("        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\" style=\"background-color: #193E29;\">\r\n");
-      out.write("            <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29' \" onmouseout=\"this.style.color='white'\">T-Shirts</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Crop-Tops</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Pants</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shorts</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Jackets</a>\r\n");
+      out.write("            <a class=\"dropdown-item\" href=\"Ladies_t-shirt.jsp\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29' \" onmouseout=\"this.style.color='white'\">T-Shirts</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"Ladies-croptops.jsp\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Crop-Tops</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"Ladies-Pants.jsp\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Pants</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"Ladies-Short.jsp\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shorts</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"Ladies-Jacket.jsp\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Jackets</a>\r\n");
       out.write("          \r\n");
       out.write("        </div>\r\n");
       out.write("      </li>\r\n");
       out.write("      <li class=\"nav-item dropdown active\">\r\n");
-      out.write("        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n");
+      out.write("        <a class=\"nav-link dropdown-toggle\" href=\"Men.jsp\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n");
       out.write("          MEN'S\r\n");
       out.write("        </a>\r\n");
       out.write("        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\" style=\"background-color: #193E29;\">\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">T-Shirts</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Pants</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shorts</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Jackets</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"MenTshirts.jsp\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">T-Shirts</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"MenPants.jsp\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Pants</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"MenShorts.jsp\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shorts</a>\r\n");
+      out.write("          <a class=\"dropdown-item\" href=\"MenJackets.jsp\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Jackets</a>\r\n");
       out.write("         \r\n");
       out.write("        </div>\r\n");
       out.write("      </li>\r\n");
@@ -170,22 +165,17 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        </div>\r\n");
       out.write("      </li>\r\n");
       out.write("      <li class=\"nav-item dropdown active\" >\r\n");
-      out.write("        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n");
+      out.write("        <a class=\"nav-link dropdown-toggle\" href=\"Accessories.jsp\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n");
       out.write("          ACCESSORIES\r\n");
       out.write("        </a>\r\n");
       out.write("        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\" style=\"background-color: #193E29;\">\r\n");
- 
-      out.write("          <a class=\"dropdown-item\" href=\"#shoes\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shoes</a>\r\n");
-      out.write("          <a class=\"dropdown-item\" href=\"#bags\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Bags</a>\r\n");
- 
       out.write("          <a class=\"dropdown-item\" href=\"Accessories.jsp#shoes\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Shoes</a>\r\n");
       out.write("          <a class=\"dropdown-item\" href=\"Accessories.jsp#bags\" style=\"color: white;\" onmouseover=\"this.style.color='#193E29'\" onmouseout=\"this.style.color='white'\">Bags</a>\r\n");
- 
       out.write("          \r\n");
       out.write("        </div>\r\n");
       out.write("      </li>\r\n");
       out.write("      <li class=\"nav-item active\">\r\n");
-      out.write("        <a class=\"nav-link\" href=\"#\">GIFT CARDS</a>\r\n");
+      out.write("        <a class=\"nav-link\" href=\"giftcard.jsp\">GIFT CARDS</a>\r\n");
       out.write("      </li>\r\n");
       out.write("    </ul>\r\n");
       out.write("    <!--<form class=\"form-inline my-2 my-lg-0\">\r\n");
@@ -198,10 +188,11 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\r\n");
       out.write("            </li>!-->\r\n");
       out.write("            <li class=\"nav-item\">\r\n");
+      out.write("            \r\n");
       out.write("              <a class=\"nav-link disabled\" href=\"Login.jsp\"><box-icon name='user-circle'  color='#ffffff' ></box-icon></a>\r\n");
       out.write("            </li>\r\n");
       out.write("            <li class=\"nav-item\">\r\n");
-      out.write("              <a class=\"nav-link disabled\" href=\"#\"><box-icon name='cart-alt' color='#ffffff'></box-icon></a>\r\n");
+      out.write("              <a class=\"nav-link disabled\" href=\"cart.jsp\"><box-icon name='cart-alt' color='#ffffff'></box-icon></a>\r\n");
       out.write("            </li>\r\n");
       out.write("          </ul>\r\n");
       out.write("      </div>\r\n");
@@ -213,7 +204,6 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("        \n");
       out.write("        ");
- 
       out.write("\n");
       out.write("        <div class=\"container\">\n");
       out.write("        <div class=\"row\">\n");
@@ -224,23 +214,10 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <a><button class=\"btn-cart\">SHOP NOW</button></a>\n");
       out.write("                    </div>\n");
       out.write("            </div>\n");
- 
-      out.write("\r\n");
-      out.write("        <div class=\"container\">\r\n");
-      out.write("        <div class=\"row\">\r\n");
-      out.write("            <div class=\"card\">\r\n");
-      out.write("                <img alt=\"\" src=\"img/mt2.jpeg\" style=\"width:253px; height: 350px;\">\r\n");
-      out.write("                    <div class=\"card-body\">\r\n");
-      out.write("                        <p><b>T-SHIRTS</b></p>\r\n");
-      out.write("                        <a><button class=\"btn-cart\">SHOP NOW</button></a>\r\n");
-      out.write("                    </div>\r\n");
-      out.write("            </div>\r\n");
- 
       out.write("        ");
       out.write("\n");
       out.write("        \n");
       out.write("        ");
- 
       out.write("\n");
       out.write("            <div class=\"card\">\n");
       out.write("                <img alt=\"\" src=\"img/mp1.jpeg\" style=\"width:253px; height: 350px;\">\n");
@@ -249,21 +226,10 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <a><button class=\"btn-cart\">SHOP NOW</button></a>\n");
       out.write("                    </div>\n");
       out.write("            </div>\n");
- 
-      out.write("\r\n");
-      out.write("            <div class=\"card\">\r\n");
-      out.write("                <img alt=\"\" src=\"img/mp1.jpeg\" style=\"width:253px; height: 350px;\">\r\n");
-      out.write("                    <div class=\"card-body\">\r\n");
-      out.write("                        <p><b>PANTS</b></p>\r\n");
-      out.write("                        <a><button class=\"btn-cart\">SHOP NOW</button></a>\r\n");
-      out.write("                    </div>\r\n");
-      out.write("            </div>\r\n");
- 
       out.write("        ");
       out.write("\n");
       out.write("        \n");
       out.write("        ");
- 
       out.write("\n");
       out.write("            <div class=\"card\">\n");
       out.write("                <img alt=\"\" src=\"img/ms1.jpeg\" style=\"width:253px; height: 350px;\">\n");
@@ -272,21 +238,10 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <a><button class=\"btn-cart\">SHOP NOW</button></a>\n");
       out.write("                    </div>\n");
       out.write("            </div>\n");
- 
-      out.write("\r\n");
-      out.write("            <div class=\"card\">\r\n");
-      out.write("                <img alt=\"\" src=\"img/ms1.jpeg\" style=\"width:253px; height: 350px;\">\r\n");
-      out.write("                    <div class=\"card-body\">\r\n");
-      out.write("                        <p><b>SHORTS</b></p>\r\n");
-      out.write("                        <a><button class=\"btn-cart\">SHOP NOW</button></a>\r\n");
-      out.write("                    </div>\r\n");
-      out.write("            </div>\r\n");
- 
       out.write("        ");
       out.write("\n");
       out.write("        \n");
       out.write("        ");
- 
       out.write("\n");
       out.write("            <div class=\"card\">\n");
       out.write("                <img alt=\"\" src=\"img/mj1.jpeg\" style=\"width:253px; height: 350px;\">\n");
@@ -297,18 +252,6 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </div>\n");
       out.write("        </div>\n");
       out.write("        </div>\n");
- 
-      out.write("\r\n");
-      out.write("            <div class=\"card\">\r\n");
-      out.write("                <img alt=\"\" src=\"img/mj1.jpeg\" style=\"width:253px; height: 350px;\">\r\n");
-      out.write("                    <div class=\"card-body\">\r\n");
-      out.write("                        <p><b>JACKETS</b></p>\r\n");
-      out.write("                        <a><button class=\"btn-cart\">SHOP NOW</button></a>\r\n");
-      out.write("                    </div>\r\n");
-      out.write("            </div>\r\n");
-      out.write("        </div>\r\n");
-      out.write("        </div>\r\n");
- 
       out.write("        ");
       out.write("\n");
       out.write("        \n");
@@ -331,35 +274,35 @@ public final class Men_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("  \t \t\t<div class=\"footer-col\">\r\n");
       out.write("  \t \t\t\t<h4>MENU</h4>\r\n");
       out.write("  \t \t\t\t<ul>\r\n");
-      out.write("  \t \t\t\t\t<li><a href=\"#\">HOME</a></li>\r\n");
-      out.write("  \t \t\t\t\t<li><a href=\"#\">WOMENS</a></li>\r\n");
-      out.write("  \t \t\t\t\t<li><a href=\"#\">MENS</a></li>\r\n");
-      out.write("  \t \t\t\t\t<li><a href=\"#\">ACCESSORIES</a></li>\r\n");
+      out.write("  \t \t\t\t\t<li><a href=\"index.jsp\">HOME</a></li>\r\n");
+      out.write("  \t \t\t\t\t<li><a href=\"ladies.jsp\">WOMENS</a></li>\r\n");
+      out.write("  \t \t\t\t\t<li><a href=\"Men.jsp\">MENS</a></li>\r\n");
+      out.write("  \t \t\t\t\t<li><a href=\"Accessories.jsp\">ACCESSORIES</a></li>\r\n");
       out.write("  \t \t\t\t</ul>\r\n");
       out.write("  \t \t\t</div>\r\n");
       out.write("  \t \t\t<div class=\"footer-col\">\r\n");
       out.write("  \t \t\t\t<h4>SHOP LATEST</h4>\r\n");
       out.write("  \t \t\t\t<ul>\r\n");
-      out.write("  \t \t\t\t\t<li><a href=\"#\">NEW DROP</a></li>\r\n");
-      out.write("  \t \t\t\t\t<li><a href=\"#\">BEST SELLING</a></li>\r\n");
+      out.write("  \t \t\t\t\t<li><a href=\"newarr.jsp#latest_release\">NEW DROP</a></li>\r\n");
+      out.write("  \t \t\t\t\t<li><a href=\"newarr.jsp#top_sell\">BEST SELLING</a></li>\r\n");
       out.write("  \t \t\t\t\t\r\n");
       out.write("  \t \t\t\t</ul>\r\n");
       out.write("  \t \t\t</div>\r\n");
       out.write("  \t \t\t<div class=\"footer-col\">\r\n");
       out.write("  \t \t\t\t<h4>SUPPORT</h4>\r\n");
       out.write("  \t \t\t\t<ul>\r\n");
-      out.write("  \t \t\t\t\t<li><a href=\"#\">ABOUT US</a></li>\r\n");
-      out.write("  \t \t\t\t\t<li><a href=\"#\">CONTACT US</a></li>\r\n");
-      out.write("  \t \t\t\t\t<li><a href=\"#\">FAQ</a></li>\r\n");
+      out.write("  \t \t\t\t\t<li><a href=\"about.jsp\">ABOUT US</a></li>\r\n");
+      out.write("  \t \t\t\t\t<li><a href=\"contactus.jsp\">CONTACT US</a></li>\r\n");
+      out.write("  \t \t\t\t\t<li><a href=\"help.jsp\">FAQ</a></li>\r\n");
       out.write("  \t \t\t\t\t\r\n");
       out.write("  \t \t\t\t</ul>\r\n");
       out.write("  \t \t\t</div>\r\n");
       out.write("  \t \t\t<div class=\"footer-col\">\r\n");
       out.write("  \t \t\t\t<h4>follow us</h4>\r\n");
       out.write("  \t \t\t\t<div class=\"social-links\">\r\n");
-      out.write("  \t \t\t\t\t<a href=\"#\"><i class=\"fab fa-facebook-f\"></i></a>\r\n");
-      out.write("  \t \t\t\t\t<a href=\"#\"><i class=\"fab fa-twitter\"></i></a>\r\n");
-      out.write("  \t \t\t\t\t<a href=\"#\"><i class=\"fab fa-instagram\"></i></a>\r\n");
+      out.write("  \t \t\t\t\t<a href=\"www.facebook.com\"><i class=\"fab fa-facebook-f\"></i></a>\r\n");
+      out.write("  \t \t\t\t\t<a href=\"www.twitter.com\"><i class=\"fab fa-twitter\"></i></a>\r\n");
+      out.write("  \t \t\t\t\t<a href=\"www.instagram.com\"><i class=\"fab fa-instagram\"></i></a>\r\n");
       out.write("  \t \t\t\t\t\r\n");
       out.write("  \t \t\t\t</div>\r\n");
       out.write("  \t \t\t</div>\r\n");
