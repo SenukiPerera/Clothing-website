@@ -28,9 +28,9 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #193E29;">
           <a class="dropdown-item" href="MenTshirts.jsp" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">T-Shirts</a>
-          <a class="dropdown-item" href="#" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Pants</a>
-          <a class="dropdown-item" href="#" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Shorts</a>
-          <a class="dropdown-item" href="#" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Jackets</a>
+          <a class="dropdown-item" href="MenPants.jsp" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Pants</a>
+          <a class="dropdown-item" href="MenShorts.jsp" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Shorts</a>
+          <a class="dropdown-item" href="MenJackets.jsp" style="color: white;" onmouseover="this.style.color='#193E29'" onmouseout="this.style.color='white'">Jackets</a>
          
         </div>
       </li>
@@ -68,10 +68,11 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             </li>!-->
             <li class="nav-item">
+            
               <a class="nav-link disabled" href="Login.jsp"><box-icon name='user-circle'  color='#ffffff' ></box-icon></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="cart.jsp"><box-icon name='cart-alt' color='#ffffff'></box-icon></a>
+              <a class="nav-link disabled" href="cartlog.jsp"><box-icon name='cart-alt' color='#ffffff'></box-icon></a>
             </li>
           </ul>
       </div>

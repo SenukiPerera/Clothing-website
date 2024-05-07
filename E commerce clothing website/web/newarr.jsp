@@ -61,6 +61,51 @@
         
    <div class="container" id="latest_release">
        <h3 class="text-center">LATEST RELEASE</h3>
+       <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/mj8.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Long Trench Coat Jacket</p>
+                                            <p>LKR 3,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/L-T-5.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Slub Cotton Zebra-Pattern Print Tee</p>
+                                            <p>LKR 3,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/mj5.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Black Casual Jacket</p>
+                                            <p>LKR 5,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/mp7.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">White Color Casual Pant</p>
+                                            <p>LKR 6,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+                <br><br>
             <div class="row">
                 <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
                        List<ItemDetails> list = dao.getNewdrop();
@@ -71,7 +116,7 @@
                                     <div class="card-body text-center ">
                                         <p style="font-weight:bold;"><%=i.getItem_name()%></p>
                                         <p><%=i.getPrice()%></p>
-                                        <a><button class="btn-cart">QUICK ADD</button></a>
+                                        <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -83,11 +128,56 @@
             </div>
             <br>
             
-   </div><br>
+   </div><br> 
         
         
         <div class="container">
             <h3 class="text-center" id="top_sell">TOP SELLING</h3>
+            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/mj8.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Long Trench Coat Jacket</p>
+                                            <p>LKR 3,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/L-T-5.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Slub Cotton Zebra-Pattern Print Tee</p>
+                                            <p>LKR 3,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/mj5.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Black Casual Jacket</p>
+                                            <p>LKR 5,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/mp7.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">White Color Casual Pant</p>
+                                            <p>LKR 6,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+                <br><br>
             <div class="row">
                 <% ItemDAOImpl dao2 = new ItemDAOImpl(DBConnect.getConn());
                        List<ItemDetails> list2 = dao2.getBestSell();
@@ -98,7 +188,7 @@
                                     <div class="card-body text-center ">
                                         <p style="font-weight:bold;"><%=i.getItem_name()%></p>
                                         <p><%=i.getPrice()%></p>
-                                        <a><button class="btn-cart">QUICK ADD</button></a>
+                                        <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
                                     </div>
                                 </div>
                             </div>
