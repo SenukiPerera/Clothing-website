@@ -152,7 +152,7 @@
                                         <div class="ts-card-body text-center ">
                                             <p><b>Geo Print T-shirt & Waist Shorts</b></p>
                                             <p>LKR 5,650.00</p>
-                                            <a><button class="btn-cart">QUICK ADD</button></a>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -163,7 +163,7 @@
                                         <div class="ts-card-body text-center ">
                                             <p><b>Colourblock Tee & Waist Shorts</b></p>
                                             <p>LKR 5,650.00</p>
-                                            <a><button class="btn-cart">QUICK ADD</button></a>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -174,7 +174,7 @@
                                         <div class="ts-card-body text-center ">
                                             <p><b>Women Letter Graphic Crop Blouse</b></p>
                                             <p>LKR 3,000.00</p>
-                                            <a><button class="btn-cart">QUICK ADD</button></a>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -185,7 +185,7 @@
                                         <div class="ts-card-body text-center ">
                                             <p><b>Men Colourblock Tee & Track Shorts</b></p>
                                             <p>LKR 7,350.00</p>
-                                            <a><button class="btn-cart">QUICK ADD</button></a>
+                                           
                                         </div>
                                     </div>
                                 </div>

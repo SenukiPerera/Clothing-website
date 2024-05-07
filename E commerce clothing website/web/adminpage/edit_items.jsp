@@ -144,7 +144,7 @@
         <section class="home-section">
             <div class="text">Edit Items</div>
             
-                 
+                
             <% 
                 String item_name = request.getParameter("item_name");
                 ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
