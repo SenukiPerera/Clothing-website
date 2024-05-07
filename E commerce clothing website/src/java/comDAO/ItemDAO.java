@@ -62,10 +62,11 @@ public interface ItemDAO {
      
      public List<ItemDetails> getShoes();
      
+      /*users*/
      public List<users> getUsers();
     
-     
-     
+      /*search*/
+     public List<ItemDetails> getItemBySearch(String ch);
      
      
      

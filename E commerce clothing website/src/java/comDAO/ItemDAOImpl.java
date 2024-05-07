@@ -602,16 +602,38 @@ public class ItemDAOImpl implements ItemDAO {
         return list;
     }
 
-    
+    @Override
+    public List<ItemDetails> getItemBySearch(String ch) {
+        
+        List<ItemDetails> list = new ArrayList<ItemDetails>();
+        ItemDetails i =null;
+        
+        try{
+             String sql = "select * from item_details where item_category like ? or item_name like ?";
+             PreparedStatement ps = conn.prepareStatement(sql);
+             ps.setString(1, "%"+ch+"%");
+             ps.setString(2, "%"+ch+"%");
+             
+             ResultSet rs = ps.executeQuery();
+             
+             while(rs.next()){
+                i = new ItemDetails();
+                i.setItem_name(rs.getString(1));
+                i.setPhoto(rs.getString(2));
+                i.setSize(rs.getString(3));
+                i.setItem_category(rs.getString(4));
+                i.setPrice(rs.getString(5));
+                list.add(i);
+                
+             }
+             
+         } catch(Exception e){
+            e.printStackTrace();
+        }
+         
+         return list;
+    }
 
-    
-
-   
-
-    
-    
-
-    
     
 
     /**

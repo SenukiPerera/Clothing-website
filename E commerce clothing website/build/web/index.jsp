@@ -27,7 +27,10 @@
                 height: 100vh;
                 position: relative;
             }
-            
+            .button button{
+                background: transparent;
+                border: none;
+            }
             /*first div bg img*/
             .first-img{
                 background: url(img/limg.jpg);
@@ -205,10 +208,10 @@
         <%-- search bar --%>
         <div class="container-fluid back-img">
             <div class="searchbar">
-                <form action="searchItem" method="POST">
+                <form action="search.jsp" method="POST">
                     <input type="text" name="ch" placeholder="What are you looking for?">
                     <div class="button">
-                        <box-icon name='search-alt' color='#ffffff'></box-icon>
+                        <button><box-icon name='search-alt' color='#ffffff'></box-icon></button>
                     </div>
                 </form>
                 
