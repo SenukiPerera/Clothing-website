@@ -28,7 +28,7 @@
             }
             
             .form-container{
-                padding: 40px 100px;
+                padding: 30px 80px;
                 
             }
              .form-container input,

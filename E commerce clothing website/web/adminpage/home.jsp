@@ -136,7 +136,7 @@
             <div class="text">Dashboard</div>
                     
                     <center><h2><img src="image/logo-b.png" style=" width: 200px; height: 150px;"></h2></center>
-                    <h1 class="text-center">Welcome to Verdevo!</h1>
+                   
                 <div class="dash-container">
                <%-- content --%>
                    
