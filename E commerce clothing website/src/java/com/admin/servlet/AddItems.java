@@ -33,11 +33,11 @@ public class AddItems extends HttpServlet{
             String item_name = req.getParameter("iname");
             String price = req.getParameter("iprice");
             String size = req.getParameter("isize");
-            String category = req.getParameter("icategory");
+            String item_category = req.getParameter("icategory");
             Part part = req.getPart("iphoto");
             String fileName = part.getSubmittedFileName();
             
-            ItemDetails i = new ItemDetails(item_name,fileName,size, category, price);
+            ItemDetails i = new ItemDetails(item_name,fileName,size, item_category, price);
             
             ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
             
@@ -47,6 +47,8 @@ public class AddItems extends HttpServlet{
             HttpSession session = req.getSession();
             
             if(f){
+                session.setAttribute("succMsg", "Item add successfully");
+                resp.sendRedirect("adminpage/addnew.jsp");
                 
                 String path = getServletContext().getRealPath("") + "items";
             
@@ -54,12 +56,11 @@ public class AddItems extends HttpServlet{
             
                 part.write(path + File.separator + fileName);
                 
-                session.setAttribute("succMsg", "Item add successfully");
-                resp.sendRedirect("addnew.jsp");
+                
             } 
             else {
                session.setAttribute("failedMsg", "Something wrong on server");
-               resp.sendRedirect("addnew.jsp"); 
+               resp.sendRedirect("adminpage/addnew.jsp"); 
             }
             
         }catch (Exception e){

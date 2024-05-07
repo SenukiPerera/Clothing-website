@@ -31,13 +31,13 @@ public class EditItems extends HttpServlet {
             String item_name = req.getParameter("iname");
             String price = req.getParameter("iprice");
             String size = req.getParameter("isize");
-            String category = req.getParameter("icategory");
+            String item_category = req.getParameter("icategory");
             
             ItemDetails i = new ItemDetails();
-            i.setItem_name("item_name");
-            i.setSize("size");
-            i.setItem_category("item_category");
-            i.setPrice("price");
+            i.setItem_name(item_name);
+            i.setSize(size);
+            i.setItem_category(item_category);
+            i.setPrice(price);
             
             ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
             boolean f=dao.updateEdit_items(i);
@@ -45,11 +45,15 @@ public class EditItems extends HttpServlet {
             HttpSession session = req.getSession();
             
             if(f){
+                
                 session.setAttribute("succMsg", "Item updated successfully");
                 resp.sendRedirect("adminpage/allitems.jsp");
+                
             }else{
+                
                 session.setAttribute("failedMsg", "Something wrong on server...");
                 resp.sendRedirect("adminpage/allitems.jsp");
+                
             }
             
         }catch(Exception e){

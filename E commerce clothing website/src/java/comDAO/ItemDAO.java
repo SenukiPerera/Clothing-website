@@ -5,6 +5,7 @@
  */
 package comDAO;
 
+import classes.Cart;
 import com.entity.ItemDetails;
 import com.entity.oders;
 import com.entity.users;
@@ -66,7 +67,8 @@ public interface ItemDAO {
      
      public List<oders> getOderList();
      
-     public List<ItemDetails> getItemBySearch(String ch);
+     
+     
      
      
 }

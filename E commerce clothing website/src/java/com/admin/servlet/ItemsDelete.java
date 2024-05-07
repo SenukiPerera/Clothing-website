@@ -29,16 +29,19 @@ public class ItemsDelete extends HttpServlet{
             String item_name = req.getParameter("item_name");
             
             ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+            
             boolean f = dao.deleteItems(item_name);
             
             HttpSession session = req.getSession();
              
             if(f){
                 session.setAttribute("succMsg", "Item delete successfully");
-                resp.sendRedirect("adminpage/edit_items.jsp");
+                resp.sendRedirect("adminpage/allitems.jsp");
+                
             }else{
                 session.setAttribute("failedMsg", "Something wrong on server...");
-                resp.sendRedirect("adminpage/edit_items.jsp");
+                resp.sendRedirect("adminpage/allitems.jsp");
+                
             }
             
         } catch (Exception e){

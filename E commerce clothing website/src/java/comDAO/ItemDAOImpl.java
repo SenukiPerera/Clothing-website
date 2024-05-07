@@ -5,6 +5,7 @@
  */
 package comDAO;
 
+import classes.Cart;
 import com.entity.ItemDetails;
 import com.entity.oders;
 import com.entity.users;
@@ -112,7 +113,7 @@ public class ItemDAOImpl implements ItemDAO {
     public boolean updateEdit_items(ItemDetails i) {
         boolean f = false;
         try{
-            String sql = "update item_details set item_name=?, size=?, item_category=?, price=? where item_name=?";
+            String sql = "update item_details set size=?,item_category=?,price=? where item_name=?";
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, i.getItem_name());
             ps.setString(2, i.getSize());
@@ -622,35 +623,33 @@ public class ItemDAOImpl implements ItemDAO {
         return list;
     }
 
-    @Override
-    public List<ItemDetails> getItemBySearch(String ch) {
-        List<ItemDetails> list = new ArrayList<ItemDetails>();
-        ItemDetails i =null;
-        try{
-            String sql = "select * from item_details where item_name like? or item_category like? ";
-            PreparedStatement ps = conn.prepareStatement(sql);
-            ps.setString(1, "%"+ch+"%" );
-            ps.setString(2, "%"+ch+"%" );
-            
-            ResultSet rs = ps.executeQuery();
-            while(rs.next()){
+    public boolean addCart(Cart c) {
+        boolean f=false;
+         
+         try{
+             String sql="Insert in to cart(cid,item_name,price,totalprice values(?,?,?,?,?)";
+             PreparedStatement ps = conn.prepareStatement(sql);
+             
+             ps.setString(3,c.getItemName());
+             ps.setString(4,c.getPrice());
+             ps.setString(4,c.getTotalPrice());
+             
+             int i=ps.executeUpdate();
+             if(i==1)
+             {
+                 f=true;
+             }
               
-                i = new ItemDetails();
-                i.setItem_name(rs.getString(1));
-                i.setPhoto(rs.getString(2));
-                i.setSize(rs.getString(3));
-                i.setItem_category(rs.getString(4));
-                i.setPrice(rs.getString(5));
-                list.add(i); 
-                
-            }
-            
-        }catch(Exception e){
-             e.printStackTrace();
+             
+         }catch (Exception e){
+            e.printStackTrace();
         }
-        return list;
+         return f;
     }
 
+   
+
+    
     
 
     
