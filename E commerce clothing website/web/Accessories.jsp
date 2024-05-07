@@ -8,6 +8,7 @@
     Author     : Hp
 --%>
 
+<%@page import="java.sql.Connection"%>
 <%@page import="java.util.List"%>
 <%@page import="com.entity.ItemDetails"%>
 <%@page import="com.DB.DBConnect"%>
@@ -22,11 +23,7 @@
 
         
         <title>Accessories Page</title>
-         <style>
-            .container .card .card-body p{
-                color: black;
-            }
-        </style>
+         
 
         <link rel="stylesheet" href="all_component/Accessories.css">
         
@@ -78,55 +75,141 @@
     <div class="container" id="bags">
             <h3 class="text-center">BAGS</h3>
             <div class="row">
-                <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
-                       List<ItemDetails> list = dao.getBags();
-                       for(ItemDetails i:list){ %>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img alt="" src="items/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
-                                    <div class="card-body text-center ">
-                                        <p style="font-weight:bold;"><%=i.getItem_name()%></p>
-                                        <p><%=i.getPrice()%></p>
-                                        <a><button class="btn-cart">QUICK ADD</button></a>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/bag5.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Vegan Leather Backpack</p>
+                                            <p>LKR 3,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/bag4.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Satin Clutch</p>
+                                            <p>LKR 6,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/bag1.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Black Mini Hand Bag</p>
+                                            <p>LKR 5,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/bag2.jpg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Blue Color Hand Bag</p>
+                                            <p>LKR 6,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
                             </div>
-                            
-             <%}
-                       %>
-                
-                
-                
-               
-    </div>
-    <br>
-    
-    <div class="container" id="shoes">
-            <h3 class="text-center">SHOES</h3>
+            <br><br>
             <div class="row">
-                <% ItemDAOImpl dao2 = new ItemDAOImpl(DBConnect.getConn());
-                       List<ItemDetails> list2 = dao.getShoes();
-                       for(ItemDetails i:list2){ %>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
-                                    <div class="card-body text-center ">
-                                        <p style="font-weight:bold;"><%=i.getItem_name()%></p>
-                                        <p><%=i.getPrice()%></p>
-                                        <a><button class="btn-cart">QUICK ADD</button></a>
+                 <% ItemDAOImpl dao = new ItemDAOImpl(DBConnect.getConn());
+                           List<ItemDetails> list = dao.getBags();
+                           for(ItemDetails i:list){ %>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;"><%=i.getItem_name()%></p>
+                                            <p><%=i.getPrice()%></p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
                                     </div>
                                 </div>
+
+                 <%}
+                          %>
+        </div>
+        <br>
+
+        <div class="container" id="shoes">
+                <h3 class="text-center">SHOES</h3>
+                <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/shoes3.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Synthetic Sandals</p>
+                                            <p>LKR 3,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/shoes6.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Canvas and Jute Espadrilles</p>
+                                            <p>LKR 6,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/shoes5.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Leather and Fabric Heels</p>
+                                            <p>LKR 5,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/shoes4.jpeg" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;">Sneakers</p>
+                                            <p>LKR 6,500.00</p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
                             </div>
-                            
-             <%}
-                       %>
-                
-               
-                
-                
-                
-            </div>
-    </div>
+                <br><br>
+                <div class="row">
+                    <% ItemDAOImpl dao2 = new ItemDAOImpl(DBConnect.getConn());
+                           List<ItemDetails> list2 = dao2.getShoes();
+                           for(ItemDetails i:list2){ %>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img alt="" src="img/<%=i.getPhoto()%>" style="width:253px; height: 350px;" class="img-thumblin">
+                                        <div class="card-body text-center ">
+                                            <p style="font-weight:bold;"><%=i.getItem_name()%></p>
+                                            <p><%=i.getPrice()%></p>
+                                            <a href="addtocart?id"><button class="btn-cart">QUICK ADD</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                 <%}
+                           %>
+
+
+
+
+
+                </div>
+        </div>
 
 
 
