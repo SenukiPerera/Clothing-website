@@ -7,7 +7,7 @@ package comDAO;
 
 import classes.Cart;
 import com.entity.ItemDetails;
-import com.entity.oders;
+
 import com.entity.users;
 
 import java.sql.Connection;
@@ -600,28 +600,7 @@ public class ItemDAOImpl implements ItemDAO {
         return list;
     }
 
-    @Override
-    public List<oders> getOderList() {
-        List<oders> list = new ArrayList<oders>();
-        oders o =null;
-        
-        try{
-            String sql = "select * from table_name";
-            PreparedStatement ps = conn.prepareStatement(sql);
-            
-            ResultSet rs = ps.executeQuery();
-            while(rs.next()){
-              
-                
-                list.add(o);
-            }
-            
-        } catch (Exception e){
-            e.printStackTrace();
-        }
-        
-        return list;
-    }
+    
 
     public boolean addCart(Cart c) {
         boolean f=false;

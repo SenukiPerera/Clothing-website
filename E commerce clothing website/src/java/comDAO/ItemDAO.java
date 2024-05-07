@@ -7,7 +7,6 @@ package comDAO;
 
 import classes.Cart;
 import com.entity.ItemDetails;
-import com.entity.oders;
 import com.entity.users;
 import java.util.List;
 import javax.mail.FetchProfile;
@@ -65,7 +64,7 @@ public interface ItemDAO {
      
      public List<users> getUsers();
      
-     public List<oders> getOderList();
+     
      
      
      
