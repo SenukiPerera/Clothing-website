@@ -10,7 +10,7 @@
         <%
             String user = (String) session.getAttribute("user");
             if (user == null) {
-                response.sendRedirect("index.jsp");
+                response.sendRedirect("cartLogin.jsp");
             }
         %>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
